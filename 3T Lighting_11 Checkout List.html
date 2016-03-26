@@ -6,7 +6,7 @@
 <title>3T Lighting</title>
 <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="checkout">
 	<div id="wrapper">
 		<div id="header">
 			<div id="cart">
@@ -49,83 +49,77 @@
 				<li><a href="#" title="">Contact Us</a></li>
 			</ul>
 		</div>
-		<div id="slider">
-			<img src="images-web/Banner(00).jpg"/>
-		</div>
 		<div id="primary-content">
-			<div class="content">
-				<h3 class="h-title">About us</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum sed turpis vel porta. Quisque mattis nunc porttitor, cursus dolor et, dapibus sapien. Praesent congue nisi nec iaculis lacinia. Vivamus sollicitudin tellus vel ex pretium, ut imperdiet nunc sollicitudin.</p>
-				<p>Vestibulum consequat mattis mattis. Maecenas eleifend tristique lectus vitae consequat. Aliquam porta eros tortor, sed ultrices erat maximus nec. Morbi rutrum enim eget viverra hendrerit. Aliquam dictum at ligula eget tristique.</p>
-				<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris vel aliquet eros. Donec sem augue, blandit eu tincidunt vitae, efficitur at erat. Sed egestas ipsum id diam porttitor. Quis ornare sapien interdum. Nullam scelerisque ultrices pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc non congue metus. Fusce quis turpis in enim malesuada semper ut non ex. Sed fringilla ipsum eu mi condimentum, ac sagittis nunc fringilla.</p>
+			<div id="con-mess">
+				<p>3T Lighting will reserve your order items <strong>within 5 workings days.</strong> </p>
+				<p>Kindly visit our shop at <i>Blk 633 Veerasamy Road, #01-122, Singapore 200633</i> to make your payment and collect your items. </p>
+				<p>Thank you for your support.</p>
 			</div>
-			<div class="o-product">
-				<h3 class="h-title">Our Products</h3>
-				<ul>
-					<li><a src="#" title="Ceiling lights"><img src="images-web/ceilinglight.jpg" alt="Ceiling lights"/><span>Ceiling lights</span></a></li>
-					<li><a src="#" title="Wall lights"><img src="images-web/walllight.jpg" alt="Wall lights"/><span>Wall lights</span></a></li>
-					<li><a src="#" title="Fans & Accessories"><img src="images-web/fans&accessories.jpg" alt="Fans & Accessories"/><span>Fans & Accessories</span></a></li>
+			<div class="details-order">
+				<h3 class="order-title">Your Lists</h3>
+				<ul class="your-list">
+					<li class="ylist-title">
+						<div class="ylist-t2">Items</div>
+						<div class="ylist-t3">Qty.</div>
+						<div class="ylist-t4">Unit Price (SGD)</div>
+						<div class="ylist-t5">Amount (SGD)</div>
+					</li>
+					<li class="ylists">
+						<div class="ylist-1"><img src="images/clear.png"> REMOVE</div>
+						<div class="ylist-2">Saponetta Ceiling Light</div>
+						<div class="ylist-3"><input type="text" class="qtys" value="1"/></div>
+						<div class="ylist-4">$ 49.80</div>
+						<div class="ylist-5">$ 49.80</div>
+					</li>
+					<li class="ylists">
+						<div class="ylist-1"><img src="images/clear.png"> REMOVE</div>
+						<div class="ylist-2">Bestlite Wall Lamp</div>
+						<div class="ylist-3"><input type="text" class="qtys" value="1"/></div>
+						<div class="ylist-4">$ 69.90</div>
+						<div class="ylist-5">$ 69.90</div>
+					</li>
+					<li class="ylists">
+						<div class="ylist-1"><img src="images/clear.png"> REMOVE</div>
+						<div class="ylist-2">Indoor Ceiling Fan with Light Kits</div>
+						<div class="ylist-3"><input type="text" class="qtys" value="1"/></div>
+						<div class="ylist-4">$ 173.30</div>
+						<div class="ylist-5">$ 173.30</div>
+					</li>
 				</ul>
 			</div>
-			<div class="o-contact">
-				<h3 class="h-title">Our Contact</h3>
-				<div id="contact-co">
-					<div id="contact-co-left">
-						<div id="maps">
-							<img src="images-web/maps.jpg" alt="Map"/>
-						</div>
-						<div id="o-addr">
-							<span>ADDRESS:<br/>
-							Blk 633 Veerasamy Road, #01-122, Singapore 200633</span>
-							
-							<span>MOBILE:<br/>
-							8157 3493</span>
-							
-							<span>TEL:<br/>
-							6297 5750, 6293 0856</span>
-							
-							<span>FAX:<br/>
-							<span>6297 5749</span>
-							
-							<span>EMAIL:<br/>
-							lazer@singnet.com.sg</span>
-							
-							<div id="qrcode">
-								<span>Scan Here:</span>
-								<span><img src="images-web/qr.jpg" alt="QR code"/></span>
-							</div>
-						</div>
-					</div>
-					<div id="contact-co-right">
-						<span id="mess-c">Kindly drop your message here if you have any enquiry.</span>
+			<div id="order-subm">
+				<div id="order-subm-left">
 						<div class="form-inp">
-							<label>Name*:</label>
-							<input type="text" id="in-name"/>
+							<label>Full Name*:</label>
+							<input type="text" id="in-fname"/>
 						</div>
 						<div class="form-inp">
-							<label>Contact No*:</label>
-							<input type="text" id="in-cont"/>
+							<label>Contact Number*:</label>
+							<input type="text" id="in-cnumber"/>
+						</div>
+				</div>
+				<div id="order-subm-right">
+						<div class="form-inp">
+							<label>Date Collect*:</label>
+							<input type="text" id="in-date" placeholder="hh-mm"/>
 						</div>
 						<div class="form-inp">
-							<label>Email*:</label>
-							<input type="text" id="in-email"/>
+							<label>Time Collect*:</label>
+							<input type="text" placeholder="dd-mm-yyyy"/>
 						</div>
-						<div class="form-inp">
-							<label>Mesage*:</label>
-							<textarea id="in-mess"/></textarea>
-						</div>
+				</div>
+				<div id="order-subm-center">
 						<div class="form-inp" id="val-cor">
 							<label>Verification Code*:</label>
 							<input type="text" id="in-ver"/>
 							<span id="in-code">M y 5 N 2</span>
 							<span id="in-change"><img src="images/changecode.png"/><img src="images/sound.png"><img src="images/question.png"/></span>
-							<span id="requ">* Required Field</span>
 						</div>
 						<div class="form-inp" id="val-subm">
-							<input type="submit" id="in-sub" value="Submit"/>
+							<input type="submit" id="in-sub" value="confirm order"/>
 						</div>
 					</div>
-				</div>
+				<span id="requ">* Required Field</span>
 			</div>
 		</div>
 		<div id="footage">

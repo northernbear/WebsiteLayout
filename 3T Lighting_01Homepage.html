@@ -1,10 +1,23 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>3T Lighting</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles/styles.css"/>
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="owl.carousel.css"/>
+<link rel="stylesheet" href="owl.theme.default.min.css"/>
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+	loop:true,
+	items:1,
+	dots:true
+  });
+});
+  </script>
 </head>
 <body>
 	<div id="wrapper">
@@ -15,7 +28,7 @@
 						<a href="#" id="link-cart" title="Cart">Cart</a>
 						<ul class="sub-menu">
 							<li>3 Items, $293.00</li>
-							<li><a href="" title="checkout">Checkout</a></li>
+							<li><a href="3T Lighting_11 Checkout List.html" title="checkout">Checkout</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -26,18 +39,19 @@
 			</div>
 			<div id="top-menu">
 				<ul id="wel">
-					<li><a href="#" id="link-acc">Welcome <span id="u-name">Username</span></span></a>
+					<li><a href="3T Lighting_11 Checkout List.html" id="link-acc">Welcome <span id="u-name">Username</span></a>
 						<ul>
-							<li><a href="" title="logout">Log Out</a></li>
-							<li><a href="" title="y-account">Your account</a></li>
+							<li><a href="3T Lighting_11 Checkout List.html" title="logout">Log Out</a></li>
+							<li><a href="3T Lighting_11 Checkout List.html" title="y-account">Your account</a></li>
 						</ul>
 					</li>
 				</ul>
 				<ul id="menu-acc">
-					<li><a href="#" title="Login">Log-in</a></li>
-					<li><a href="#" title="Register">Register Here</a></li>
+					<li><a href="3T Lighting_10 Register_Login.html" title="Login">Log-in</a></li>
+					<li><a href="3T Lighting_10 Register_Login.html" title="Register">Register Here</a></li>
+				</ul>
 			</div>
-			<a href="#" title="logo" id="logo"><img src="images/logo.png" alt="logo"/></a>
+			<a href="3T Lighting_01Homepage.html" title="logo" id="logo"><img src="images/logo.png" alt="logo"/></a>
 		</div>
 		<div id="navi-menu">
 			<ul>
@@ -45,12 +59,15 @@
 				<li><a href="#" title="">About Us</a></li>
 				<li><a href="#" title="">Ceiling Lights</a></li>
 				<li><a href="#" title="">Wall Lights</a></li>
-				<li><a href="#" title="">Fans & Accessories</a></li>
+				<li><a href="#" title="">Fans &amp; Accessories</a></li>
 				<li><a href="#" title="">Contact Us</a></li>
 			</ul>
 		</div>
 		<div id="slider">
-			<img src="images-web/Banner(00).jpg"/>
+			<div class="owl-carousel">
+			  <div><img src="slider_banner/Banner(00).jpg" alt="banner"/></div>
+			  <div><img src="slider_banner/Banner(01).jpg" alt="banner"/></div>
+			</div>
 		</div>
 		<div id="primary-content">
 			<div class="content">
@@ -62,9 +79,9 @@
 			<div class="o-product">
 				<h3 class="h-title">Our Products</h3>
 				<ul>
-					<li><a src="#" title="Ceiling lights"><img src="images-web/ceilinglight.jpg" alt="Ceiling lights"/><span>Ceiling lights</span></a></li>
-					<li><a src="#" title="Wall lights"><img src="images-web/walllight.jpg" alt="Wall lights"/><span>Wall lights</span></a></li>
-					<li><a src="#" title="Fans & Accessories"><img src="images-web/fans&accessories.jpg" alt="Fans & Accessories"/><span>Fans & Accessories</span></a></li>
+					<li><a href="#" title="Ceiling lights"><img src="images-web/ceilinglight.jpg" alt="Ceiling lights"/><span>Ceiling lights</span></a></li>
+					<li><a href="#" title="Wall lights"><img src="images-web/walllight.jpg" alt="Wall lights"/><span>Wall lights</span></a></li>
+					<li><a href="#" title="Fans &amp; Accessories"><img src="images-web/fans&amp;accessories.jpg" alt="Fans &amp; Accessories"/><span>Fans &amp; Accessories</span></a></li>
 				</ul>
 			</div>
 			<div class="o-contact">
@@ -85,7 +102,7 @@
 							6297 5750, 6293 0856</span>
 							
 							<span>FAX:<br/>
-							<span>6297 5749</span>
+							6297 5749</span>
 							
 							<span>EMAIL:<br/>
 							lazer@singnet.com.sg</span>
@@ -98,32 +115,32 @@
 					</div>
 					<div id="contact-co-right">
 						<span id="mess-c">Kindly drop your message here if you have any enquiry.</span>
-						<div class="form-inp">
-							<label>Name*:</label>
-							<input type="text" id="in-name"/>
-						</div>
-						<div class="form-inp">
-							<label>Contact No*:</label>
-							<input type="text" id="in-cont"/>
-						</div>
-						<div class="form-inp">
-							<label>Email*:</label>
-							<input type="text" id="in-email"/>
-						</div>
-						<div class="form-inp">
-							<label>Mesage*:</label>
-							<textarea id="in-mess"/></textarea>
-						</div>
-						<div class="form-inp" id="val-cor">
-							<label>Verification Code*:</label>
-							<input type="text" id="in-ver"/>
-							<span id="in-code">M y 5 N 2</span>
-							<span id="in-change"><img src="images/changecode.png"/><img src="images/sound.png"><img src="images/question.png"/></span>
-							<span id="requ">* Required Field</span>
-						</div>
-						<div class="form-inp" id="val-subm">
-							<input type="submit" id="in-sub" value="Submit"/>
-						</div>
+							<div class="form-inp">
+								<label>Name*:</label>
+								<input type="text" id="in-name"/>
+							</div>
+							<div class="form-inp">
+								<label>Contact No*:</label>
+								<input type="text" id="in-cont"/>
+							</div>
+							<div class="form-inp">
+								<label>Email*:</label>
+								<input type="text" id="in-email"/>
+							</div>
+							<div class="form-inp">
+								<label>Mesage*:</label>
+								<textarea id="in-mess" cols="10" rows="6" ></textarea>
+							</div>
+							<div class="form-inp" id="val-cor">
+								<label>Verification Code*:</label>
+								<input type="text" id="in-ver"/>
+								<span id="in-code">M y 5 N 2</span>
+								<span id="in-change"><img src="images/changecode.png" alt="change code"/><img src="images/sound.png" alt="sound"/><img src="images/question.png" alt="question"/></span>
+								<span id="requ">* Required Field</span>
+							</div>
+							<div class="form-inp val-subm">
+								<input type="submit" class="in-sub" value="Submit"/>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -132,12 +149,12 @@
 			<div class="foot-content">
 				<h3>SITEMAP</h3>
 				<ul class="cate">
-					<li><a href="#" title>Homepage</a></li>
-					<li><a href="#" title>About us</a></li>
-					<li><a href="#" title>Ceiling Lights</a></li>
-					<li><a href="#" title>Wall Lights</a></li>
-					<li><a href="#" title>Fans & Accessories</a></li>
-					<li><a href="#" title>Contact Us</a></li>
+					<li><a href="#" title="Homepage">Homepage</a></li>
+					<li><a href="#" title="About us">About us</a></li>
+					<li><a href="#" title="Ceiling Lights">Ceiling Lights</a></li>
+					<li><a href="#" title="Wall Lights">Wall Lights</a></li>
+					<li><a href="#" title="Fans &amp; Accessories">Fans &amp; Accessories</a></li>
+					<li><a href="#" title="Contact Us">Contact Us</a></li>
 				</ul>
 			</div>	
 			<div class="foot-content">
@@ -163,9 +180,8 @@
 				</div>
 			</div>				
 		</div>
-	</div>
 		<div id="copyright">
-			<p>&copy; Copyright 2016. Designed & Developed by Trust Venture International Pte Ltd. All Rights Reserved.</p>
+			<p>&copy; Copyright 2016. Designed &amp; Developed by Trust Venture International Pte Ltd. All Rights Reserved.</p>
 		</div>
 	</div>
 </body>

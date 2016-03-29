@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>3T Lighting</title>
+<link rel="stylesheet" href="styles/styles.css"/>
+<link rel="stylesheet" href="jquery-ui.min.css"/>
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+  $(function() {
+    $( "#tabs-pro" ).tabs();
+	$( "#dialog-4" ).dialog({
+               autoOpen: false, 
+               modal: true
+            });
+            $( "#aitems" ).click(function() {
+               $( "#dialog-4" ).dialog( "open" );
+            });
+	$("#big-image img:eq(0)").nextAll().hide();
+    $(".small-images img").click(function(e){
+        var index = $(this).index();
+        $("#big-image img").eq(index).show().siblings().hide();
+    });
+  });
+  </script>
+</head>
+<body class="product-details">
+	<div id="wrapper">
+		<div id="header">
+			<div id="cart">
+				<ul id="cart-s">
+					<li>
+						<a href="#" id="link-cart" title="Cart">Cart</a>
+						<ul class="sub-menu">
+							<li>3 Items, $293.00</li>
+							<li><a href="3T Lighting_11 Checkout List.html" title="checkout">Checkout</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div id="search">
+					<input type="text" id="bt-inpu" placeholder="Search Items..."/>
+					<input type="submit" value="Search" id="bt-sear"/>
+				</div>
+			</div>
+			<div id="top-menu">
+				<ul id="wel">
+					<li><a href="3T Lighting_11 Checkout List.html" id="link-acc">Welcome <span id="u-name">Username</span></a>
+						<ul>
+							<li><a href="3T Lighting_11 Checkout List.html" title="logout">Log Out</a></li>
+							<li><a href="3T Lighting_11 Checkout List.html" title="y-account">Your account</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="menu-acc">
+					<li><a href="3T Lighting_10 Register_Login.html" title="Login">Log-in</a></li>
+					<li><a href="3T Lighting_10 Register_Login.html" title="Register">Register Here</a></li>
+			</div>
+			<a href="3T Lighting_01Homepage.html" title="logo" id="logo"><img src="images/logo.png" alt="logo"/></a>
+		</div>
+		<div id="navi-menu">
+			<ul>
+				<li class="activ"><a href="#" title="">Homepage</a></li>
+				<li><a href="#" title="">About Us</a></li>
+				<li><a href="#" title="">Ceiling Lights</a></li>
+				<li><a href="#" title="">Wall Lights</a></li>
+				<li><a href="#" title="">Fans &amp; Accessories</a></li>
+				<li><a href="#" title="">Contact Us</a></li>
+			</ul>
+		</div>
+		<div id="primary-content">
+			<div id="sidebar">
+				<div class="mleft-menu">
+					<h3 class="mleft-title">OUR PRODUCTS</h3>
+					<ul id="menu-poduct">
+						<li><a href="#">Ceiling Lights</a>
+							<ul class="menu-poduct-sub">
+								<li><a href="#">Indoor</a></li>
+								<li><a href="#" class="acte">Outdoor</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Wall Lights</a>
+							<ul class="menu-poduct-sub">
+								<li><a href="#">Indoor</a></li>
+								<li><a href="#">Outdoor</a></li>
+							</ul>
+						</li>
+						<li class="no-sub"><a href="#">Fan &amp; Accessories</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pro-content">
+				<h3 class="h-title">Outdoor Ceiling Lights</h3>
+				<div id="pro-details">
+					<div id="pro-img">
+						<div id="big-image">
+							<img src="images-web/big/outdoor1.jpg">
+							<img src="images-web/big/outdoor2.jpg"/>
+						</div>
+
+						<div class="small-images">
+							<img src="images-web/small/outdoor1.jpg">
+							<img src="images-web/small/outdoor2.jpg"/>
+						</div>
+					</div>
+					<div id="pro-short">
+						<div class="price"><sup>SGD $</sup>49.80</div>
+						<div id="pro-colo">You will discover a pleasant variety of shapes, colors, sizes and functions.</div>
+						<div id="icode">Item Code : ceiling0001</div>
+						<div id="short-descp">The ceiling lamp "SAPONETTA" is not only named after a famous hygiene product, it also looks like an oversized piece of soap.  The SAPONETTA light is dimmable and optional designed for outdoor use.</div>
+						<div id="pro-qty"><label>Qty:</label>
+						<select id="sel-qty">
+						  <option value="1" selected>1</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5</option>
+						</select>
+						<input value="add item" id="aitems" type="button"/>
+						</div>
+					</div>
+				</div>
+				<div id="pro-descp">
+					<div id="tabs-pro">
+					  <ul>
+						<li><a href="#pro-1">Product Details</a></li>
+						<li><a href="#pro-2">Customers Review</a></li>
+					  </ul>
+					  <div id="pro-1">
+						<h4 class="title-desctab">Reviews for Saponetta Ceiling Light</h4>
+						<p>Size : Large</p>
+						<p>Manufacturer : Modoluce</p>
+						<p>Country of Origin : Italy</p>
+						<p>Design : 2012</p>
+						<p>Material : Polyethylen</p>
+						<p>Dimmable : Yes</p>
+						<p>Light Emission : Uniform</p>
+						<p>Illuminant : T5 1x21W</p>
+						<p>Dimensions in cm (WxHxD) : 110cm x 18cm x 50cm</p>
+						<p>Dimensions in inch (WxHxD) : 43.31'' x 5.5'' 19.69''</p>
+					  </div>
+					  <div id="pro-2">
+						<h4 class="title-desctab">Reviews for Bestlite Wall Lamp</h4>
+						<ul id="reviews">
+							<li>
+								<div class="Rati"><span>Raiting:</span> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/></div>
+								<div class="rev-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. </div>
+								<div class="author-time">Admin, 12 March 2016</div>
+							</li>
+							<li>
+								<div class="Rati"><span>Raiting:</span> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/></div>
+								<div class="rev-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. </div>
+								<div class="author-time">Admin, 12 March 2016</div>
+							</li>
+					  </ul>
+					  <h4 class="title-desctab">Your Feedback for Bestlite Wall Lamp</h4>
+					  <div class="your-list">
+						<div id="acc-reg-center">
+							<div class="form-inp">
+								<label>Name:</label>
+								<input type="text"/>
+							</div>
+							<div class="form-inp">
+								<label>Email:</label>
+								<input type="text" />
+							</div>
+							<div class="form-inp">
+								<div class="Rati-fo"><label>Raiting:</label><div class="no-rait"><img src="images/no-raiting.png"/> <img src="images/no-raiting.png"/> <img src="images/no-raiting.png"/> <img src="images/no-raiting.png"/> <img src="images/no-raiting.png"/></div></div>
+							</div>
+							<div class="form-inp">
+								<label>Feedback:</label>
+								<textarea/></textarea>
+							</div>
+						</div>
+						<div class="order-subm-center">
+						<div class="form-inp" id="val-cor">
+							<label>Verification Code*:</label>
+							<input type="text" id="in-ver"/>
+							<span id="in-code">M y 5 N 2</span>
+							<span id="in-change"><img src="images/changecode.png"/><img src="images/sound.png"><img src="images/question.png"/></span>
+						</div>
+						<div class="form-inp val-subm" >
+							<input type="submit" class="in-sub" value="Submit"/>
+						</div>
+					</div>
+					
+					</div>
+					  </div>
+					</div>
+				</div>
+				 <div id="dialog-4" title="Add to cart">
+				 <p>
+					Your are adding <strong>Saponetta Ceilling Light</strong> to your cart.<br/> 
+					Thank you for your support.
+				  </p>
+				  <div class="achag"><a href="#" id="ylis">Your Lists</a>
+				  </div>
+				  </div>
+			</div>
+		</div>
+		<div id="footage">
+			<div class="foot-content">
+				<h3>SITEMAP</h3>
+				<ul class="cate">
+					<li><a href="#" title>Homepage</a></li>
+					<li><a href="#" title>About us</a></li>
+					<li><a href="#" title>Ceiling Lights</a></li>
+					<li><a href="#" title>Wall Lights</a></li>
+					<li><a href="#" title>Fans & Accessories</a></li>
+					<li><a href="#" title>Contact Us</a></li>
+				</ul>
+			</div>	
+			<div class="foot-content">
+				<h3>CONTACT US</h3>
+				<ul class="cons">
+					<li><span>Mobile:<br/>8157 3493</span></li>
+					<li><span>Tel:<br/>6297 5750, 6293 0856</span></li>
+					<li><span>Fax:<br/>6297 5749</span></li>
+				</ul>
+			</div>
+			<div class="foot-content">
+				<h3>FIND US</h3>
+				<div id="addr">
+					<span>Blk 663 Veerasamy Road, #01-122,<br/>Singapore 200633<br/>(Nextto Weld Rd)</span>
+				</div>
+				<div id="e-addr">
+					<span>Email:<br/>lazer@singnet.com.sg</span>
+					<ul id="social">
+						<li><a href="#" title="Facebook" id="fb">Facebook</a></li>
+						<li><a href="#" title="Youtube" id="ytb">Youtube</a></li>
+						<li><a href="#" title="Instagram" id="ins">Instagram</a></li>
+					</ul>
+				</div>
+			</div>				
+		</div>
+	</div>
+		<div id="copyright">
+			<p>&copy; Copyright 2016. Designed & Developed by Trust Venture International Pte Ltd. All Rights Reserved.</p>
+		</div>
+	</div>
+</body>
+</html>

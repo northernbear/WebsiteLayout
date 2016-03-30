@@ -1,14 +1,16 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>3T Lighting</title>
-<link rel="stylesheet" href="styles/styles.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Our Product(Products Details) | 3T Lighting</title>
+<link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="reponsive.css"/>
 <link rel="stylesheet" href="jquery-ui.min.css"/>
-<script src="js/jquery-1.12.2.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script>
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript">
   $(function() {
     $( "#tabs-pro" ).tabs();
 	$( "#dialog-4" ).dialog({
@@ -56,17 +58,18 @@
 				<ul id="menu-acc">
 					<li><a href="3T Lighting_10 Register_Login.html" title="Login">Log-in</a></li>
 					<li><a href="3T Lighting_10 Register_Login.html" title="Register">Register Here</a></li>
+				</ul>
 			</div>
 			<a href="3T Lighting_01Homepage.html" title="logo" id="logo"><img src="images/logo.png" alt="logo"/></a>
 		</div>
-		<div id="navi-menu">
+		<div class="nav">
 			<ul>
-				<li class="activ"><a href="#" title="">Homepage</a></li>
-				<li><a href="#" title="">About Us</a></li>
-				<li><a href="#" title="">Ceiling Lights</a></li>
-				<li><a href="#" title="">Wall Lights</a></li>
-				<li><a href="#" title="">Fans &amp; Accessories</a></li>
-				<li><a href="#" title="">Contact Us</a></li>
+				<li><a href="3T Lighting_01Homepage.html" title="Homepage">Homepage</a></li>
+				<li><a href="#" title="About Us">About Us</a></li>
+				<li class="current"><a href="3T Lighting_02Our Product_Ceiling Lights(Indoor).html" title="Ceiling Lights">Ceiling Lights</a></li>
+				<li><a href="3T Lighting_05Our Product_Wall Lights(Indoor).html" title="Wall Lights">Wall Lights</a></li>
+				<li><a href="3T Lighting_08Our Product_Fans&Accessories.html" title="Fans &amp; Accessories">Fans &amp; Accessories</a></li>
+				<li><a href="#" title="Contact Us">Contact Us</a></li>
 			</ul>
 		</div>
 		<div id="primary-content">
@@ -74,19 +77,19 @@
 				<div class="mleft-menu">
 					<h3 class="mleft-title">OUR PRODUCTS</h3>
 					<ul id="menu-poduct">
-						<li><a href="#">Ceiling Lights</a>
+						<li><a href="3T Lighting_02Our Product_Ceiling Lights(Indoor).html">Ceiling Lights</a>
 							<ul class="menu-poduct-sub">
-								<li><a href="#">Indoor</a></li>
-								<li><a href="#" class="acte">Outdoor</a></li>
+								<li><a href="3T Lighting_02Our Product_Ceiling Lights(Indoor).html">Indoor</a></li>
+								<li><a href="3T Lighting_03Our Product_Ceiling Lights(Outdoor).html" class="acte">Outdoor</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Wall Lights</a>
+						<li><a href="3T Lighting_05Our Product_Wall Lights(Indoor).html">Wall Lights</a>
 							<ul class="menu-poduct-sub">
-								<li><a href="#">Indoor</a></li>
-								<li><a href="#">Outdoor</a></li>
+								<li><a href="3T Lighting_05Our Product_Wall Lights(Indoor).html">Indoor</a></li>
+								<li><a href="3T Lighting_06Our Product_Wall Lights(Outdoor).html">Outdoor</a></li>
 							</ul>
 						</li>
-						<li class="no-sub"><a href="#">Fan &amp; Accessories</a>
+						<li class="no-sub"><a href="3T Lighting_08Our Product_Fans&Accessories.html">Fan &amp; Accessories</a>
 						</li>
 					</ul>
 				</div>
@@ -96,13 +99,13 @@
 				<div id="pro-details">
 					<div id="pro-img">
 						<div id="big-image">
-							<img src="images-web/big/outdoor1.jpg">
-							<img src="images-web/big/outdoor2.jpg"/>
+							<img src="images-web/big/outdoor1.jpg" alt="Outdoor Large"/>
+							<img src="images-web/big/outdoor2.jpg" alt="Outdoor Large"/>
 						</div>
 
 						<div class="small-images">
-							<img src="images-web/small/outdoor1.jpg">
-							<img src="images-web/small/outdoor2.jpg"/>
+							<img src="images-web/small/outdoor1.jpg" alt="Outdoor Large"/>
+							<img src="images-web/small/outdoor2.jpg" alt="Outdoor Large"/>
 						</div>
 					</div>
 					<div id="pro-short">
@@ -112,7 +115,7 @@
 						<div id="short-descp">The ceiling lamp "SAPONETTA" is not only named after a famous hygiene product, it also looks like an oversized piece of soap.  The SAPONETTA light is dimmable and optional designed for outdoor use.</div>
 						<div id="pro-qty"><label>Qty:</label>
 						<select id="sel-qty">
-						  <option value="1" selected>1</option>
+						  <option value="1"  selected="selected">1</option>
 						  <option value="2">2</option>
 						  <option value="3">3</option>
 						  <option value="4">4</option>
@@ -145,12 +148,12 @@
 						<h4 class="title-desctab">Reviews for Bestlite Wall Lamp</h4>
 						<ul id="reviews">
 							<li>
-								<div class="Rati"><span>Raiting:</span> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/></div>
+								<div class="Rati"><span>Raiting:</span> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/></div>
 								<div class="rev-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. </div>
 								<div class="author-time">Admin, 12 March 2016</div>
 							</li>
 							<li>
-								<div class="Rati"><span>Raiting:</span> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/> <img src="images/raiting.png"/></div>
+								<div class="Rati"><span>Raiting:</span> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/></div>
 								<div class="rev-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. </div>
 								<div class="author-time">Admin, 12 March 2016</div>
 							</li>
@@ -167,11 +170,11 @@
 								<input type="text" />
 							</div>
 							<div class="form-inp">
-								<div class="Rati-fo"><label>Raiting:</label><div class="no-rait"><img src="images/no-raiting.png"/> <img src="images/no-raiting.png"/> <img src="images/no-raiting.png"/> <img src="images/no-raiting.png"/> <img src="images/no-raiting.png"/></div></div>
+								<div class="Rati-fo"><label>Raiting:</label><div class="no-rait"><img src="images/no-raiting.png" alt="no-raiting"/> <img src="images/no-raiting.png" alt="no-raiting"/> <img src="images/no-raiting.png" alt="no-raiting"/> <img src="images/no-raiting.png" alt="no-raiting"/> <img src="images/no-raiting.png" alt="no-raiting"/></div></div>
 							</div>
 							<div class="form-inp">
 								<label>Feedback:</label>
-								<textarea/></textarea>
+								<textarea cols="10" rows="6"></textarea>
 							</div>
 						</div>
 						<div class="order-subm-center">
@@ -179,7 +182,7 @@
 							<label>Verification Code*:</label>
 							<input type="text" id="in-ver"/>
 							<span id="in-code">M y 5 N 2</span>
-							<span id="in-change"><img src="images/changecode.png"/><img src="images/sound.png"><img src="images/question.png"/></span>
+							<span id="in-change"><img src="images/changecode.png" alt="changecode"/><img src="images/sound.png" alt="sound"/><img src="images/question.png" alt="question"/></span>
 						</div>
 						<div class="form-inp val-subm" >
 							<input type="submit" class="in-sub" value="Submit"/>
@@ -195,7 +198,7 @@
 					Your are adding <strong>Saponetta Ceilling Light</strong> to your cart.<br/> 
 					Thank you for your support.
 				  </p>
-				  <div class="achag"><a href="#" id="ylis">Your Lists</a>
+				  <div class="achag"><a href="3T Lighting_11 Checkout List.html" id="ylis">Your Lists</a>
 				  </div>
 				  </div>
 			</div>
@@ -204,12 +207,12 @@
 			<div class="foot-content">
 				<h3>SITEMAP</h3>
 				<ul class="cate">
-					<li><a href="#" title>Homepage</a></li>
-					<li><a href="#" title>About us</a></li>
-					<li><a href="#" title>Ceiling Lights</a></li>
-					<li><a href="#" title>Wall Lights</a></li>
-					<li><a href="#" title>Fans & Accessories</a></li>
-					<li><a href="#" title>Contact Us</a></li>
+					<li><a href="3T Lighting_01Homepage.html" title="Homepage">Homepage</a></li>
+					<li><a href="#" title="About us">About us</a></li>
+					<li><a href="3T Lighting_02Our Product_Ceiling Lights(Indoor).html" title="Ceiling Lights">Ceiling Lights</a></li>
+					<li><a href="3T Lighting_05Our Product_Wall Lights(Indoor).html" title="Wall Lights">Wall Lights</a></li>
+					<li><a href="3T Lighting_08Our Product_Fans&Accessories.html" title="Fans &amp; Accessories">Fans &amp; Accessories</a></li>
+					<li><a href="#" title="Contact Us">Contact Us</a></li>
 				</ul>
 			</div>	
 			<div class="foot-content">
@@ -235,9 +238,8 @@
 				</div>
 			</div>				
 		</div>
-	</div>
 		<div id="copyright">
-			<p>&copy; Copyright 2016. Designed & Developed by Trust Venture International Pte Ltd. All Rights Reserved.</p>
+			<p>&copy; Copyright 2016. Designed &amp; Developed by <a href="http://www.trust-touch.com.sg">Trust Venture International Pte Ltd</a>. All Rights Reserved.</p>
 		</div>
 	</div>
 </body>

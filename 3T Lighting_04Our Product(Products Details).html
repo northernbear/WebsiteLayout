@@ -8,9 +8,20 @@
 <link rel="stylesheet" href="styles.css"/>
 <link rel="stylesheet" href="reponsive.css"/>
 <link rel="stylesheet" href="jquery-ui.min.css"/>
+<link rel="stylesheet" href="font-awesome.min.css"/>
 <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript">
+ $(document).ready(function() {
+            $('dd:not(:first)').hide();
+            $('dt a').click(function()  {
+                $('dd:visible').slideUp('slow');
+                $('.active').removeClass('active');
+                $(this).parent().addClass('active').next().slideDown('slow');
+                return false;
+            });
+                
+        });
   $(function() {
     $( "#tabs-pro" ).tabs();
 	$( "#dialog-4" ).dialog({
@@ -76,22 +87,25 @@
 			<div id="sidebar">
 				<div class="mleft-menu">
 					<h3 class="mleft-title">OUR PRODUCTS</h3>
-					<ul id="menu-poduct">
-						<li><a href="3T Lighting_02Our Product_Ceiling Lights(Indoor).html">Ceiling Lights</a>
-							<ul class="menu-poduct-sub">
+					<!--- -->
+					<dl>
+						<dt><a class="active" href="#">Ceiling Lights</a></dt>
+						<dd>
+							<ul>
 								<li><a href="3T Lighting_02Our Product_Ceiling Lights(Indoor).html">Indoor</a></li>
-								<li><a href="3T Lighting_03Our Product_Ceiling Lights(Outdoor).html" class="acte">Outdoor</a></li>
+								<li><a href="3T Lighting_03Our Product_Ceiling Lights(Outdoor).html">Outdoor</a></li>
 							</ul>
-						</li>
-						<li><a href="3T Lighting_05Our Product_Wall Lights(Indoor).html">Wall Lights</a>
-							<ul class="menu-poduct-sub">
+						</dd>
+						<dt><a href="#">Wall Lights</a></dt>
+						<dd>
+							<ul>
 								<li><a href="3T Lighting_05Our Product_Wall Lights(Indoor).html">Indoor</a></li>
 								<li><a href="3T Lighting_06Our Product_Wall Lights(Outdoor).html">Outdoor</a></li>
 							</ul>
-						</li>
-						<li class="no-sub"><a href="3T Lighting_08Our Product_Fans&Accessories.html">Fan &amp; Accessories</a>
-						</li>
-					</ul>
+						</dd>
+						<dt><a href="3T Lighting_08Our Product_Fans&Accessories.html">Fan &amp; Accessories</a></dt>
+					</dl>
+					<!-- -->
 				</div>
 			</div>
 			<div class="pro-content">
@@ -148,12 +162,42 @@
 						<h4 class="title-desctab">Reviews for Bestlite Wall Lamp</h4>
 						<ul id="reviews">
 							<li>
-								<div class="Rati"><span>Raiting:</span> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/></div>
+								<div class="Rati"><span class="label-rait">Raiting:</span>
+								<div class="star-rating">
+								  <div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-s5" type="radio" name="rating-s1" value="5" checked="checked"/>
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-s5" title="5 out of 5 stars" checked="checked"></label>
+									<input class="star-rating__input" id="star-rating-s4" type="radio" name="rating-s2" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-s4" title="4 out of 5 stars" checked="checked"></label>
+									<input class="star-rating__input" id="star-rating-s3" type="radio" name="rating-s3" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-s3" title="3 out of 5 stars" checked="checked"></label>
+									<input class="star-rating__input" id="star-rating-s2" type="radio" name="rating-s4" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-s2" title="2 out of 5 stars" checked="checked"></label>
+									<input class="star-rating__input" id="star-rating-s1" type="radio" name="rating-s5" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-s1" title="1 out of 5 stars" checked="checked"></label>
+								  </div>
+								</div>
+								</div>
 								<div class="rev-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. </div>
 								<div class="author-time">Admin, 12 March 2016</div>
 							</li>
 							<li>
-								<div class="Rati"><span>Raiting:</span> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/> <img src="images/raiting.png" alt="raiting"/></div>
+								<div class="Rati"><span class="label-rait">Raiting:</span>
+								<div class="star-rating">
+								  <div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-f5" type="radio" name="rating-f1" value="5" checked="checked"/>
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-f5" title="5 out of 5 stars" checked="checked"></label>
+									<input class="star-rating__input" id="star-rating-f4" type="radio" name="rating-f2" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-f4" title="4 out of 5 stars" checked="checked"></label>
+									<input class="star-rating__input" id="star-rating-f3" type="radio" name="rating-f3" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-f3" title="3 out of 5 stars" checked="checked"></label>
+									<input class="star-rating__input" id="star-rating-f2" type="radio" name="rating-f4" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-f2" title="2 out of 5 stars" checked="checked"></label>
+									<input class="star-rating__input" id="star-rating-f1" type="radio" name="rating-f5" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-f1" title="1 out of 5 stars" checked="checked"></label>
+								  </div>
+								</div>
+								</div>
 								<div class="rev-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit massa vel mauris sollicitudin dignissim. </div>
 								<div class="author-time">Admin, 12 March 2016</div>
 							</li>
@@ -170,7 +214,22 @@
 								<input type="text" />
 							</div>
 							<div class="form-inp">
-								<div class="Rati-fo"><label>Raiting:</label><div class="no-rait"><img src="images/no-raiting.png" alt="no-raiting"/> <img src="images/no-raiting.png" alt="no-raiting"/> <img src="images/no-raiting.png" alt="no-raiting"/> <img src="images/no-raiting.png" alt="no-raiting"/> <img src="images/no-raiting.png" alt="no-raiting"/></div></div>
+								<div class="Rati-fo"><label>Raiting:</label>
+								<div class="star-rating">
+								  <div class="star-rating__wrap">
+									<input class="star-rating__input" id="star-rating-5" type="radio" name="rating" value="5">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-5" title="5 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-4" type="radio" name="rating" value="4">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-4" title="4 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-3" type="radio" name="rating" value="3">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-3" title="3 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-2" type="radio" name="rating" value="2">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-2" title="2 out of 5 stars"></label>
+									<input class="star-rating__input" id="star-rating-1" type="radio" name="rating" value="1">
+									<label class="star-rating__ico fa fa-star-o fa-lg" for="star-rating-1" title="1 out of 5 stars"></label>
+								  </div>
+								</div>
+								</div>
 							</div>
 							<div class="form-inp">
 								<label>Feedback:</label>

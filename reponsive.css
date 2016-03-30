@@ -26,14 +26,17 @@
 	}
 	.nav a {
 		display: block;
-		padding: 5px 5px 5px 32px;
+		padding: 5px 5px 5px 32px !important;
 		text-align: left;
+	}
+	.nav  .current a {
+		padding: 5px 5px 5px 0px !important;
 	}
 	.nav .current a {
 		background: none;
 		color: #fff;
+		margin-left: 35px;
 	}
-
 	/* on nav hover */
 	.nav ul:hover {
 		background-image: none;
@@ -153,6 +156,9 @@
 	#pro-short {
     float: left;
     width: 47%;
+	}
+	.nav a {
+    padding: 16px 30px 20px 30px;
 	}
 }
 
@@ -295,6 +301,9 @@
 	#con-mess {
     width: 95%;
 	}
+	.nav a {
+    padding: 16px 30px 20px 30px;
+	}
 }
 
 @media all and (min-width: 600px) and (max-width: 979px){
@@ -409,6 +418,9 @@
 	body.product-details .pro-content {
     width: 98%;
     margin-top: 30px;
+	}
+	.nav a {
+    padding: 16px 12px 20px 12px;
 	}
 }
 
@@ -688,6 +700,9 @@
     width: 62%;
     margin-left: 10px;
     padding-top: 7px;
+	}
+	.mleft-menu ul {
+    background: #fff ;
 	}
 }
 @media all and (max-width: 320px){

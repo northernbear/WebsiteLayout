@@ -7,6 +7,19 @@
 <title>Our Product Ceiling Lights(Outdoor) | 3T Lighting</title>
 <link rel="stylesheet" href="styles.css"/>
 <link rel="stylesheet" href="reponsive.css"/>
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $('dd:not(:first)').hide();
+            $('dt a').click(function()  {
+                $('dd:visible').slideUp('slow');
+                $('.active').removeClass('active');
+                $(this).parent().addClass('active').next().slideDown('slow');
+                return false;
+            });
+                
+        });
+     </script>
 </head>
 <body>
 	<div id="wrapper">
@@ -59,22 +72,25 @@
 			<div id="sidebar">
 				<div class="mleft-menu">
 					<h3 class="mleft-title">OUR PRODUCTS</h3>
-					<ul id="menu-poduct">
-						<li><a href="3T Lighting_02Our Product_Ceiling Lights(Indoor).html">Ceiling Lights</a>
-							<ul class="menu-poduct-sub">
+					<!--- -->
+					<dl>
+						<dt><a class="active" href="#">Ceiling Lights</a></dt>
+						<dd>
+							<ul>
 								<li><a href="3T Lighting_02Our Product_Ceiling Lights(Indoor).html">Indoor</a></li>
-								<li><a href="3T Lighting_03Our Product_Ceiling Lights(Outdoor).html" class="acte">Outdoor</a></li>
+								<li><a href="3T Lighting_03Our Product_Ceiling Lights(Outdoor).html">Outdoor</a></li>
 							</ul>
-						</li>
-						<li><a href="3T Lighting_05Our Product_Wall Lights(Indoor).html">Wall Lights</a>
-							<ul class="menu-poduct-sub">
+						</dd>
+						<dt><a href="#">Wall Lights</a></dt>
+						<dd>
+							<ul>
 								<li><a href="3T Lighting_05Our Product_Wall Lights(Indoor).html">Indoor</a></li>
 								<li><a href="3T Lighting_06Our Product_Wall Lights(Outdoor).html">Outdoor</a></li>
 							</ul>
-						</li>
-						<li class="no-sub"><a href="3T Lighting_08Our Product_Fans&Accessories.html">Fan &amp; Accessories</a>
-						</li>
-					</ul>
+						</dd>
+						<dt><a href="3T Lighting_08Our Product_Fans&Accessories.html">Fan &amp; Accessories</a></dt>
+					</dl>
+					<!-- -->
 				</div>
 			</div>
 			<div class="pro-content">

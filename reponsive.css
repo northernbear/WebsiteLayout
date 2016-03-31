@@ -160,6 +160,9 @@
 	.nav a {
     padding: 16px 30px 20px 30px;
 	}
+	body.account .order-subm-center .val-subm{
+    width: 14% !important;
+	}
 }
 
 @media all and (max-width: 980px) {
@@ -304,6 +307,9 @@
 	.nav a {
     padding: 16px 30px 20px 30px;
 	}
+	body.account .order-subm-center .val-subm {
+    width: 20% !important;
+	}
 }
 
 @media all and (min-width: 600px) and (max-width: 979px){
@@ -421,6 +427,11 @@
 	}
 	.nav a {
     padding: 16px 12px 20px 12px;
+	}
+	.ylist-t {
+    padding-right: 37px;
+    float: left;
+    width: 94.5%;
 	}
 }
 
@@ -703,6 +714,12 @@
 	}
 	.mleft-menu ul {
     background: #fff ;
+	}
+	.ylist-t {
+    padding-right: 0px;
+    float: left;
+    width: 100%;
+    text-align: left;
 	}
 }
 @media all and (max-width: 320px){

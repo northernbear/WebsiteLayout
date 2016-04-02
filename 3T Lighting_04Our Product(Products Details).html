@@ -5,16 +5,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Our Product(Products Details) | 3T Lighting</title>
-<link rel="stylesheet" href="styles.css"/>
-<link rel="stylesheet" href="reponsive.css"/>
-<link rel="stylesheet" href="jquery-ui.min.css"/>
-<link rel="stylesheet" href="font-awesome.min.css"/>
-<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="assets/styles.css"/>
+<link rel="stylesheet" href="assets/reponsive.css"/>
+<link rel="stylesheet" href="assets/jquery-ui.min.css"/>
+<link rel="stylesheet" href="assets/font-awesome.min.css"/>
+<script type="text/javascript" src="assets/js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
 <script type="text/javascript">
  $(document).ready(function() {
             $('dd:not(:first)').hide();
-            $('dt a').click(function()  {
+            $('dt.mleft-li a').click(function()  {
                 $('dd:visible').slideUp('slow');
                 $('.active').removeClass('active');
                 $(this).parent().addClass('active').next().slideDown('slow');
@@ -61,8 +61,8 @@
 				<ul id="wel">
 					<li><a href="3T Lighting_11 Checkout List.html" id="link-acc">Welcome <span id="u-name">Username</span></a>
 						<ul>
-							<li><a href="3T Lighting_11 Checkout List.html" title="logout">Log Out</a></li>
-							<li><a href="3T Lighting_11 Checkout List.html" title="y-account">Your account</a></li>
+							<li><a href="3T Lighting_09 Account Setting.html" title="logout">Log Out</a></li>
+							<li><a href="3T Lighting_09 Account Setting.html" title="y-account">Your account</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -71,7 +71,7 @@
 					<li><a href="3T Lighting_10 Register_Login.html" title="Register">Register Here</a></li>
 				</ul>
 			</div>
-			<a href="3T Lighting_01Homepage.html" title="logo" id="logo"><img src="images/logo.png" alt="logo"/></a>
+			<a href="3T Lighting_01Homepage.html" title="logo" id="logo"><img src="res/upload/images/logo.png" alt="logo"/></a>
 		</div>
 		<div class="nav">
 			<ul>
@@ -89,15 +89,15 @@
 					<h3 class="mleft-title">OUR PRODUCTS</h3>
 					<!--- -->
 					<dl>
-						<dt><a class="active" href="#">Ceiling Lights</a></dt>
-						<dd>
+						<dt class="mleft-li active"><a class="active" href="#">Ceiling Lights</a></dt>
+						<dd style="display: block;">
 							<ul>
 								<li><a href="3T Lighting_02Our Product_Ceiling Lights(Indoor).html">Indoor</a></li>
 								<li><a href="3T Lighting_03Our Product_Ceiling Lights(Outdoor).html">Outdoor</a></li>
 							</ul>
 						</dd>
-						<dt><a href="#">Wall Lights</a></dt>
-						<dd>
+						<dt class="mleft-li"><a href="#">Wall Lights</a></dt>
+						<dd style="display: none;">
 							<ul>
 								<li><a href="3T Lighting_05Our Product_Wall Lights(Indoor).html">Indoor</a></li>
 								<li><a href="3T Lighting_06Our Product_Wall Lights(Outdoor).html">Outdoor</a></li>
@@ -113,13 +113,13 @@
 				<div id="pro-details">
 					<div id="pro-img">
 						<div id="big-image">
-							<img src="images-web/big/outdoor1.jpg" alt="Outdoor Large"/>
-							<img src="images-web/big/outdoor2.jpg" alt="Outdoor Large"/>
+							<img src="res/upload/images/big/outdoor1.jpg" alt="Outdoor Large"/>
+							<img src="res/upload/images/big/outdoor2.jpg" alt="Outdoor Large"/>
 						</div>
 
 						<div class="small-images">
-							<img src="images-web/small/outdoor1.jpg" alt="Outdoor Large"/>
-							<img src="images-web/small/outdoor2.jpg" alt="Outdoor Large"/>
+							<img src="res/upload/images/small/outdoor1.jpg" alt="Outdoor Large"/>
+							<img src="res/upload/images/small/outdoor2.jpg" alt="Outdoor Large"/>
 						</div>
 					</div>
 					<div id="pro-short">
@@ -241,7 +241,7 @@
 							<label>Verification Code*:</label>
 							<input type="text" id="in-ver"/>
 							<span id="in-code">M y 5 N 2</span>
-							<span id="in-change"><img src="images/changecode.png" alt="changecode"/><img src="images/sound.png" alt="sound"/><img src="images/question.png" alt="question"/></span>
+							<span id="in-change"><img src="res/upload/images/changecode.png" alt="changecode"/><img src="res/upload/images/sound.png" alt="sound"/><img src="res/upload/images/question.png" alt="question"/></span>
 						</div>
 						<div class="form-inp val-subm" >
 							<input type="submit" class="in-sub" value="Submit"/>

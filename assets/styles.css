@@ -5,36 +5,36 @@ Version: 1.03.16
 
 @font-face {
     font-family: 'bignoodletitlingregular';
-    src: url('../fonts/big_noodle_titling-webfont.eot');
-    src: url('../fonts/big_noodle_titling-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/big_noodle_titling-webfont.woff2') format('woff2'),
-         url('../fonts/big_noodle_titling-webfont.woff') format('woff'),
-         url('../fonts/big_noodle_titling-webfont.ttf') format('truetype'),
-         url('../fonts/big_noodle_titling-webfont.svg#bignoodletitlingregular') format('svg');
+    src: url('fonts/big_noodle_titling-webfont.eot');
+    src: url('fonts/big_noodle_titling-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/big_noodle_titling-webfont.woff2') format('woff2'),
+         url('fonts/big_noodle_titling-webfont.woff') format('woff'),
+         url('fonts/big_noodle_titling-webfont.ttf') format('truetype'),
+         url('fonts/big_noodle_titling-webfont.svg#bignoodletitlingregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gurmukhi_mnregular';
-    src: url('../fonts/gurmukhimn-webfont.eot');
-    src: url('../fonts/gurmukhimn-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/gurmukhimn-webfont.woff2') format('woff2'),
-         url('../fonts/gurmukhimn-webfont.woff') format('woff'),
-         url('../fonts/gurmukhimn-webfont.ttf') format('truetype'),
-         url('../fonts/gurmukhimn-webfont.svg#gurmukhi_mnregular') format('svg');
+    src: url('fonts/gurmukhimn-webfont.eot');
+    src: url('fonts/gurmukhimn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gurmukhimn-webfont.woff2') format('woff2'),
+         url('fonts/gurmukhimn-webfont.woff') format('woff'),
+         url('fonts/gurmukhimn-webfont.ttf') format('truetype'),
+         url('fonts/gurmukhimn-webfont.svg#gurmukhi_mnregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'gurmukhi_mnbold';
-    src: url('../fonts/gurmukhimn-bold-webfont.eot');
-    src: url('../fonts/gurmukhimn-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/gurmukhimn-bold-webfont.woff2') format('woff2'),
-         url('../fonts/gurmukhimn-bold-webfont.woff') format('woff'),
-         url('../fonts/gurmukhimn-bold-webfont.ttf') format('truetype'),
-         url('../fonts/gurmukhimn-bold-webfont.svg#gurmukhi_mnbold') format('svg');
+    src: url('fonts/gurmukhimn-bold-webfont.eot');
+    src: url('fonts/gurmukhimn-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gurmukhimn-bold-webfont.woff2') format('woff2'),
+         url('fonts/gurmukhimn-bold-webfont.woff') format('woff'),
+         url('fonts/gurmukhimn-bold-webfont.ttf') format('truetype'),
+         url('fonts/gurmukhimn-bold-webfont.svg#gurmukhi_mnbold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,7 +44,12 @@ Version: 1.03.16
 body {
 	font-size: 100%;
 	font-family: 'gurmukhi_mnregular', tahoma, arial, sans-serif;
-	background:url(../images/Background02.jpg) no-repeat top center;
+	/*background:url(images/Background02.jpg) no-repeat top center, url(images/Background.jpg);*/
+	background: url(../res/upload/images/background1.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }   
 
 ol, ul {
@@ -146,7 +151,7 @@ width: 325px;
     width: 25px;
     height: 25px;
     text-indent: 28px;
-	background: url(../images/search-bg.png) no-repeat center;
+	background: url(../res/upload/images/search-bg.png) no-repeat center;
 	border: 0px;
 }
 
@@ -175,7 +180,7 @@ width: 325px;
     height: 27px;
     width: 27px;
     text-align: right;
-    background: url(../images/cart.png) no-repeat right center;
+    background: url(../res/upload/images/cart.png) no-repeat right center;
     text-indent: 30px;
 	cursor:pointer;
 	padding-bottom: 5px;
@@ -308,7 +313,7 @@ width: 325px;
 #navi-menu ul{
 	float:left;
 	width:100%;
-	background: url(../images/menu-bg.png) no-repeat top center;
+	background: url(../res/upload/images/menu-bg.png) no-repeat top center;
 }
 
 #navi-menu ul li a{
@@ -327,7 +332,7 @@ position: absolute;
     float: left;
     position: relative;
 	padding: 16px 10px 20px 10px;
-	background: url(../images/menu-li.png) no-repeat left center;
+	background: url(../res/upload/images/menu-li.png) no-repeat left center;
 }
 
 #navi-menu ul li.activ{
@@ -341,20 +346,21 @@ position: absolute;
     overflow: hidden;
     padding: 28px 0px;
     width: 1152px;
-	background: url(../images/menu-bg.png) no-repeat bottom center;
+	background: url(../res/upload/images/menu-bg.png) no-repeat bottom center;
 }
 
 #slider img{
 	border:2px solid #fff;
 	border-radius:3px;
 	width: 99.7%;
+	vertical-align: bottom;
 }
 
 #primary-content{
 	padding: 30px;
     margin: 0px auto;
     overflow: hidden;
-    background: url(../images/content-bg.png) repeat;
+    background: url(../res/upload/images/content-bg.png) repeat;
     width: 1094px;
 	color:#363636;
 }
@@ -591,7 +597,7 @@ h3.h-title{
 	float:left;
 	width: 100%;
 	font-size:13px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	font-family: 'gurmukhi_mnbold';
 }
 
@@ -651,15 +657,15 @@ h3.h-title{
 }
 
 #social li a#fb{
-	background: url(../images/facebook.png) no-repeat center center;
+	background: url(../res/upload/images/facebook.png) no-repeat center center;
 }
 
 #social li a#ytb{
-	background: url(../images/youtube.png) no-repeat center center;
+	background: url(../res/upload/images/youtube.png) no-repeat center center;
 }
 
 #social li a#ins{
-	background: url(../images/instagram.png) no-repeat center center;
+	background: url(../res/upload/images/instagram.png) no-repeat center center;
 }
 
 #copyright{
@@ -671,16 +677,20 @@ h3.h-title{
 }
 
 #copyright p{
-	font-size:11px;
+	font-size:12px;
 }
 
 #maps{
 	margin-bottom: 15px;
     float: left;
     width: 100%;
-    border: 1px solid #40403f;
+	text-align:center;
+	 border: 1px solid #40403f;
 }
 
+#maps img{
+   /* border: 1px solid #40403f;*/
+}
 
 #qrcode{
 	position:absolute;
@@ -728,7 +738,7 @@ h3.h-title{
 #menu-poduct li a{
 	float: left;
     width: 222px;
-	background: #ff8d00 url(../images/m-down.png) no-repeat 210px center;
+	background: #ff8d00 url(../res/upload/images/m-down.png) no-repeat 210px center;
 	color:#fff;
 	padding: 5px 10px;
 }
@@ -751,7 +761,7 @@ h3.h-title{
 .menu-poduct-sub{
 	float: left;
     width: 100%;
-	background:#fff url(../images/cat-menu-bg.png) no-repeat top center;
+	background:#fff url(../res/upload/images/cat-menu-bg.png) no-repeat top center;
 }
 
 .pro-content{
@@ -778,6 +788,7 @@ h3.h-title{
     margin-right: 5px;
     margin-bottom: 5px;
 	position: relative;
+	overflow:hidden;
 }
 
 #cat-product li:nth-child(3n){
@@ -799,6 +810,7 @@ h3.h-title{
     left: 0px;
 	display:none;
 	padding: 50px 35px 35px 35px;
+	text-align: center;
 }
 
 #cat-product li  a{
@@ -809,7 +821,9 @@ h3.h-title{
 	padding: 5px 10px;
     border: 2px solid #B52B2F;
     color: #B52B2F;
+	margin:0px auto;
 	float: left;
+	width:88%;
 }
 
 #cat-product li:hover .mask{
@@ -1045,7 +1059,7 @@ body.checkout #con-mess{
 	float:left;
 	width:100%;
 	padding-bottom:18px;
-	background: url(../images/box-bg.png) no-repeat bottom center;
+	background: url(../res/upload/images/box-bg.png) no-repeat bottom center;
 }
 
 .details-order .order-title{
@@ -1152,6 +1166,29 @@ body.checkout .your-list{
 	width:15%;
 }
 
+.ylist-t{
+	padding-right: 100px;
+    float: left;
+    width: 90.5%;
+    text-align: right;
+	border-bottom: 1px dotted #dfdfdf;
+}
+
+.ylist-t span{
+	color:#a50807;
+	font-weight:bold;
+	font-size: 20px;
+}
+
+.ylist-t span sup{
+	font-size: 12px;
+}
+
+.ylists:last-child {
+    border-bottom: 1px solid #9d9d9d;    
+	padding: 3px 0px;
+}
+
 #order-subm{
 	float:left;
 	width:100%;
@@ -1239,7 +1276,7 @@ body.checkout .your-list{
 	margin-top: 20px;
 	width:14% !important;
 	padding-bottom: 9px;
-	background:transparent url(../images/button-bg.png) no-repeat bottom center;
+	background:transparent url(../res/upload/images/button-bg.png) no-repeat bottom center;
 }
 
 .order-subm-center .val-subm .in-sub{
@@ -1526,7 +1563,7 @@ body.register  #order-subm-center .val-subm {
 }
 
 .regis .details-order {
-    background: url(../images/box-a-bg.png) no-repeat bottom center;
+    background: url(../res/upload/images/box-a-bg.png) no-repeat bottom center;
 }
 
 #tabs-pro .ui-widget-header{
@@ -1747,6 +1784,10 @@ body.product-details  .ui-dialog{
 	text-align: center;
 }
 
+body.account #order-subm {
+    margin-top: 0px;
+}
+
 body.product-details  .ui-widget-content {
     border: 1px solid #ddd;
     background: #e1e1e1;
@@ -1760,3 +1801,149 @@ body.product-details  .ui-widget-content {
 	cursor: pointer;
 	padding-right:5px;
 }
+
+/**********************/
+.nav {
+	position: relative;
+	margin: 0px auto;
+	width: 100%;
+    height: 57px;
+    background: #5e5e5e;
+    border-top: 4px solid #ff8d00;
+    font-size: 20px;
+    font-family: 'bignoodletitlingregular';
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+	display: table;
+    table-layout: fixed;
+}
+.nav li {
+	margin: 0px -2px 0px -1px;
+    list-style: none;
+    display: table-cell;
+    padding: 16px 10px 20px 10px;
+    background: url(../res/upload/images/menu-li.png) no-repeat left center;
+}
+.nav li:hover{
+	 background: #ff8d00 url(../res/upload/images/menu-li.png) no-repeat left center;
+}
+.nav a {
+	padding: 16px 48px 20px 48px;
+	text-decoration: none;
+	color: #fff;
+	line-height: 100%;
+}
+.nav a:hover {
+	color: #fff;
+}
+.nav .current{
+	 background: #ff8d00 url(../res/upload/images/menu-li.png) no-repeat left center;
+	color: #fff;
+	border-radius: 0px;
+}
+/*.nav .current a {
+	background: #999;
+	color: #fff;
+	border-radius: 5px;
+}*/
+/*******************/
+
+		.mleft-menu .active {
+           background: #ff8d00;
+        }
+        .mleft-menu dl  {
+            width: 100%;
+        }
+        
+        .mleft-menu dt{
+            background: #ff8d00;
+            border-bottom: 1px solid white;
+            font-size: 14px; 
+            padding: 0px 0px;
+			overflow: hidden;
+        }
+		.mleft-menu dt.mleft-li{
+            background: #ff8d00 url(../res/upload/images/m-down.png) no-repeat 95% center;
+        }
+		.mleft-menu dt.mleft-li.active{
+            background: #ff8d00;
+        }
+        
+        .mleft-menu dt a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+			font-size: 16px;
+			float: left;
+			width: 85%;
+			height: 21px;
+        }
+        
+        .mleft-menu dd a {
+            color: black;
+        }
+		
+		.mleft-menu dd a:hover{
+			color:#b11f24;
+		}
+        
+        .mleft-menu  ul {
+            list-style: none; padding: 0px;
+			background: #fff url(../res/upload/images/cat-menu-bg.png) no-repeat top center;
+        }
+		
+		.mleft-menu  dd ul  li {
+    background: transparent;
+    color: #363636;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ffc67f;
+	}
+	
+	/***************/
+	.star-rating{
+	font-size: 0;
+}
+.star-rating__wrap{
+	display: inline-block;
+	font-size: 1rem;
+}
+.star-rating__wrap:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.star-rating__ico{
+	float: right !important;
+	padding-left: 7px !important;
+	cursor: pointer;
+	color: #b11f24;
+	font-size: 20px !important;
+}
+.star-rating__ico:last-child{
+	padding-left: 0;
+}
+.star-rating__input{
+	display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+{
+	content: "\f005";
+}
+.star-rating__wrap .star-rating__ico{
+	background: transparent  !important;
+    border-bottom: 0px solid white  !important;
+}
+.star-rating{
+	float: left;
+    width: 70%;
+    margin-left: 9px;
+    padding-top: 4px;
+}
+.label-rait{
+float:left;
+}
+/******************/

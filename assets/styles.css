@@ -1174,6 +1174,11 @@ body.checkout .your-list{
 	border-bottom: 1px dotted #dfdfdf;
 }
 
+.ylists:last-child .ylist-t{
+	border-top: 1px solid #9d9d9d;
+	padding-top:10px;
+}
+
 .ylist-t span{
 	color:#a50807;
 	font-weight:bold;
@@ -1947,3 +1952,87 @@ body.product-details  .ui-widget-content {
 float:left;
 }
 /******************/
+
+.your-list .ssam{
+    float: left;
+	margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    float: left;
+    padding: 0px 0px 20px 0px;
+}
+
+.your-list .ssam span{
+    float: left;
+	margin-right:10px;
+}
+
+.checkboxAcc input[type=radio]:checked + label:after {
+    opacity: 1;
+	    
+}
+
+.checkboxAcc input[type=radio]:checked ~ label {
+    border-bottom: 1px solid #ddd;
+}
+
+.your-list  .ssam1{
+	border-bottom: 0px solid #333;
+	width: 100%;
+	margin-bottom: 0px;
+	padding: 20px 0px 0px 0px;
+}
+
+body.checkout .detail-deli .your-list{
+	background: #ebebeb;
+	padding: 20px 10px 30px 10px;
+}
+
+.detail-deli .sl-pay .check-Rem {
+    float: right;
+    width: 43%;
+}
+
+.detail-deli .sl-pay  #acc-subm-right .check-Rem {
+    width: 89%;
+}
+
+.deli2 .your-list .ssam {
+    overflow: hidden;
+    float: left;
+    border-bottom: 1px solid #333;
+    width: 88%;
+    float: initial;
+    padding: 0px 0px 20px 0px;
+    margin: 0px auto 20px auto;
+}
+
+.deli2 .your-list  #acc-subm-left {
+    float: left;
+    width: 46%;
+}
+
+body.checkout .your-list .form-inp input, body.checkout .your-list .form-inp textarea {
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+}
+
+body.checkout .details-order {
+    margin-bottom: 15px;
+}
+
+.button-submit{
+	overflow: hidden;
+	width:27%;
+	margin:0px auto;
+}
+
+.order-subm-center .button-submit .val-subm {
+    margin-top: 20px;
+    width: 50% !important;
+	float: left !important;
+}
+
+body.checkout #order-subm {
+    margin-top: 0px;
+}

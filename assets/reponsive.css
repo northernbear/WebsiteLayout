@@ -433,6 +433,34 @@
     float: left;
     width: 94.5%;
 	}
+	.deli2 .your-list #acc-subm-left {
+    float: left;
+    width: 100%;
+	}
+	.detail-deli .sl-pay #acc-subm-right .check-Rem {
+    width: 100%;
+	}
+	.detail-deli .sl-pay .check-Rem {
+    float: left;
+    width: 100%;
+	}
+	.button-submit {
+    overflow: hidden;
+    width: 50%;
+    margin: 0px auto;
+	}
+	body.checkout  .order-subm-center .button-submit .val-subm {
+    margin-top: 20px;
+    width: 50% !important;
+    float: left !important;
+	}
+	.your-list .form-inp textarea {
+    padding: 5px 9px;
+    float: left;
+    width: 56%;
+    margin-left: 10px;
+    height: 70px;
+	}
 }
 
 @media all and (min-width: 320px) and (max-width: 599px){
@@ -720,6 +748,27 @@
     float: left;
     width: 100%;
     text-align: left;
+	}
+	.deli2 .your-list #acc-subm-left{
+    float: left;
+    width: 100%;
+	}
+	.detail-deli .sl-pay #acc-subm-right .check-Rem {
+    width: 100%;
+	}
+	.detail-deli .sl-pay .check-Rem {
+    float: left;
+    width: 100%;
+	}
+	.button-submit {
+    overflow: hidden;
+    width: 87%;
+    margin: 0px auto;
+	}
+	body.checkout  .order-subm-center .button-submit .val-subm {
+    margin-top: 20px;
+    width: 50% !important;
+    float: left !important;
 	}
 }
 @media all and (max-width: 320px){

@@ -1,0 +1,17 @@
+<div>
+	<img src="/lib/PHPCaptcha/captcha.php?rand={rand()}" id="captcha-img">
+	<a href='javascript: refreshCaptcha();'>
+		<img src="/res/upload/images/images-web/refresh.png" height="40px" />
+	</a>
+</div>
+<div>
+	<label>Verification Code*:</label>
+	<input type="text" id="verification" name="verification"/>
+</div>
+<script type='text/javascript'>
+function refreshCaptcha()
+{
+	var img = document.images['captcha-img'];
+	img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + Math.random() * 1000;
+}
+</script>

@@ -20,7 +20,7 @@ $(document).ready(function(){
 });
   </script>
 </head>
-<body>
+<body class="contact">
 	<div id="wrapper">
 		<div id="header">
 			<div id="langu">
@@ -40,58 +40,65 @@ $(document).ready(function(){
 		</div>
 		<div id="nav">
 			<ul>
-				<li class="current"><a href="Dinghe-01Homepage.html" title="Homepage">Homepage</a></li>
+				<li><a href="Dinghe-01Homepage.html" title="Homepage">Homepage</a></li>
 				<li><a href="Dinghe-03Services(Marine).html" title="Marine">Marine</a></li>
 				<li><a href="Dinghe-05Services(Trading).html" title="Trading">Trading</a></li>
 				<li><a href="http://www.mahkotatigaberlian.com" title="Warehouse">Warehouse</a></li>
-				<li><a href="Dinghe-07Contact Us.html" title="Contact">Contact</a></li>
+				<li class="current"><a href="Dinghe-07Contact Us.html" title="Contact">Contact</a></li>
 			</ul>
 		</div>
-		<div id="slider">
-			<div class="owl-carousel">
-			  <div><img src="res/upload/images/slider_banner/banner01.jpg" alt="banner"/></div>
-			  <div><img src="res/upload/images/slider_banner/banner02.jpg" alt="banner"/></div>
-			  <div><img src="res/upload/images/slider_banner/banner03.jpg" alt="banner"/></div>
-			</div>
+		<div id="map-contact">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53666.130052866494!2d103.73991014863184!3d1.3203475454057838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da106db3757909%3A0xb842574b3782ed40!2sWcega+Tower!5e0!3m2!1svi!2s!4v1460887651879" width="100%" height="759" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		<div id="body-content">
 			<div id="primary-content">
-				<div class="main-content">
-					<div class="primary-title"><h2>Services</h2></div>
-					<div class="srv-content">
-						<a href="#"><img src="res/upload/images/services/marine.jpg" alt="Marine"/></a>
-						<div class="srv-co">
-							<h3>Marine</h3>
-							<div class="srv-c">
-								<p>Ding He Marine Pte. Ltd. may be a new addition to the marine industry in Singapore but it is our attitude that sets us apart. We know that solutions are more important than questions and that the best approach is the kind of resourceful diligence which simply gets the job done.</p>
+				<div class="main-content m-post">
+					<div class="m-content">
+						<form id="contact-from" action="">
+							<p>For any information, kindly send us a email here:</p>
+							<div class="c-contact">
+								<label>Name:</label>
+								<input type="text" name="fname" id="fname" class="cinput"/>
 							</div>
-							<div class="btn">
-								<a href="Dinghe-03Services(Marine).html" class="bt-change" title="See More">See More</a>
+							<div class="c-contact">
+								<label>Email:</label>
+								<input type="text" name="femail" id="femail" class="cinput"/>
 							</div>
-						</div>
-					</div>
-					<div class="srv-content">
-						<a href="#"><img src="res/upload/images/services/trading.jpg" alt="Trading"/></a>
-						<div class="srv-co">
-							<h3>Trading</h3>
-							<div class="srv-c">
-								<p>Ding He Trading Pte. Ltd. is a trading and wholesale company based in Singapore, specializing in the wholesale and distribution of alcoholic beverages and tobacco products including OEM brands cigarettes. </p>
+							<div class="c-contact">
+								<label>Subject:</label>
+								<input type="text" name="fsub" id="fsub" class="cinput"/>
 							</div>
-							<div class="btn">
-								<a href="Dinghe-05Services(Trading).html" class="bt-change" title="See More">See More</a>
+							<div class="c-contact">
+								<label>Message:</label>
+								<textarea rows="10" cols="50" name="fmess" id="fmess" class="ctextar"></textarea>
 							</div>
-						</div>
-					</div>
-					<div class="srv-content">
-						<a href="#"><img src="res/upload/images/services/warehouse.jpg" alt="Warehouse"/></a>
-						<div class="srv-co">
-							<h3>Warehouse</h3>
-							<div class="srv-c">
-								<p>We are born to support and dedicated to serve our customers. We believe in transparent and candid realtionship. We are dedicated to continuosly improve.</p>
+							<div class="c-contact c-submit">
+								<input type="submit" name="fsubm" id="fsubm" class="csub" />
 							</div>
-							<div class="btn">
-								<a href="http://www.mahkotatigaberlian.com" class="bt-change" title="See More">See More</a>
+						</form>
+						<div id="find-us">
+							<div id="find-s">
+								<h3 class="title-post">FIND US at :</h3>
 							</div>
+							<ul>
+								<li><strong>Address</strong><br/>
+									21 Bukit Batok Crescent<br/>
+									#25-81 WCEGA Tower<br/>
+									Singapore 658065
+								</li>
+								<li>
+									<ul>
+										<li><strong>Contact with Us</strong><br/>
+										Tel: (65) 6570 8226<br/>
+										Fax: (65) 6570 8177<br/></li>
+										<li><strong>Email</strong><br/>
+										<a href="mailto:info@dinghe.sg">info@dinghe.sg</a></li>
+									</ul>
+								</li>
+								<li id="qrcode-find">
+									<img src="res/upload/images/dinghe_qrcode.jpg" alt="Dinghe Qrcode"/>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>

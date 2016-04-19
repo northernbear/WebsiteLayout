@@ -1,0 +1,406 @@
+﻿
+@media all and (min-width: 981px) and (max-width: 1024px){
+	#header {
+    width: 100%;
+	height: 200px;
+	}
+	#logo img{
+	width:40%;
+	}
+	#menu-info {
+    right: 10px;
+	}
+	#nav ul{
+	width:100%;
+	text-align:center;
+	}
+	#nav li {
+    padding: 20px 5px 20px 5px;
+	}
+	#nav a {
+    padding: 0px;
+	}
+	#primary-content {
+    width: 100%;
+	}
+	.srv-content{
+	margin-bottom:30px;
+	float: left;
+    width: 31%;
+	margin-right: 20px;
+	}
+	.main-content {
+    width: 70%;
+    margin-right:10px;
+	margin-left:10px;
+	}
+	.m-post{
+	width: 67%;
+	}
+	#sidebar {
+    float: left;
+    width: 25%;
+	}
+	.boxes {
+    width: 95%;
+    padding: 15px;
+	}
+	.srv-c {
+    height: 370px;
+	}
+	.foot-content {
+    width: 20%;
+	}
+	.foot-content:nth-child(4) {
+    float: left;
+    width: 40%;
+	}
+	#footage {
+	width:95%;
+	padding: 30px 20px;
+	}
+	#social li {
+    width: 21%;
+	}
+	#pro-logo li {
+    width: 16.5%;
+	}
+	#find-us {
+    padding-left: 20px;
+    width: 95%;
+	}
+	#map-contact {
+    max-height: 259px;
+	}
+	#map-contact iframe {
+    max-height: 259px;
+	}
+}
+
+@media all and (min-width: 605px) and (max-width: 980px) {
+	#header {
+    width: 100%;
+    margin: 0px auto;
+    height: 190px;
+	}
+	#logo img{
+	width:40%;
+	}
+	#menu-info {
+    width: 60%;
+	bottom: 0px;
+	}
+	#info-content li {
+    padding: 10px 10px 10px 0px;
+	}
+	#langu {
+    bottom: 10px;
+	}
+	#nav ul{
+	width:100%;
+	text-align:center;
+	}
+	#nav li {
+    padding: 20px 5px 20px 5px;
+	}
+	#nav a {
+    padding: 0px;
+	}
+	#primary-content {
+    width: 100%;
+	}
+	.main-content{
+	width:100%;
+	margin-right: 0px;
+	float: inherit;
+	}
+	.srv-tabe {
+	border-collapse: separate;
+    border-spacing: 15px;
+    table-layout: fixed;
+    display: table;
+    float: inherit;
+    width: 100%;
+	}
+	.srv-row{
+	display: table-row;
+	float: inherit;
+	}
+	.srv-content {
+    float: inherit;
+    width: auto;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    display: table-cell;
+	}
+	.srv-c {
+    float: left;
+    width: 100%;
+    height: auto;
+	}
+	#sidebar {
+    vertical-align: top;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 15px 0px;
+    float: inherit;
+    width: 100%;
+	}
+	.boxes {
+    vertical-align: top;
+    float: inherit;
+    display: table-cell;
+	}
+	#footage {
+    padding: 40px 15px;
+    width: 94%;
+	}
+	#qrcode {
+    width: 40%;
+	}
+	.foot-content {
+    float: left;
+    width: 38%;
+	}
+	.foot-content:nth-child(3) {
+    float: left;
+    width: 35%;
+	}
+	.foot-content:nth-child(4) {
+    float: left;
+    width: 64%;
+	}
+	#social li {
+    float: left;
+    width: 20%;
+	}
+	.m-post {
+    width: auto;
+    overflow: hidden;
+    margin: 0px 15px 15px 15px;
+	}
+	#pro-logo li {
+    width: 24.8%;
+	}
+	.c-contact .ctextar {
+    width: 90%;
+	}
+	.c-contact .cinput {
+    width: 90%;
+	}
+	#find-us {
+    padding-left: 0px;
+    width: 100%;
+    float: left;
+	}
+	#map-contact {
+    width: 100%;
+    overflow: hidden;
+    max-height: 250px;
+	}
+	#map-contact iframe {
+    max-height: 250px;
+	}
+}
+
+@media all and (max-width: 604px){
+	#header {
+    width: 100%;
+    margin: 0px auto;
+    height: 210px;
+	}
+	#logo img{
+	width: 60%;
+	}
+	#menu-info {
+    width: 60%;
+	bottom: 0px;
+	}
+	#info-content li {
+    padding: 10px 10px 10px 0px;
+	}
+	#langu {
+    bottom: 10px;
+	width: 140px;
+	}
+	#langu  li{
+	border-left: 0px;
+    padding: 2px 10px;
+    text-align: left;
+    width: 100%;
+	}
+	#nav ul{
+	width:100%;
+	text-align:center;
+	}
+	#nav li {
+    padding: 20px 5px 20px 5px;
+	}
+	#nav a {
+    padding: 0px;
+	}
+	#primary-content {
+    width: 100%;
+	}
+	.main-content{
+	width:100%;
+	margin-right: 0px;
+	float: inherit;
+	}
+	.srv-tabe{
+	border-collapse: separate;
+    border-spacing: 15px;
+    table-layout: fixed;
+    display: table;
+    float: inherit;
+    width: 100%;
+	}
+	.srv-row{
+	display: table-row;
+    float: inherit;
+	}
+	.srv-content{
+	float: inherit;
+    width: auto;
+    margin-bottom: 30px;
+    margin-right: 0px;
+	}
+	#sidebar {
+    vertical-align: top;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 15px 0px;
+    float: inherit;
+    width: 100%;
+	}
+	.boxes {
+    overflow: hidden;
+    width: auto;
+    vertical-align: top;
+    float: inherit;
+	}
+	#footage {
+    padding: 20px 15px;
+    width: 94%;
+	}
+	.foot-content {
+    float: left;
+    width: 100%;
+	margin-bottom:20px;
+	}
+	#social li {
+    float: left;
+    width: auto;
+	}
+	.foot-content:nth-child(4) {
+    float: left;
+    width: 100%;
+	}
+	.foot-content ul.cate li {
+    height: 175px;
+	}
+	.m-post {
+    width: auto;
+    overflow: hidden;
+    margin: 0px 15px 15px 15px;
+	}
+	.primary-title h2 {
+    line-height: 47px;
+	}
+	#pro-logo li {
+    width: 32.9%;
+	}
+	#map-contact {
+    max-height: 150px;
+	}
+	#map-contact iframe {
+    max-height: 150px;
+	}
+	#contact-from {
+    padding-left: 0px;
+    width: 100%;
+	}
+	.c-contact .ctextar {
+    width: 90%;
+	}
+	.c-contact .cinput {
+    width: 90%;
+	}
+	#find-us {
+    padding-left: 0px;
+    width: 100%;
+    float: left;
+	}
+	#find-us ul li {
+    width: 100%;
+	}
+	#find-us ul li#qrcode-find {
+    text-align: center;
+	}
+}
+
+/***********menu*************/
+
+@media screen and (max-width: 640px) {
+	#nav {
+		position: relative;
+		min-height: 60px;
+		width: 100%;
+		height: auto;
+	}	
+	#nav ul {
+		width: 100%;
+		padding: 0px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #516f85 url(../res/upload/images/interface.png) no-repeat 9px 18px;
+		z-index: 10;
+	}
+	#nav li {
+		display: none;
+		margin: 0;
+		padding: 15px 10px 15px 10px;
+		border-bottom: 1px solid #6991aa;
+	}
+	#nav .current {
+		display: block;
+		background: transparent;
+	}
+	#nav a {
+		display: block;
+		padding: 5px 5px 5px 32px !important;
+		text-align: left;
+	}
+	#nav  .current a {
+		padding: 5px 5px 5px 0px !important;
+	}
+	#nav .current a {
+		background: none;
+		color: #fff;
+		margin-left: 35px;
+	}
+	/* on nav hover */
+	#nav ul:hover {
+		background-image: none;
+	}
+	#nav ul:hover li {
+		display: block;
+		margin: 0 0 0px;
+	}
+	#nav ul:hover .current {
+		background: url(../res/upload/images/check.png) no-repeat 9px 17px;
+	}
+
+	/* right nav */
+	#nav.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	/* center nav */
+	#nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+}

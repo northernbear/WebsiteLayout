@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Home | DingHe Group</title>
 <link rel="stylesheet" href="assets/styles.css"/>
+<link rel="stylesheet" href="assets/reponsive.css"/>
 <script src="assets/js/jquery-1.12.2.min.js" type="text/javascript"></script>
 <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="assets/owl.carousel.css"/>
@@ -13,9 +14,11 @@
 <script type="text/javascript">
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
-	loop:true,
-	items:1,
-	dots:true
+ loop:true,
+ items:1,
+ autoplay: true,
+    autoplayTimeout: 5000,
+ dots:true
   });
 });
   </script>
@@ -58,39 +61,43 @@ $(document).ready(function(){
 			<div id="primary-content">
 				<div class="main-content">
 					<div class="primary-title"><h2>Services</h2></div>
-					<div class="srv-content">
-						<a href="#"><img src="res/upload/images/services/marine.jpg" alt="Marine"/></a>
-						<div class="srv-co">
-							<h3>Marine</h3>
-							<div class="srv-c">
-								<p>Ding He Marine Pte. Ltd. may be a new addition to the marine industry in Singapore but it is our attitude that sets us apart. We know that solutions are more important than questions and that the best approach is the kind of resourceful diligence which simply gets the job done.</p>
+					<div class="srv-tabe">
+						<div class="srv-row">
+							<div class="srv-content">
+								<a href="#"><img src="res/upload/images/services/marine.jpg" alt="Marine"/></a>
+								<div class="srv-co">
+									<h3>Marine</h3>
+									<div class="srv-c">
+										<p>Ding He Marine Pte. Ltd. may be a new addition to the marine industry in Singapore but it is our attitude that sets us apart. We know that solutions are more important than questions and that the best approach is the kind of resourceful diligence which simply gets the job done.</p>
+									</div>
+									<div class="btn">
+										<a href="Dinghe-03Services(Marine).html" class="bt-change" title="See More">See More</a>
+									</div>
+								</div>
 							</div>
-							<div class="btn">
-								<a href="Dinghe-03Services(Marine).html" class="bt-change" title="See More">See More</a>
+							<div class="srv-content">
+								<a href="#"><img src="res/upload/images/services/trading.jpg" alt="Trading"/></a>
+								<div class="srv-co">
+									<h3>Trading</h3>
+									<div class="srv-c">
+										<p>Ding He Trading Pte. Ltd. is a trading and wholesale company based in Singapore, specializing in the wholesale and distribution of alcoholic beverages and tobacco products including OEM brands cigarettes. </p>
+									</div>
+									<div class="btn">
+										<a href="Dinghe-05Services(Trading).html" class="bt-change" title="See More">See More</a>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-					<div class="srv-content">
-						<a href="#"><img src="res/upload/images/services/trading.jpg" alt="Trading"/></a>
-						<div class="srv-co">
-							<h3>Trading</h3>
-							<div class="srv-c">
-								<p>Ding He Trading Pte. Ltd. is a trading and wholesale company based in Singapore, specializing in the wholesale and distribution of alcoholic beverages and tobacco products including OEM brands cigarettes. </p>
-							</div>
-							<div class="btn">
-								<a href="Dinghe-05Services(Trading).html" class="bt-change" title="See More">See More</a>
-							</div>
-						</div>
-					</div>
-					<div class="srv-content">
-						<a href="#"><img src="res/upload/images/services/warehouse.jpg" alt="Warehouse"/></a>
-						<div class="srv-co">
-							<h3>Warehouse</h3>
-							<div class="srv-c">
-								<p>We are born to support and dedicated to serve our customers. We believe in transparent and candid realtionship. We are dedicated to continuosly improve.</p>
-							</div>
-							<div class="btn">
-								<a href="http://www.mahkotatigaberlian.com" class="bt-change" title="See More">See More</a>
+							<div class="srv-content">
+								<a href="#"><img src="res/upload/images/services/warehouse.jpg" alt="Warehouse"/></a>
+								<div class="srv-co">
+									<h3>Warehouse</h3>
+									<div class="srv-c">
+										<p>We are born to support and dedicated to serve our customers. We believe in transparent and candid realtionship. We are dedicated to continuosly improve.</p>
+									</div>
+									<div class="btn">
+										<a href="http://www.mahkotatigaberlian.com" class="bt-change" title="See More">See More</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -118,7 +125,7 @@ $(document).ready(function(){
 								</li>
 							</ul>
 							<div class="btn">
-								<a href="#" class="bt-change" title="View all">View all</a>
+								<a href="Dinghe-08News.html" class="bt-change" title="View all">View all</a>
 							</div>
 						</div>
 					</div>

@@ -339,6 +339,20 @@
 	}
 }
 
+@media all and (max-width: 385px){
+	.foot-content ul.cate li {
+    height: 170px;
+    float: left;
+    width: 25%;
+	}
+}
+
+@media all and (max-width: 300px){
+	#pro-logo li {
+    width: 99%;
+}
+}
+
 /***********menu*************/
 
 @media screen and (max-width: 640px) {

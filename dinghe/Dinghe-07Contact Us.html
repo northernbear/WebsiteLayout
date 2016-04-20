@@ -14,11 +14,9 @@
 <script type="text/javascript">
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
- loop:true,
- items:1,
- autoplay: true,
-    autoplayTimeout: 5000,
- dots:true
+	loop:true,
+	items:1,
+	dots:true
   });
 });
   </script>
@@ -57,6 +55,13 @@ $(document).ready(function(){
 			<div id="primary-content">
 				<div class="main-content m-post">
 					<div class="m-content">
+						<script type='text/javascript'>
+							function refreshCaptcha()
+							{
+								var img = document.images['captcha-img'];
+								img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + Math.random() * 1000;
+							}
+						</script>
 						<form id="contact-from" action="">
 							<p>For any information, kindly send us a email here:</p>
 							<div class="c-contact">
@@ -74,6 +79,18 @@ $(document).ready(function(){
 							<div class="c-contact">
 								<label>Message:</label>
 								<textarea rows="10" cols="50" name="fmess" id="fmess" class="ctextar"></textarea>
+							</div>
+							<div class="c-contact">
+								<label>Verification Code*:</label>
+								<div>
+									<img src="assets/capcha/lib/PHPCaptcha/captcha.php?rand={rand()}" id="captcha-img">
+									<a href='javascript: refreshCaptcha();' title="refresh">
+										<img src="res/upload/images/refresh.png" height="24px" />
+									</a>
+								</div>
+								<div>
+									<input type="text" id="verification" name="verification"/>
+								</div>
 							</div>
 							<div class="c-contact c-submit">
 								<input type="submit" name="fsubm" id="fsubm" class="csub" />

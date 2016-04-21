@@ -28,7 +28,7 @@ a {
 
 a:focus, a:hover{
 	text-decoration: none;
-	color:##516f85;
+	color:#516f85;
 }
 
 a img {
@@ -374,12 +374,12 @@ text-align: center;
 	color:#363636;
 }
 
-.btn{
+.btns{
 	float:left;
 	width:100%;
 	text-align:center;
 	padding-top:20px;
-	height: 30px;
+	height: 48px;
 }
 
 .bt-change{
@@ -392,6 +392,21 @@ text-align: center;
 
 .bt-change:hover{
     background: #082F4C;
+	color:#ddd;
+}
+
+.btu-change{
+	font-size: 14px;
+    background: #516f85;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+	border:0px;
+}
+
+.btu-change:hover{
+    background: #082F4C;
+	color:#ddd;
 }
 
 .primary-title{
@@ -525,6 +540,11 @@ text-align: center;
     margin-bottom: 20px;
 }
 
+.m-content span {
+    font-size: 16px;
+    line-height: 28px;
+}
+
 .m-content ul{
 	padding-left: 20px;
 	margin-bottom: 20px;
@@ -534,6 +554,7 @@ text-align: center;
 	list-style: disc;
 	line-height: 26px;    
 	padding-left: 15px;
+	font-size: 16px;
 }
 
 #pro-logo{
@@ -835,7 +856,11 @@ body.contact h3.title-post{
 
 .foot-content ul.cate li a{
     transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
 	transform-origin: -7px 37px 0;
+	-webkit-transform-origin: -7px 37px 0;
+	-moz-transform-origin: -7px 37px 0;
 	float: left;
 }
 

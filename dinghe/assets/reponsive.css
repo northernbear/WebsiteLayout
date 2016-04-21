@@ -150,6 +150,7 @@
     vertical-align: top;
     float: inherit;
     display: table-cell;
+	width: 50%;
 	}
 	#footage {
     padding: 40px 15px;
@@ -339,7 +340,7 @@
 	}
 }
 
-@media all and (max-width: 385px){
+@media all and (max-width: 395px){
 	.foot-content ul.cate li {
     height: 170px;
     float: left;

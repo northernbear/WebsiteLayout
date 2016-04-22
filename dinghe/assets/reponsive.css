@@ -63,7 +63,7 @@
     width: 21%;
 	}
 	#pro-logo li {
-    width: 16.5%;
+    width: 16.65%;
 	}
 	#find-us {
     padding-left: 20px;
@@ -299,6 +299,7 @@
 	}
 	.foot-content ul.cate li {
     height: 175px;
+	width: 11%;
 	}
 	.m-post {
     width: auto;
@@ -338,13 +339,50 @@
 	#find-us ul li#qrcode-find {
     text-align: center;
 	}
+	ul#social{
+	width: 136px;
+    overflow: hidden;
+    margin: 0px auto;
+	}
+	#footage{
+	text-align:center;
+	}
+	.foot-content ul.cate {
+    margin: 0px auto;
+    float: initial;
+    width: 75%;
+	}
 }
 
-@media all and (max-width: 395px){
+@media all and (min-width: 401px) and (max-width: 499px){
+	.foot-content ul.cate {
+    margin: 0px auto;
+    float: initial;
+    width: 100%;
+	}
+}
+
+@media all and (max-width: 400px){
 	.foot-content ul.cate li {
     height: 170px;
     float: left;
     width: 25%;
+	background-position-x: 45% !important;
+    background-position-y: 0%  !important;
+	}
+	.foot-content ul.cate {
+    margin: 0px auto;
+    float: initial;
+    width: 100%;
+	}
+	.foot-content ul.cate li a {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform-origin: 4px 48px 0;
+    -webkit-transform-origin: 4px 47px 0;
+    -moz-transform-origin: 4px 47px 0;
+    float: left;
 	}
 }
 

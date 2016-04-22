@@ -8,7 +8,7 @@ Version: 1.04.16
 
 body {
 	font-size: 100%;
-	font-family:'Century Gothic', tahoma, arial, sans-serif;
+	font-family:Open Sans,'Helvetica Neue',Arial,sans-serif;
 	background: #fff; 
 }   
 
@@ -18,7 +18,7 @@ ol, ul {
 
 p {
 	font-size: 16px;
-    line-height: 28px;
+    line-height: 25px;
 }
 
 a {
@@ -41,7 +41,7 @@ fieldset {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Century Gothic', tahoma, arial, sans-serif;
+	font-family: Open Sans,'Helvetica Neue',Arial,sans-serif;
 	font-weight: bold;
 }
 
@@ -567,7 +567,7 @@ text-align: center;
 }
 
 #pro-logo li{
-	width: 16.5%;
+	width: 16.65%;
     list-style: none;
     line-height: 26px;
     padding-left: 0px;

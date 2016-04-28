@@ -1,0 +1,783 @@
+﻿@media screen and (max-width: 600px) {
+	.nav {
+		position: relative;
+		min-height: 40px;
+		width: 95%;
+		height: auto;
+	}	
+	.nav ul {
+		width: 100%;
+		padding: 0px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #5E5E5E url(../res/upload/images/interface.png) no-repeat 9px 8px;
+		z-index: 10;
+	}
+	.nav li {
+		display: none; /* hide all <li> items */
+		margin: 0;
+		padding: 5px 10px 5px 10px;
+		border-bottom: 1px solid #737373;
+	}
+	.nav .current {
+		display: block; /* show only current <li> item */
+		background: transparent;
+	}
+	.nav a {
+		display: block;
+		padding: 5px 5px 5px 32px !important;
+		text-align: left;
+	}
+	.nav  .current a {
+		padding: 5px 5px 5px 0px !important;
+	}
+	.nav .current a {
+		background: none;
+		color: #fff;
+		margin-left: 35px;
+	}
+	/* on nav hover */
+	.nav ul:hover {
+		background-image: none;
+	}
+	.nav ul:hover li {
+		display: block;
+		margin: 0 0 0px;
+	}
+	.nav ul:hover .current {
+		background: url(../res/upload/images/check.png) no-repeat 10px 7px;
+	}
+
+	/* right nav */
+	.nav.right ul {
+		left: auto;
+		right: 0;
+	}
+
+	/* center nav */
+	.nav.center ul {
+		left: 50%;
+		margin-left: -90px;
+	}
+	
+}
+
+@media all and (min-width: 981px) and (max-width: 1024px){
+	#wrapper {
+    width: 100%;
+	}
+	#header{
+	width: 100%;
+	}
+	#cart {
+    width: 200px;
+	}
+	#top-menu {
+    width: 200px;
+	}
+	#navi-menu ul {
+    width: 100%;
+	}
+	#navi-menu ul li a {
+    padding: 16px 28px 20px 28px;
+	}
+	#slider {
+    width: 100%;
+	}
+	#primary-content {
+    width: 92%;
+	}
+	.o-product ul li {
+    width: 31%;
+	}
+	#contact-co {
+    overflow: hidden;
+    float: none;
+    width: 65%;
+    margin: 0px auto;
+	}
+	#contact-co-left {
+    float: left;
+    width: 93%;
+	}
+	#contact-co-right {
+    float: left;
+    width: 93%;
+    font-size: 12px;
+    padding-left: 0px;
+	}
+	#maps img{
+	max-width:100%;
+	}
+	#footage {
+    width: 94%;
+	}
+	#copyright {
+	width:100%;
+	}
+	#sidebar {
+    float: left;
+    width: 20%;
+	}
+	#menu-poduct li a {
+    float: left;
+    width: 89%;
+    background: #ff8d00 url(../res/upload/images/m-down.png) no-repeat 89% center;
+    color: #fff;
+    padding: 5px 10px;
+	}
+	.pro-content {
+    width: 79%;
+	}
+	#cat-product li {
+    float: left;
+    width: 31.6%;
+	height: auto;
+	}
+	#cat-product li .mask {
+    top: 0px;
+    background: rgba(146, 146, 146, 0.5);
+    width: 91%;
+    height: 35%;
+	padding: 50px 10px 35px 10px;
+	}
+	.acc-change-center {
+    width: 65%;
+	}
+	.order-subm-center .form-inp {
+    overflow: hidden;
+    margin: 0px auto;
+    width: 61% !important;
+	}
+	#pro-img #big-image img{
+		width:100%;
+	}
+	#pro-short {
+    float: left;
+    width: 47%;
+	}
+	.nav a {
+    padding: 16px 30px 20px 30px;
+	}
+	body.account .order-subm-center .val-subm{
+    width: 14% !important;
+	}
+}
+
+@media all and (max-width: 980px) {
+	#wrapper {
+    width: 100%;
+	}
+	#header{
+	width: 100%;
+	height:auto;
+	}
+	#logo img{
+	width: 30%;
+	}
+	#cart {
+    width: 200px;
+	}
+	#top-menu {
+    width: 200px;
+	}
+	#navi-menu ul {
+    width: 100%;
+	}
+	#navi-menu ul li a {
+    padding: 16px 13px 20px 13px;
+	}
+	#slider {
+    width: 100%;
+	}
+	#primary-content {
+    width: 92%;
+	}
+	.o-product ul li {
+    width: 30%;
+	}
+	.o-product ul li span{
+	font-size: 15px;
+	}
+	#contact-co {
+    overflow: hidden;
+    float: none;
+    width: 65%;
+    margin: 0px auto;
+	}
+	#contact-co-left {
+    float: left;
+    width: 93%;
+	}
+	#contact-co-right {
+    float: left;
+    width: 93%;
+    font-size: 12px;
+    padding-left: 0px;
+	}
+	#maps img{
+	max-width:100%;
+	}
+	#footage {
+    width: 94%;
+	}
+	#copyright {
+	width:93%;
+	}
+	#contact-co-right .form-inp input,
+	#contact-co-right .form-inp textarea	{
+    width: 62%;
+	}
+	#contact-co-right #val-cor {
+    float: right;
+    width: 100%;
+	}
+	.foot-content ul.cate li {
+    float: left;
+    width: 100%;	
+	}
+	.foot-content {
+    float: left;
+    width: 25%;
+	}
+	.foot-content +.foot-content +.foot-content {
+	width: 50%;
+	}
+	#sidebar {
+    float: left;
+    width: 30%;
+	}
+	#menu-poduct li a {
+    float: left;
+    width: 88%;
+    background: #ff8d00 url(../res/upload/images/m-down.png) no-repeat 88% center;
+    color: #fff;
+    padding: 5px 10px;
+	}
+	.pro-content {
+    width: 67%;
+	}
+	#cat-product li {
+    float: left;
+    width: 100%;
+    height: auto;
+	}
+	#cat-product li .mask{
+    float: left;
+    width: 96%;
+    height: 65%;
+	padding:20% 2% 0px 2%;
+	}
+	h3.h-title {
+    font-size: 30px;
+	}
+	.acc-change-center {
+    width: 70%;
+	}
+	.order-subm-center .form-inp {
+    overflow: hidden;
+    margin: 0px auto;
+    width: 70% !important;
+	}
+	.your-list .form-inp input {
+    padding: 5px 9px;
+    float: left;
+    width: 56%;
+	}
+	body.register .order-subm-center .form-inp {
+    overflow: hidden;
+    margin: 0px auto;
+    width: 91% !important;
+	}
+	body.register .order-subm-center #val-cor #in-code {
+    font-size: 20px;
+    float: left;
+    width: 28%;
+	}
+	.order-subm-center #in-change {
+    width: 100%;
+	}
+	#check-agree {
+    width: 80%;
+	}
+	#con-mess {
+    width: 95%;
+	}
+	.nav a {
+    padding: 16px 30px 20px 30px;
+	}
+	body.account .order-subm-center .val-subm {
+    width: 20% !important;
+	}
+}
+
+@media all and (min-width: 600px) and (max-width: 979px){
+	.o-product ul li {
+    width: 97%;
+    margin-right: 0px;
+	margin-bottom: 20px;
+	}
+	#contact-co {
+    overflow: hidden;
+    float: none;
+    width: 95%;
+    margin: 0px auto;
+	}
+	.o-product ul li span {
+    font-size: 19px;
+	}
+	#contact-co-right .form-inp label {
+    float: left;
+    width: 30%;
+	}
+	#footage {
+    width: 91%;
+	}
+	.foot-content {
+    float: left;
+    width: 26%;
+	}
+	.foot-content +.foot-content +.foot-content {
+    width: 48%;
+	}
+	#acc-subm-left {
+    float: left;
+    width: 100%;
+	}
+	#acc-subm-right {
+    float: left;
+    width: 100%;
+	}
+	.acc-change-center {
+    width: 100%;
+	}
+	.order-subm-center .form-inp {
+    overflow: hidden;
+    margin: 0px auto;
+    width: 100% !important;
+	}
+	.regis {
+    float: left;
+    width: 98%;
+	}
+	.logi {
+    float: left;
+    width: 98%;
+	}
+	.order-subm-center #in-change {
+	width: 94%;
+	}
+	#order-subm-right {
+    float: left;
+    width: 100%;
+	}
+	#order-subm-left {
+    float: left;
+    width: 100%;
+	}
+	body.checkout .order-subm-center .val-subm{
+    overflow: hidden;
+    margin: 0px auto;
+    width: 30% !important;
+	}
+	body.product-details h3.h-title {
+    font-size: 20px;
+	}
+	#pro-img {
+    width: 100%;
+	margin-right: 0px;
+	}
+	#pro-img img{
+	max-width:100%;
+	}
+	#pro-short {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+	}
+	#pro-descp .your-list .form-inp label {
+    float: left;
+    width: 17%;
+	}
+	.no-rait {
+    float: left;
+    width: 77%;
+    margin-left: 10px;
+    padding-top: 7px;
+	}
+	body.product-details #pro-descp .your-list #val-cor {
+    width: 100% !important;
+	}
+	body.product-details #pro-descp .your-list #val-cor label {
+    float: left;
+    width: 100%;
+	text-align: left;
+	}
+	body.product-details #pro-descp .your-list #val-cor #in-ver {
+    float: left;
+    width: 46%;
+	}
+	body.product-details #pro-descp .order-subm-center #val-cor #in-code {
+    width: 35%;
+	}
+	body.product-details .pro-content {
+    width: 98%;
+    margin-top: 30px;
+	}
+	.nav a {
+    padding: 16px 12px 20px 12px;
+	}
+	.ylist-t {
+    padding-right: 37px;
+    float: left;
+    width: 94.5%;
+	}
+	.deli2 .your-list #acc-subm-left {
+    float: left;
+    width: 100%;
+	}
+	.detail-deli .sl-pay #acc-subm-right .check-Rem {
+    width: 100%;
+	}
+	.detail-deli .sl-pay .check-Rem {
+    float: left;
+    width: 100%;
+	}
+	.button-submit {
+    overflow: hidden;
+    width: 50%;
+    margin: 0px auto;
+	}
+	body.checkout  .order-subm-center .button-submit .val-subm {
+    margin-top: 20px;
+    width: 50% !important;
+    float: left !important;
+	}
+	.your-list .form-inp textarea {
+    padding: 5px 9px;
+    float: left;
+    width: 56%;
+    margin-left: 10px;
+    height: 70px;
+	}
+}
+
+@media all and (min-width: 320px) and (max-width: 599px){
+	#cart {
+    padding: 20px 10px 10px 7px;
+    float: left;
+    margin-bottom: 10px;
+    width: 94%;
+    position: initial;
+	}	
+	#top-menu {
+    position: absolute;
+    right: 0px;
+    top: 17px;
+	}
+	#primary-content {
+    width: 85%;
+	}
+	.content p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 27px;
+	}
+	.o-product ul li {
+    width: 100%;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	}
+	#contact-co {
+    overflow: hidden;
+    float: none;
+    width: 100%;
+    margin: 0px auto;
+	}
+	#contact-co-left {
+    float: left;
+    width: 99%;
+	}
+	#qrcode {
+    position: initial;
+    width: 168px;
+    right: 0px;
+    bottom: 0px;
+	}
+	#contact-co-right {
+    float: left;
+    width: 100%;
+	}
+	#o-addr {
+    font-size: 15px;
+	}
+	#contact-co-right #mess-c {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 15px;
+	}
+	#contact-co-right .form-inp label {
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding: 8px 0px;
+    font-size: 15px;
+	}
+	#contact-co-right .form-inp input, #contact-co-right .form-inp textarea {
+    width: 83%;
+    margin-left: 0px;
+	}
+	#contact-co-right #val-cor input {
+    float: left;
+    width: 39%;
+	}
+	#contact-co-right #val-cor #in-code {
+    width: 85%;
+	}
+	#in-change, #requ {
+    width: 88%;
+    float: left;
+	}
+	#contact-co-right .val-subm {
+    float: right;
+    width: 93%;
+    margin-top: 20px;
+	}
+	#footage {
+    width: 83%;
+	}
+	.foot-content {
+    float: left;
+    width: 100%;
+	margin-bottom: 40px;
+	}
+	.foot-content +.foot-content +.foot-content {
+    width: 100%;
+	}
+	#copyright {
+    width: 89%;
+	}
+	#sidebar {
+    float: left;
+    width: 100%;
+	}
+	#menu-poduct {
+    float: left;
+    width: 89%;
+	}
+	#menu-poduct li a {
+    float: left;
+    width: 92%;
+    background: #ff8d00 url(../res/upload/images/m-down.png) no-repeat 92% center;
+    color: #fff;
+    padding: 5px 10px;
+	}
+	.pro-content {
+    width: 90%;
+    margin-top: 30px;
+	}
+	#acc-subm-left {
+    float: left;
+    width: 100%;
+	}
+	#acc-subm-right {
+    float: left;
+    width: 100%;
+	}
+	.acc-change-center {
+    width: 100%;
+	}
+	.order-subm-center .form-inp {
+    overflow: hidden;
+    margin: 0px auto;
+    width: 100% !important;
+	}
+	.your-list {
+    border-radius: 0px 0px 3px 3px;
+    margin: 0px auto;
+    width: 93%;
+	}
+	.your-list .form-inp label {
+    float: left;
+    width: 100%;
+	text-align: left;
+	}
+	.your-list .form-inp input, .your-list .form-inp textarea {
+    width: 87%;
+    margin-left: 0px;
+	}
+	#order-subm .form-inp label {
+    float: left;
+    width: 100%;
+	text-align: left;
+	}
+	#order-subm .form-inp input{
+	width: 87%;
+    margin-left: 0px;
+	}
+	.order-subm-center #val-cor #in-code {
+    width: 90%;
+	margin-top:10px;
+	}
+	.regis {
+    float: left;
+    width: 98%;
+	}
+	.logi {
+    float: left;
+    width: 98%;
+	}
+	.order-subm-center #in-change {
+	width: 94%;
+	}
+	body.register .your-list .form-inp label {
+    width: 100%;
+	}
+	body.register .your-list #val-cor label {
+    float: left;
+    width: 50%;
+	}
+	body.register .order-subm-center #in-ver {
+    width: 40%;
+	}
+	body.register .order-subm-center #val-cor #in-code {
+    font-size: 20px;
+    float: left;
+    width: 43%;
+	}
+	#check-agree {
+    width: 92%;
+	}
+	body.register .regis .order-subm-center .val-subm, body.register .logi .order-subm-center .val-subm {
+    width: 50% !important;
+	}
+	.check-Rem {
+    float: right;
+    width: 95%;
+    margin-bottom: 10px;
+	}
+	#order-subm-right {
+    float: left;
+    width: 100%;
+	}
+	#order-subm-left {
+    float: left;
+    width: 100%;
+	}
+	body.checkout .order-subm-center .val-subm{
+    overflow: hidden;
+    margin: 0px auto;
+    width: 40% !important;
+	}
+	.ylist-1, .ylist-2, .ylist-3, .ylist-4, .ylist-5,
+	.ylist-t2, .ylist-t3, .ylist-t4, .ylist-t5{
+	width: 100%;
+	text-align: left;
+	}
+	#con-mess {
+    width: 90%;
+	}
+	body.product-details h3.h-title {
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: capitalize;
+	}
+	#pro-img {
+    width: 100%;
+	margin-right: 0px;
+	}
+	#pro-img img{
+	max-width:100%;
+	}
+	#pro-short {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+	}
+	#pro-descp .your-list .form-inp label {
+    float: left;
+    width: 17%;
+	}
+	.no-rait {
+    float: left;
+    width: 77%;
+    margin-left: 10px;
+    padding-top: 7px;
+	}
+	body.product-details #pro-descp .your-list #val-cor {
+    width: 100% !important;
+	}
+	body.product-details #pro-descp .your-list #val-cor label {
+    float: left;
+    width: 100%;
+	text-align: left;
+	}
+	body.product-details #pro-descp .your-list #val-cor #in-ver {
+    float: left;
+    width: 84%;
+	}
+	body.product-details #pro-descp .order-subm-center #val-cor #in-code {
+    width: 90%;
+	}
+	body.product-details .pro-content {
+    width: 98%;
+    margin-top: 30px;
+	}
+	body.product-details .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: left;
+    padding: .5em .5em;
+    text-decoration: none;
+	}
+	body.product-details .Rati-fo label{
+    float: left;
+    width: 24%;
+	}
+	.no-rait {
+    float: left;
+    width: 62%;
+    margin-left: 10px;
+    padding-top: 7px;
+	}
+	.mleft-menu ul {
+    background: #fff ;
+	}
+	.ylist-t {
+    padding-right: 0px;
+    float: left;
+    width: 100%;
+    text-align: left;
+	}
+	.deli2 .your-list #acc-subm-left{
+    float: left;
+    width: 100%;
+	}
+	.detail-deli .sl-pay #acc-subm-right .check-Rem {
+    width: 100%;
+	}
+	.detail-deli .sl-pay .check-Rem {
+    float: left;
+    width: 100%;
+	}
+	.button-submit {
+    overflow: hidden;
+    width: 87%;
+    margin: 0px auto;
+	}
+	body.checkout  .order-subm-center .button-submit .val-subm {
+    margin-top: 20px;
+    width: 50% !important;
+    float: left !important;
+	}
+}
+@media all and (max-width: 320px){
+	#search #bt-inpu {
+    width: 55px;
+	}
+	#pro-descp .your-list .form-inp label {
+    float: left;
+    width: 26%;
+	}
+}
+

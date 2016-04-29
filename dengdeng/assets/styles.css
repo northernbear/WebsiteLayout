@@ -337,6 +337,7 @@ position: absolute;
 	margin: 0px auto;
     overflow: hidden;
     width: 1155px;
+	background-color: rgba(63, 63, 63, 0.85);
 }
 
 #slider img{
@@ -2134,7 +2135,7 @@ body.checkout #order-subm {
     width: 100%;
     text-align: center;
     padding-top: 20px;
-    height: 30px;
+    height: 47px;
 }
 
 #food-info {
@@ -2601,4 +2602,51 @@ body.checkout #order-subm {
 
 .finfoco ul li:hover, .finfoco ul li.active-sub{
 	background-color: rgba(97, 97, 97, 0.85);
+}
+
+#slider.owl-controls {
+    position: initial;
+	left:0px;
+}
+
+#slider .owl-controls .owl-prev{
+	overflow: hidden;
+    width: 56px;
+    position: absolute;
+    left: 25px;
+    top: 42%;
+    background: url(../res/upload/images/prevh.png) no-repeat left top;
+    text-indent: 52px;
+    height: 56px;
+	z-index:10;
+}
+
+#slider .owl-controls .owl-next{
+	overflow: hidden;
+    width: 56px;
+    position: absolute;
+    right: 25px;
+    top: 42%;
+    background: url(../res/upload/images/nexth.png) no-repeat left top;
+    text-indent: 52px;
+    height: 56px;
+    z-index: 17;
+}
+
+#slider .owl-controls .owl-next:hover,
+#slider .owl-controls .owl-prev:hover{
+	opacity: 0.5;
+}
+
+#slider .owl-controls {
+    /* left: 46%; */
+    bottom: 0px;
+    position: initial;
+	margin-top: 0px;
+}
+
+#slider .owl-controls .owl-dots{
+    left: 46%;
+    bottom: 0px;
+    position: absolute;
 }

@@ -160,8 +160,16 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 980px) {
+	#head-title{
+	width:100%;
+	}
 	#slider .owl-controls .owl-dots {
     left: 40%;
+	}
+	#head-logo {
+    width: 60%;
+    margin: 0px auto;
+	padding-bottom: 20px;
 	}
 	#wrapper {
     width: 100%;
@@ -171,7 +179,7 @@
 	height:auto;
 	}
 	#logo img{
-	width: 50%;
+	width: 35%;
 	}
 	#cart {
     width: 200px;
@@ -373,6 +381,17 @@
 }
 
 @media all and (min-width: 605px) and (max-width: 767px) {
+	#head-title{
+	width:100%;
+	}
+	#slider .owl-controls .owl-dots {
+    left: 40%;
+	}
+	#head-logo {
+    width: 50%;
+    margin: 0px auto;
+	padding-bottom: 20px;
+	}
 	#slider .owl-controls .owl-dots {
     left: 40%;
 	}
@@ -384,7 +403,7 @@
 	height:auto;
 	}
 	#logo img{
-	width: 50%;
+	width: 35%;
 	}
 	#cart {
     width: 200px;
@@ -414,8 +433,8 @@
     width: 100px;
 	}
 	#search {
-    right: 16px;
-    top: 45px;
+    right: 12px;
+    top: 6px;
     width: 135px;
 	}
 	.o-product ul li {
@@ -594,6 +613,17 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 604px){
+	#head-title{
+	width:100%;
+	}
+	#slider .owl-controls .owl-dots {
+    left: 40%;
+	}
+	#head-logo {
+    width: 60%;
+    margin: 0px auto;
+	padding-bottom: 20px;
+	}
 	#slider .owl-controls .owl-dots {
     left: 40%;
 	}
@@ -605,7 +635,7 @@
 	height:auto;
 	}
 	#logo img{
-	width: 70%;
+	width: 45%;
 	}
 	#cart {
     width: 200px;
@@ -818,6 +848,18 @@
 }
 
 @media all and (max-width: 479px){
+	#head-title{
+	width:100%;
+	}
+	#slider .owl-controls .owl-dots {
+    left: 40%;
+	}
+	#head-logo {
+    width: 80%;
+    margin: 0px auto;
+	padding-bottom: 20px;
+	padding-top: 50px;
+	}
 	#slider .owl-controls .owl-dots {
     left: 35%;
 	}
@@ -829,8 +871,8 @@
 	height: 245px;
 	}
 	#logo img{
-	width: 92%;
-    margin-top: 40px;
+	width: 35%;
+    margin-top: 0px;
 	}
 	#top-menu {
     width: 200px;
@@ -1097,6 +1139,12 @@
 	}
 	.finfoco {
     height: auto;
+	}
+	#head-logo {
+    width: 91%;
+    margin: 0px auto;
+    padding-bottom: 20px;
+    padding-top: 50px;
 	}
 }
 

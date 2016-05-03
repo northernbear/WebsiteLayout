@@ -149,7 +149,7 @@ overflow:hidden;
 width:1155px;
 margin: 0px auto;
 overflow:hidden;
-height:310px;
+height:320px;
 text-align: center;
 position: relative;
 font-size:14px;
@@ -2163,7 +2163,7 @@ body.checkout #order-subm {
 	padding: 18px 10px 18px 10px;
     margin: 0px -2px 0px -1px;
 	background: url(../res/upload/images/menu-li.png) no-repeat left center;
-    color: #fff;
+    color: #474747;
     border-radius: 0px;
 	font-family: 'sanchez_regularregular';
 	font-size: 20px;
@@ -2649,4 +2649,9 @@ body.checkout #order-subm {
     left: 46%;
     bottom: 0px;
     position: absolute;
+}
+
+#head-logo{
+	width:70%;
+	margin: 0px auto;
 }

@@ -11,7 +11,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: rgba(20, 158, 18, 0.85) url(../res/upload/images/interface.png) no-repeat 9px 21px;
+		background: rgba(20, 158, 18, 0.85) url(../res/upload/images/interface.png) no-repeat 95% 21px;
 		z-index: 10;
 	}
 	.nav li {
@@ -30,12 +30,12 @@
 		text-align: left;
 	}
 	.nav  .current a {
-		padding: 5px 5px 5px 0px !important;
+		padding: 5px 5px 5px 32px !important;
 	}
 	.nav .current a {
 		background: none;
 		color: #fff;
-		margin-left: 35px;
+		margin-right: 50px;
 	}
 	/* on nav hover */
 	.nav ul:hover {
@@ -46,7 +46,7 @@
 		margin: 0 0 0px;
 	}
 	.nav ul:hover .current {
-		background: url(../res/upload/images/check.png) no-repeat 10px 19px;
+		background: url(../res/upload/images/check.png) no-repeat 95% 19px;
 	}
 
 	/* right nav */
@@ -236,6 +236,10 @@
 	#contact-co-right .form-inp textarea	{
     width: 73%;
 	}
+	#checkcp input{
+    width: 97% !important;
+	margin-left: 0px !important;
+	}
 	#contact-co-right #val-cor {
     float: right;
     width: 100%;
@@ -381,6 +385,14 @@
 }
 
 @media all and (min-width: 605px) and (max-width: 767px) {
+	#checkcp input{
+    width: 95.5% !important;
+	margin-left: 0px !important;
+	}
+	#checkcp {
+    float: right;
+    width: 78.5%;
+	}
 	#head-title{
 	width:100%;
 	}
@@ -613,6 +625,17 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 604px){
+	#checkcp input{
+    width: 96% !important;
+	margin-left: 0px !important;
+	}
+	#checkcp {
+    float: right;
+    width: 78.5%;
+	}
+	.foot-content:last-child {
+    padding-left: 10px !important;
+	}
 	#head-title{
 	width:100%;
 	}
@@ -848,6 +871,26 @@
 }
 
 @media all and (max-width: 479px){
+	#checkcp input{
+    width: 100% !important;
+	margin-left: 0px !important;
+	}
+	#checkcp {
+    float: right;
+    width: 100%;
+	}
+	#checkc {
+    margin-left: 0px;
+	}
+	.foot-content ul.cons-1{
+	text-align: center;
+	}
+	.foot-content ul.cons-1 li span{
+	float:none !important;
+	}
+	.foot-content ul.cate {
+    text-align: center;
+	}
 	#head-title{
 	width:100%;
 	}
@@ -1110,7 +1153,7 @@
 		height: 100% !important;
 	}
 	#social {
-    /*margin: 0px auto;*/
+    margin: 0px auto;
     width: 80px;
     overflow: hidden;
 	}
@@ -1148,3 +1191,12 @@
 	}
 }
 
+@media all and (max-width: 390px){
+	.foot-md ul li {
+    width: 100%;
+	}
+	.foot-md ul li+li {
+    border-top: 1px solid #0F880D;
+    background: transparent;
+	}
+}

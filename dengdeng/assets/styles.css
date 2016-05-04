@@ -273,12 +273,6 @@ position: absolute;
     margin-bottom: 15px;
 }
 
-#photo-slide{
-	margin: 0px auto;
-    overflow: hidden;
-	width:100%;
-}
-
 #photo-slide .owl-controls {
     position: initial;
 	left:0px;
@@ -306,12 +300,45 @@ position: absolute;
 	height: 35px;
 }
 
+.owl-carousel-u .owl-controls {
+    position: initial;
+	left:0px;
+}
+
+.owl-carousel-u .owl-controls .owl-prev{
+	overflow: hidden;
+    width: 5px;
+    position: absolute;
+    left: -25px;
+    top: 40%;
+    background: url(../res/upload/images/prev.png) no-repeat left top !important;
+    text-indent: 27px;
+	height: 35px;
+}
+
+.owl-carousel-u .owl-controls .owl-next{
+	overflow: hidden;
+    width: 15px;
+    position: absolute;
+    right: -25px;
+    top: 40%;
+    background: url(../res/upload/images/next.png) no-repeat left top !important;
+    text-indent: 27px;
+	height: 35px;
+}
+
 #photo-slide #photo-slide-c {
     width: 80%;
     display: block;
 	float:left;
 	padding: 0px 30px;
 	max-height: 201px;
+}
+
+#photo-slide{
+	margin: 0px auto;
+    overflow: hidden;
+	width:100%;
 }
 
 #call-phone{
@@ -463,7 +490,7 @@ h3.h-title{
 
 #contact-co-right .form-inp label{
 	float:left;
-	width:20%;
+	width:25%;
 	text-align: right;
     padding: 8px 0px;
 	font-size: 14px;
@@ -472,7 +499,7 @@ h3.h-title{
 #contact-co-right .form-inp input{
 	padding: 10px 9px;
     float: left;
-    width: 76%;
+    width: 70%;
     margin-left: 10px;
 	background: #555555;
 	border:0px;
@@ -481,7 +508,7 @@ h3.h-title{
 #contact-co-right .form-inp textarea{
 	padding: 5px 9px;
     float: left;
-    width: 76%;
+    width: 70%;
     margin-left: 10px;
 	height: 95px;
 	background: #555555;
@@ -631,13 +658,13 @@ h3.h-title{
 }
 
 .foot-content ul.cons-1 li{
-	padding-left: 30px;
+	/*padding-left: 30px;*/
     float: left;
-    width: 85%;
+    width: 100%;
     margin-bottom: 10px;
 }
 
-.foot-content ul.cons-1 li#addr-1{
+/*.foot-content ul.cons-1 li#addr-1{
 	background:url(../res/upload/images/addr-1.png) no-repeat left top;
 }
 
@@ -659,6 +686,42 @@ h3.h-title{
 
 .foot-content ul.cons-1 li#fax{
 	background:url(../res/upload/images/fax.png) no-repeat left top;
+}*/
+
+.foot-content ul.cons-1 li#addr-1 span{
+	background:url(../res/upload/images/addr-1.png) no-repeat left top;
+	padding-left: 30px;
+	float: left;
+}
+
+.foot-content ul.cons-1 li#tel-1 span{
+	background:url(../res/upload/images/tel-1.png) no-repeat left top;
+	padding-left: 30px;
+	float: left;
+}
+
+.foot-content ul.cons-1 li#email span{
+	background:url(../res/upload/images/email.png) no-repeat left top;
+	padding-left: 30px;
+	float: left;
+}
+
+.foot-content ul.cons-1 li#addr-2 span{
+	background:url(../res/upload/images/addr-2.png) no-repeat left top;
+	padding-left: 30px;
+	float: left;
+}
+
+.foot-content ul.cons-1 li#tel-2 span{
+	background:url(../res/upload/images/tel-2.png) no-repeat left top;
+	padding-left: 30px;
+	float: left;
+}
+
+.foot-content ul.cons-1 li#fax span{
+	background:url(../res/upload/images/fax.png) no-repeat left top;
+	padding-left: 30px;
+	float: left;
 }
 
 .qrcodef img{
@@ -1866,7 +1929,7 @@ body.product-details  .ui-widget-content {
     background: url(../res/upload/images/menu-li.png) no-repeat left center;
 }
 .nav li:hover{
-	background-color: rgba(90, 187, 89, 0.85);
+	background-color: rgba(91, 174, 90, 0.75);
 }
 .nav a {
 	text-decoration: none;
@@ -1877,13 +1940,13 @@ body.product-details  .ui-widget-content {
 	color: #fff;
 }
 .nav .current{
-	background-color: rgba(90, 187, 89, 0.85);
+	background-color: rgba(91, 174, 90, 0.75);
 	color: #fff;
 	border-radius: 0px;
 }
 
 .nav .current a, .nav li:hover a{
-	color:#dbd90d;
+	color:#fff200;
 }
 /*.nav .current a {
 	background: #999;
@@ -2163,7 +2226,7 @@ body.checkout #order-subm {
 	padding: 18px 10px 18px 10px;
     margin: 0px -2px 0px -1px;
 	background: url(../res/upload/images/menu-li.png) no-repeat left center;
-    color: #474747;
+    color: #343434;
     border-radius: 0px;
 	font-family: 'sanchez_regularregular';
 	font-size: 20px;
@@ -2171,7 +2234,7 @@ body.checkout #order-subm {
 
 .finfo-title{
     list-style: none;
-    background-color: rgba(172, 204, 21, 0.85);
+    background-color: rgba(175, 209, 15, 0.85);
 	text-align:center;
 	width:100%;
 }
@@ -2181,7 +2244,7 @@ body.checkout #order-subm {
     float: left;
     width: 100%;
 	height: 140px;
-    background-color: rgba(63, 63, 63, 0.85);
+    background-color: rgba(52, 52, 52, 0.85);
 }
 
 .finfoco li {
@@ -2425,6 +2488,9 @@ body.checkout #order-subm {
 .contact-content-1 ul.ccons-1 li#ctime-1{
 	background:url(../res/upload/images/clock.png) no-repeat left top;
 }
+.contact-content-1 ul.ccons-1 li#ctime-2{
+	background:url(../res/upload/images/clock.png) no-repeat left top;
+}
 
 .contact-content-1 ul.ccons-1 li#caddr-2{
 	background:url(../res/upload/images/caddr-2.png) no-repeat left top;
@@ -2601,7 +2667,7 @@ body.checkout #order-subm {
 }
 
 .finfoco ul li:hover, .finfoco ul li.active-sub{
-	background-color: rgba(97, 97, 97, 0.85);
+	background-color: rgba(89, 89, 89, 0.85);
 }
 
 #slider.owl-controls {
@@ -2655,3 +2721,38 @@ body.checkout #order-subm {
 	width:70%;
 	margin: 0px auto;
 }
+
+#checkc{
+	padding: 10px 9px 10px 0px;
+    float: left;
+    width: 70%;
+    margin-left: 10px;
+    border: 0px;
+}
+
+#checkcp{
+	float: right;
+    width: 75%;
+}
+
+#checkcp input {
+    width: 93% !important;
+}
+
+/*.slide-pop {
+    width: 100%;
+    display: block;
+	float:left;
+}
+
+.slide-pop{
+    width: 100%;
+    display: block;
+	float:left;
+}
+
+.owl-carousel-u .item {
+    background: none repeat scroll 0 0 #4dc7a0;
+    height: 10rem;
+    padding: 1rem;
+}*/

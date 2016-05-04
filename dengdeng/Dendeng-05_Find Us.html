@@ -31,11 +31,11 @@ $(document).ready(function(){
 					<input type="submit" value="Search" id="bt-sear"/>
 			</div>
 			<div id="head-logo">
-			<img src="res/upload/images/head-title.png" id="head-title"/>
+			<img src="res/upload/images/head-title.png" id="head-title" alt="Dendeng House Halal BBQ Meat"/>
 			<a href="Dendeng-01_Welcome.html" title="logo" id="logo"><img src="res/upload/images/logo.png" alt="logo"/></a>
 			</div>
-			<img src="res/upload/images/halo-singapore.png" id="halo-sing"/>
-			<img src="res/upload/images/hotline.png" id="hotline"/>
+			<img src="res/upload/images/halo-singapore.png" id="halo-sing" alt="HALAL SINGAPORE"/>
+			<img src="res/upload/images/hotline.png" id="hotline" alt="9296 5929"/>
 		</div>
 		<div class="nav">
 			<ul>
@@ -119,7 +119,7 @@ $(document).ready(function(){
 									<li id="caddr-2"><span>Blk 15, #01-16, Woodland Loop,<br/>Woodlands Industrial Estate<br/>Singapore 738322</span></li>
 									<li id="ctel-2"><span>6853 3544</span></li>
 									<li id="cfax"><span>6753 1300</span></li>
-									<li id="ctime-1"><span>5.00am - 2.00 pm<br/><i>(Close on Sunday & Public Holiday)</i></span></li>
+									<li id="ctime-2"><span>5.00am - 2.00 pm<br/><i>(Close on Sunday &amp; Public Holiday)</i></span></li>
 								</ul>
 							</div>
 						</div>
@@ -132,12 +132,20 @@ $(document).ready(function(){
 							<p>Leave us a message for any enquiries. Thank you for your support.</p>
 							<div id="check-q">
 								<span>What would you like to know from us:</span>
-								<input type="radio" name="like" id="c1" value="General Enquiry"> <label for="c1"><span></span>General Enquiry</label><br/>
-								<input type="radio" name="like" id="c2" value="Pre Order"> <label for="c2"><span></span>Pre Order</label><br/>
-								<input type="radio" name="like" id="c3" value="Local Enquiries Delivery"> <label for="c3"><span></span>Local Enquiries Delivery</label><br/>
-								<input type="radio" name="like" id="c4" value="Export Enquiries Delivery"> <label for="c4"><span></span>Export Enquiries Delivery</label>
+								<input type="radio" name="like" id="c1" value="General Enquiry"/> <label for="c1"><span></span>General Enquiry</label><br/>
+								<input type="radio" name="like" id="c2" value="Pre Order"/> <label for="c2"><span></span>Pre Order</label><br/>
+								<input type="radio" name="like" id="c3" value="Local Enquiries Delivery"/> <label for="c3"><span></span>Local Enquiries Delivery</label><br/>
+								<input type="radio" name="like" id="c4" value="Export Enquiries Delivery"/> <label for="c4"><span></span>Export Enquiries Delivery</label>
 							</div>
 							<div id="contact-co-right">
+							<script type='text/javascript'>
+							function refreshCaptcha()
+							{
+								var img = document.images['captcha-img'];
+								img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + Math.random() * 1000;
+							}
+							</script>
+							<form id="contact-from" action="">
 									<div class="form-inp">
 										<label>Name:</label>
 										<input type="text" id="in-name"/>
@@ -154,9 +162,22 @@ $(document).ready(function(){
 										<label>Mesage:</label>
 										<textarea id="in-mess" cols="10" rows="6" ></textarea>
 									</div>
+									<div class="form-inp">
+										<label>Verification Code*:</label>
+										<div id="checkc">
+											<img src="assets/capcha/lib/PHPCaptcha/captcha.php?rand={rand()}" id="captcha-img" alt="captcha"/>
+											<a href='javascript: refreshCaptcha();' title="refresh">
+												<img src="res/upload/images/refresh.png" height="24px" alt="refresh"/>
+											</a>
+										</div>
+										<div id="checkcp">
+											<input type="text" id="verification" name="verification"/>
+										</div>
+									</div>
 									<div class="form-inp val-subm">
 										<input type="submit" class="in-sub" value="Submit"/>
 									</div>
+								</form>
 							</div>
 						</div>
 					</div>

@@ -1,6 +1,6 @@
 ﻿/***
-Theme Name: 3T Lighting
-Version: 1.04.16
+Theme Name: Dendeng
+Version: 1.05.16
 ***/
 
 @font-face {
@@ -67,11 +67,15 @@ Version: 1.04.16
 
 *{margin: 0; padding: 0;}
 
+html {
+	background: url(../res/upload/images/background.jpg) no-repeat top center fixed; 
+} 
+
 body {
 	font-size: 100%;
 	font-family: 'Roboto', tahoma, arial, sans-serif;
 	/*background:url(images/Background02.jpg) no-repeat top center, url(images/Background.jpg);*/
-	background: url(../res/upload/images/background.jpg) no-repeat top center fixed; 
+	background: url(../res/upload/images/body-bg.png) no-repeat top center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -153,7 +157,7 @@ height:320px;
 text-align: center;
 position: relative;
 font-size:14px;
-background-color: rgba(188, 228, 0, 0.85); 
+background-color: rgba(188, 228, 0, 0.8); 
 }
 
 #search{
@@ -260,7 +264,7 @@ position: absolute;
     margin: 0px auto;
     overflow: hidden;
     color: #fff;
-	background-color: rgba(53, 53, 53, 0.85);
+	background-color: rgba(53, 53, 53, 0.8);
     padding: 40px 0px;
 	width:100%;
 }
@@ -271,6 +275,7 @@ position: absolute;
     font-size: 20px;
     width: 100%;
     margin-bottom: 15px;
+	color: #fff;
 }
 
 #photo-slide .owl-controls {
@@ -364,7 +369,7 @@ position: absolute;
 	margin: 0px auto;
     overflow: hidden;
     width: 1155px;
-	background-color: rgba(63, 63, 63, 0.85);
+	background-color: rgba(63, 63, 63, 0.8);
 }
 
 #slider img{
@@ -603,7 +608,7 @@ h3.h-title{
 	color:#393939;
 	font-size:14px;
 	border-top: 7px solid #afd10f;
-	background-color: rgba(227, 227, 227, 0.85);
+	background-color: rgba(227, 227, 227, 0.8);
 }
 
 #footage a{
@@ -774,7 +779,7 @@ h3.h-title{
     overflow: hidden;
 	text-align:center;
 	font-size:11px;
-	background-color: rgba(56, 56, 56, 0.85);
+	background-color: rgba(56, 56, 56, 0.8);
 }
 
 #copyright p{
@@ -1909,7 +1914,7 @@ body.product-details  .ui-widget-content {
 	margin: 0px auto;
 	width: 100%;
     height: 62px;
-    background-color: rgba(20, 158, 18, 0.85); 
+    background-color: rgba(20, 158, 18, 0.8); 
     font-size: 20px;
 	font-family: 'sanchez_regularregular';
 }
@@ -2156,7 +2161,7 @@ body.checkout #order-subm {
 
 .hinfo-title{
     list-style: none;
-    background-color: rgba(20, 158, 18, 0.85);
+    background-color: rgba(20, 158, 18, 0.8);
 	text-align:center;
 	width:100%;
 }
@@ -2170,7 +2175,7 @@ body.checkout #order-subm {
 	padding: 20px 60px 40px 60px;
     float: left;
     width: 100%;
-	background-color: rgba(63, 63, 63, 0.85);
+	background-color: rgba(63, 63, 63, 0.8);
 }
 
 .hinfoco p.sb-hinfoco{
@@ -2214,12 +2219,12 @@ body.checkout #order-subm {
 
 .finfo{
 	float:left;
-	width:22%
+	width:21.6%;
 }
 
 .finfo:last-child{
 	float:left;
-	width:11%
+	width:11.8%
 }
 
 .finfo h3{
@@ -2234,9 +2239,13 @@ body.checkout #order-subm {
 
 .finfo-title{
     list-style: none;
-    background-color: rgba(175, 209, 15, 0.85);
+    background-color: rgba(175, 209, 15, 0.8);
 	text-align:center;
 	width:100%;
+}
+
+.finfo:last-child .finfoco{
+    border-right: 0px;
 }
 
 .finfoco {
@@ -2244,7 +2253,8 @@ body.checkout #order-subm {
     float: left;
     width: 100%;
 	height: 140px;
-    background-color: rgba(52, 52, 52, 0.85);
+    background-color: rgba(52, 52, 52, 0.8);
+	border-right: 1px solid #595959;
 }
 
 .finfoco li {
@@ -2283,7 +2293,7 @@ body.checkout #order-subm {
 
 #primary-title{
     list-style: none;
-    background-color: rgba(20, 158, 18, 0.85);
+    background-color: rgba(20, 158, 18, 0.8);
     text-align: center;
     width: 100%;
 }
@@ -2302,7 +2312,7 @@ body.checkout #order-subm {
 	padding: 20px 60px 40px 60px;
     float: left;
     width: 100%;
-    background-color: rgba(63, 63, 63, 0.85);
+    background-color: rgba(63, 63, 63, 0.8);
 }
 
 #pr-content p{
@@ -2318,7 +2328,7 @@ body.checkout #order-subm {
     padding: 0px;
     float: left;
     width: 100%;
-    background-color: rgba(63, 63, 63, 0.85);
+    background-color: rgba(63, 63, 63, 0.8);
 }
 
 .list-post{
@@ -2419,7 +2429,7 @@ body.checkout #order-subm {
 
 .cinfo-title{
     list-style: none;
-    background-color: rgba(20, 158, 18, 0.85);
+    background-color: rgba(20, 158, 18, 0.8);
 	text-align:center;
 	width:100%;
 }
@@ -2568,7 +2578,7 @@ body.checkout #order-subm {
 	overflow:hidden;
 	width:100%;
 	height:450px;
-	background-color: rgba(63, 63, 63, 0.85);
+	background-color: rgba(63, 63, 63, 0.8);
 }
 
 .modal-content{
@@ -2607,7 +2617,7 @@ body.checkout #order-subm {
 	margin-top: 0px;
     margin-bottom: 0px;
     list-style: none;
-    background-color: rgba(20, 158, 18, 0.85);
+    background-color: rgba(20, 158, 18, 0.8);
     text-align: center;
     width: 100%;
     padding: 10px 0px;
@@ -2641,7 +2651,7 @@ body.checkout #order-subm {
 }
 
 .foot-md ul{
-	background-color: rgba(20, 158, 18, 0.85);
+	background-color: rgba(20, 158, 18, 0.8);
     text-align: center;
 	color:#fff;
 	padding: 0px;
@@ -2667,7 +2677,7 @@ body.checkout #order-subm {
 }
 
 .finfoco ul li:hover, .finfoco ul li.active-sub{
-	background-color: rgba(89, 89, 89, 0.85);
+	background-color: rgba(89, 89, 89, 0.8);
 }
 
 #slider.owl-controls {
@@ -2756,3 +2766,22 @@ body.checkout #order-subm {
     height: 10rem;
     padding: 1rem;
 }*/
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}

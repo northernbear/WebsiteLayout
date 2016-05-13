@@ -199,8 +199,8 @@
 	#halo-sing {
     position: absolute;
     left: 15px;
-    bottom: 10px;
-    width: 80px;
+    bottom: 19px;
+    width: 100px;
 	}
 	#hotline {
     position: absolute;
@@ -210,7 +210,7 @@
 	}
 	#search {
     right: 16px;
-    top: 15px;
+    top: 20px;
     width: 135px;
 	}
 	.o-product ul li {
@@ -366,11 +366,11 @@
 	}
 	.finfo:first-child {
     float: left;
-    width: 43%;
+    width: 43.8%;
 	}
 	.finfo:last-child {
     float: left;
-    width: 13%;
+    width: 14%;
 	}
 	.post-avil {
     float: left;
@@ -381,6 +381,25 @@
 	}
 	.hinfoco {
     padding: 20px 10px 40px 20px;
+	}
+	.finfo:first-child .finfoco{
+	padding-left:20px;
+	}
+	.finfo:last-child .finfoco{
+		padding-right:20px;
+	}
+	.finfo {
+    float: left;
+    width: 21.1%;
+	}
+	#footage {
+    padding: 20px 20px
+	}
+	#videos {
+    padding: 40px 20px 40px 20px;
+	}
+	#videos h3 {
+	padding-left: 0px;
 	}
 }
 
@@ -435,7 +454,7 @@
 	#halo-sing {
     position: absolute;
     left: 15px;
-    bottom: 10px;
+    bottom: 19px;
     width: 80px;
 	}
 	#hotline {
@@ -622,9 +641,45 @@
 	#map-contact  iframe{
 		height: 100% !important;
 	}
+	.finfo:first-child .finfoco {
+    padding: 0px 60px;
+	}
+	.finfo .finfoco {
+    padding: 0px 0px 0px 60px;
+	}
+	.finfo+.finfo+.finfo .finfoco {
+    padding: 0px 60px 0px 0px;
+	}
+	.finfo+.finfo+.finfo+.finfo .finfoco {
+    padding: 0px 60px;
+	}
+	#videos {
+    padding: 40px 60px 40px 60px;
+	}
+	#videos h3 {
+	padding-left: 0px;
+	}
 }
 
 @media all and (min-width: 480px) and (max-width: 604px){
+	.finfo:first-child .finfoco {
+    padding: 0px 60px;
+	}
+	.finfo .finfoco {
+    padding: 0px 0px 0px 60px;
+	}
+	.finfo+.finfo+.finfo .finfoco {
+    padding: 0px 60px 0px 0px;
+	}
+	.finfo+.finfo+.finfo+.finfo .finfoco {
+    padding: 0px 60px;
+	}
+	#videos {
+    padding: 40px 60px 40px 60px;
+	}
+	#videos h3 {
+	padding-left: 0px;
+	}
 	#checkcp input{
     width: 96% !important;
 	margin-left: 0px !important;
@@ -678,7 +733,7 @@
 	#halo-sing {
     position: absolute;
     left: 15px;
-    bottom: 10px;
+    bottom: 20px;
     width: 80px;
 	}
 	#hotline {
@@ -871,6 +926,60 @@
 }
 
 @media all and (max-width: 479px){
+	.foot-content ul.cons-1 li#email span {
+    padding: 10px 0px;
+    background: url(../res/upload/images/email.png) no-repeat left center;
+    padding-left: 30px;
+    float: left;
+	}
+	.foot-content ul.cons-1 li#tel-1 span {
+	padding: 10px 0px;
+    background: url(../res/upload/images/tel-1.png) no-repeat left center;
+    padding-left: 30px;
+    float: left;
+	}
+	.foot-content ul.cons-1 li#tel-2 span {
+	padding: 10px 0px;
+    background: url(../res/upload/images/tel-2.png) no-repeat left center;
+    padding-left: 30px;
+    float: left;
+	}
+	.foot-content ul.cons-1 li#fax span {
+	padding: 10px 0px;
+    background: url(../res/upload/images/fax.png) no-repeat left center;
+    padding-left: 30px;
+    float: left;
+	}
+	.foot-content ul.cons-1 li#addr-2 span {
+	padding: 10px 0px;
+    background: url(../res/upload/images/addr-2.png) no-repeat left center;
+    padding-left: 30px;
+    float: left;
+	}
+	.foot-content ul.cons-1 li#addr-1 span {
+	padding: 10px 0px;
+    background: url(../res/upload/images/addr-1.png) no-repeat left center;
+    padding-left: 30px;
+    float: left;
+	}
+	.finfo:first-child .finfoco {
+    padding: 0px 30px;
+	}
+	.finfo .finfoco {
+    padding: 0px 0px 0px 30px;
+	}
+	.finfo+.finfo+.finfo .finfoco {
+    padding: 0px 30px 0px 0px;
+	}
+	.finfo+.finfo+.finfo+.finfo .finfoco {
+    padding: 0px 30px;
+	}
+	#videos {
+    padding: 40px 30px 40px 30px;
+	}
+	#videos h3 {
+	padding-left: 0px;
+	}
 	#checkcp input{
     width: 100% !important;
 	margin-left: 0px !important;
@@ -1198,5 +1307,25 @@
 	.foot-md ul li+li {
     border-top: 1px solid #0F880D;
     background: transparent;
+	}
+}
+@media all and (max-width: 390px){
+	.finfo:first-child .finfoco ul li {
+    float: left;
+    text-align: center;
+    width: 50%;
+	}
+	.finfo {
+    float: left;
+    width: 100%;
+	}
+	.finfoco {
+    height: auto;
+	}
+	.finfo .finfoco {
+    padding: 0px 30px 0px 30px;
+	}
+	.finfo+.finfo+.finfo .finfoco {
+    padding: 0px 30px 0px 30px;
 	}
 }

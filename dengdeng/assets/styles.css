@@ -87,8 +87,9 @@ ol, ul {
 }
 
 p {
-	font-size: 14px;
+	font-size: 13px;
     line-height: 26px;
+	font-family:'Roboto-Light';
 }
 
 a {
@@ -116,6 +117,10 @@ h1, h2, h3, h4, h5 {
 
 h1 {
 	font-size: 2em;
+}
+
+.h3, h3 {
+    font-size: 23px;
 }
 
 strong{
@@ -167,7 +172,7 @@ background-color: rgba(188, 228, 0, 0.8);
 	margin: 2px 0px 0px 15px;
 	position: absolute;
     right: 25px;
-    top: 20px;
+    top: 28px;
     width: 150px;
 }
 
@@ -206,14 +211,14 @@ background-color: rgba(188, 228, 0, 0.8);
 #halo-sing {
     position: absolute;
     left: 60px;
-    bottom: 25px;
+    bottom: 20px;
     width: 116px;
 }
 
 #hotline{
     position: absolute;
     right: 25px;
-    bottom: 40px;
+    bottom: 2px;
     width: 175px;
 }
 
@@ -265,7 +270,7 @@ position: absolute;
     overflow: hidden;
     color: #fff;
 	background-color: rgba(53, 53, 53, 0.8);
-    padding: 40px 0px;
+    padding: 40px 60px 40px 30px;
 	width:100%;
 }
 
@@ -276,6 +281,7 @@ position: absolute;
     width: 100%;
     margin-bottom: 15px;
 	color: #fff;
+	padding-left: 30px;
 }
 
 #photo-slide .owl-controls {
@@ -336,7 +342,7 @@ position: absolute;
     width: 80%;
     display: block;
 	float:left;
-	padding: 0px 30px;
+	padding: 0px 30px 0px 30px;
 	max-height: 201px;
 }
 
@@ -600,15 +606,16 @@ h3.h-title{
 }
 
 #footage{
-	padding: 20px 30px;
+	padding: 20px 60px;
     margin: 0px auto;
     overflow: hidden;
     background: #5e5e5e;
     width: 100%;
 	color:#393939;
-	font-size:14px;
+	font-size:12px;
 	border-top: 7px solid #afd10f;
 	background-color: rgba(227, 227, 227, 0.8);
+	font-family: 'Roboto-Light';
 }
 
 #footage a{
@@ -632,10 +639,11 @@ h3.h-title{
 .foot-content h3{
 	float:left;
 	width: 100%;
-	font-size: 16px;
+	font-size: 14px;
     margin-bottom: 15px;
 	color:#239821;
-	font-family: "Roboto-Medium";
+	font-family: "Roboto";
+	margin-top: 15px;
 }
 
 .foot-content ul{
@@ -2179,13 +2187,13 @@ body.checkout #order-subm {
 }
 
 .hinfoco p.sb-hinfoco{
-	font-size: 18px;
+	font-size: 19px;
     font-family: 'sanchez_regularregular';
 }
 
 .hinfoco p{
-	font-size: 18px;
-	margin-bottom: 25px;
+	font-size: 17px;
+	margin-bottom: 20px;
 }
 
 .btu {
@@ -2214,17 +2222,17 @@ body.checkout #order-subm {
 
 .finfo:first-child{
 	float:left;
-	width:45%
+	width:44%
 }
 
 .finfo{
 	float:left;
-	width:21.6%;
+	width:20.1%;
 }
 
 .finfo:last-child{
 	float:left;
-	width:11.8%
+	width:15.8%
 }
 
 .finfo h3{
@@ -2239,13 +2247,18 @@ body.checkout #order-subm {
 
 .finfo-title{
     list-style: none;
-    background-color: rgba(175, 209, 15, 0.8);
+    background-color: rgba(30, 147, 28, 0.8);
 	text-align:center;
 	width:100%;
 }
 
+.finfo:first-child .finfoco{
+   padding-left:60px;
+}
+
 .finfo:last-child .finfoco{
     border-right: 0px;
+	padding-right:60px;
 }
 
 .finfoco {
@@ -2288,7 +2301,7 @@ body.checkout #order-subm {
 	width:100%;
 	text-align:center;
 	margin-top:10px;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 #primary-title{
@@ -2462,12 +2475,12 @@ body.checkout #order-subm {
 
 .cinfo{
 	float:left;
-	width:45%;
+	width:44%;
 }
 
 .cinfo+.cinfo{
 	float:left;
-	width:55%;
+	width:56%;
 }
 
 .contact-content-1 ul.ccons-1{
@@ -2617,11 +2630,12 @@ body.checkout #order-subm {
 	margin-top: 0px;
     margin-bottom: 0px;
     list-style: none;
-    background-color: rgba(20, 158, 18, 0.8);
+    background-color: #149E12;/*rgba(20, 158, 18, 0.8);*/
     text-align: center;
     width: 100%;
     padding: 10px 0px;
 	color:#fff;
+	font-size: 20px;
 }
 
 .md-content{
@@ -2651,7 +2665,7 @@ body.checkout #order-subm {
 }
 
 .foot-md ul{
-	background-color: rgba(20, 158, 18, 0.8);
+	background-color:#149E12; /*rgba(20, 158, 18, 0.8);*/
     text-align: center;
 	color:#fff;
 	padding: 0px;

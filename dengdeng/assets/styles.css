@@ -2351,6 +2351,10 @@ body.checkout #order-subm {
 	border-bottom: 1px solid #7f7f7f;
 }
 
+.list-post:last-child{
+	border-bottom: 0px;
+}
+
 .post-thumb{
 	float: left;
     width: 30%;
@@ -2799,3 +2803,41 @@ body.checkout #order-subm {
   text-align: left;
   vertical-align: middle;
 }
+
+#follow{
+    padding: 15px 60px;
+    margin: 0px auto;
+    overflow: hidden;
+    background: #5e5e5e;
+    width: 100%;
+    color: #fff;
+    font-size: 12px;
+    background-color: rgba(40, 40, 40, 0.8);
+    font-family: 'Roboto-Light';
+}
+
+#follow span{
+	float:left;
+	width:24%;
+	line-height: 21px;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-right:10px;
+}
+
+#follow span+span{
+	float:left;
+	width:38%;
+	line-height: 21px;
+	padding-top: 0px;
+}
+
+#follow span strong{
+	color:#cf2d2e;
+}
+
+#follow span#ymy{
+	background: url(../res/upload/images/ymy.png) no-repeat left center;
+    padding-left: 43px;
+}
+

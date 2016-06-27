@@ -84,20 +84,25 @@
     background: transparent;
     position: absolute;
     right: initial !important;
-    bottom: -50px;
+    bottom: -72px;
     width: auto;
 	top:auto;
+	padding: 21px 10px;
 	}
 	#cart {
-    left: 129px;
+    left: 131px;
     z-index: 999;
     float: left;
     background: transparent;
     position: absolute;
     right: initial !important;
-    bottom: -45px;
+    bottom: -72px;
     top: auto;
     color: #fff;
+	padding: 26px 20px;
+	}
+	#cart:hover {
+		color:#4d4d4d;
 	}
 	#lang ul{
 	float:left;
@@ -403,10 +408,6 @@
 	}
 	.hinfo+.hinfo+.hinfo+.hinfo {
     padding: 0px 0px 0px 15px;
-	}
-	.btu {
-    font-size: 19px;
-    padding: 10px 0px 9px 0px;
 	}
 	.post-excep {
     margin-bottom: 10px;
@@ -1478,7 +1479,7 @@
     background: transparent;
 	}
 }
-@media all and (max-width: 390px){
+@media all and (max-width: 395px){
 	.finfo:first-child .finfoco ul li {
     float: left;
     text-align: center;
@@ -1496,6 +1497,20 @@
 	}
 	.finfo+.finfo+.finfo .finfoco {
     padding: 0px 30px 0px 30px;
+	}
+	body.checkout .pr-content .col-xs-6{
+	width:100%;
+	}
+	.col-xs-6 .btns {
+    float: right;
+    width: 100%;
+	text-align: center;
+    background: url(../images/btns.png) no-repeat bottom center;
+	margin-bottom:15px;
+	}
+	.col-xs-6:last-child .btns {
+	float: left;
+	width: 100%;
 	}
 }
 @media all and (max-width: 738px){

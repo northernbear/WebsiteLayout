@@ -216,10 +216,10 @@
 	width:85%;
 	}
 	.fo-content .form-inp input {
-    width: 72%;
+    width: 62%;
 	}
 	.fo-content .form-inp label {
-    width: 25%;
+    width: 35%;
 	}
 	.primary-title h2,.primary-title h3 {
     font-size: inherit;
@@ -296,10 +296,17 @@
 	}
 	#contact-co-right .form-inp input,
 	#contact-co-right .form-inp textarea	{
-    width: 67%;
+    width: 60%;
+	}
+	#checkcp {
+    float: right;
+    width: 60%;
+	}
+	#checkc {
+    width: 60%;
 	}
 	#checkcp input{
-    width: 89% !important;
+    width: 100% !important;
 	margin-left: 0px !important;
 	}
 	#contact-co-right #val-cor {
@@ -357,7 +364,7 @@
 	}
 	#contact-co-right .form-inp label {
     float: left;
-    width: 30%;
+    width: 35%;
 	}
 	#contact-co-right .form-inp input.in-sub{
         width: 100%;
@@ -414,16 +421,25 @@
 	}
 	.post-content h3 {
     margin-top: 0px;
+	width: 80%;
+	}
+	.post-avil-abs {
+    top: 15px;
 	}
 	.cinfo+.cinfo .cinfoco {
     padding: 20px 0px 40px 20px;
 	}
-	.fo-content .form-inp input {
-    width: 67%;
+	.fo-content {
+    width: 100%;
+    float: left;
+	}
+	/*.fo-content .form-inp input {
+    width: 100%;
 	}
 	.fo-content .form-inp label {
-    width: 30%;
-	}
+    width: 100%;
+	text-align:left;
+	}*/
 	.primary-title h2,.primary-title h3 {
     font-size: inherit;
     overflow: hidden;
@@ -441,21 +457,42 @@
 	.primary-title-large h2, .primary-title-large h3{
 	width: 80%;
 	}
+	.cinfo {
+    float: left;
+    width: 100%;
+	}
+	.contact-content-1 {
+    text-align: center;
+    margin-bottom: 0px;
+	}
+	.cinfoco {
+    padding: 20px 10px 0px 10px;
+    float: left;
+    width: 100%;
+	}
+	.contact-content-1 ul.ccons-1 li {
+    width: 100%;
+	}
+	.cinfo+.cinfo {
+    float: left;
+    width: 100%;
+	}
 }
 
 @media all and (min-width: 605px) and (max-width: 767px) {
 	#checkcp input{
-    width: 89% !important;
+    width: 100% !important;
 	margin-left: 0px !important;
 	}
 	#checkcp {
     float: right;
-    width: 78.5%;
+    width: 100%;
 	}
 	#checkc {
     padding: 10px 9px 10px 0px;
     float: right;
 	margin-left: 0px;
+	width: 100% !important;
 	}
 	#slider .owl-controls .owl-dots {
     left: 40%;
@@ -511,7 +548,7 @@
 	#contact-co-right .form-inp input,
 	#contact-co-right .form-inp textarea	{
     float: right;
-    width: 70%;
+    width: 100%;
 	margin-left: 0px;
 	}
 	#contact-co-right #val-cor {
@@ -622,7 +659,8 @@
 	}
 	#contact-co-right .form-inp label {
     float: left;
-    width: 25%;
+    width: 100%;
+	text-align: left;
 	}
 	#contact-co-right .form-inp input.in-sub{
         width: 100%;
@@ -717,6 +755,14 @@
 	.primary-title-large h2, .primary-title-large h3{
 	width: 80%;
 	}
+	.post-avil-abs {
+    text-align: right;
+    float: right;
+    width: 30%;
+    position: static;
+    right: 0px;
+    top: 30px;
+	}
 }
 
 @media all and (min-width: 480px) and (max-width: 604px){
@@ -752,12 +798,12 @@
     padding: 0px;
 	}
 	#checkcp input{
-    width: 85% !important;
+    width: 100% !important;
 	margin-left: 0px !important;
 	}
 	#checkcp {
     float: right;
-    width: 78.5%;
+    width: 100%;
 	}
 	.foot-content:last-child {
     padding-left: 10px !important;
@@ -821,7 +867,7 @@
 	#contact-co-right .form-inp input,
 	#contact-co-right .form-inp textarea	{
     float: right;
-    width: 67%;
+    width: 100%;
     margin-left: 0px;
 	}
 	#contact-co-right #val-cor {
@@ -981,14 +1027,15 @@
 	}
 	#contact-co-right .form-inp label {
     float: left;
-    width: 30%;
+    width: 100%;
+	text-align:left;
 	}
 	#contact-co-right .form-inp input.in-sub{
         width: 100%;
 	}
 	#checkc {
     float: right;
-    width: 67%;
+    width: 100%;
     margin-left: 0px;
 	}
 	#contact-co-right {
@@ -1006,11 +1053,11 @@
     width: 100%;
 	}
 	.fo-content .form-inp label {
-    width: 30%;
+    width: 34%;
 	}
 	.fo-content .form-inp input {
     float: right;
-    width: 67%;
+    width: 63%;
     margin-left: 0px;
 	}
 	.post-avil-abs {
@@ -1518,5 +1565,25 @@
     width: 100%;
 	margin-bottom:10px;
 	padding-right: 0px;
+	}
+}
+@media all and (max-width: 360px){
+	.post-avil {
+    width: 100%;
+	text-align: center;
+	}
+	.post-descp .btns {
+    margin: 0px auto;
+    overflow: hidden;
+    float: none;
+    width: 172px;
+    text-align: center;
+    background: url(../images/cart-btns.png) no-repeat bottom center;
+	}
+	.post-avil-abs {
+    float: right;
+    position: static;
+	width: 100%;
+	text-align: center;
 	}
 }

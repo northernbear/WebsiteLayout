@@ -132,7 +132,7 @@ font-size:14px;
     width: auto;
 }
 
-#cart{
+#header-cart{
     float: left;
 	background: transparent;
 	position: absolute;
@@ -144,7 +144,7 @@ font-size:14px;
 	color:#4d4d4d;
 }
 
-#cart:hover{
+#header-cart:hover{
 	color:#EE0000;
 }
 
@@ -2500,14 +2500,14 @@ body.checkout #order-subm {
 	font-weight:bold;
 }
 
-input.check-cook[type="checkbox"] {
+input.check-cook[type="checkbox"],input.check-cook[type="radio"] {
     display:none;
 }
-input.check-cook[type="checkbox"] + label {
+input.check-cook[type="checkbox"] + label,input.check-cook[type="radio"] + label {
     color: #f3f3f3;
     font-size:14px;
 }
-input.check-cook[type="checkbox"] + label span {
+input.check-cook[type="checkbox"] + label span,input.check-cook[type="radio"] + label span {
     display:inline-block;
     width:19px;
     height:19px;
@@ -2518,11 +2518,11 @@ input.check-cook[type="checkbox"] + label span {
     border-radius:  50%;
 }
 
-input.check-cook[type="checkbox"] + label span {
+input.check-cook[type="checkbox"] + label span,input.check-cook[type="radio"] + label span {
      background-color:#f3f3f3;
 }
 
-input.check-cook[type="checkbox"]:checked + label span{
+input.check-cook[type="checkbox"]:checked + label span,input.check-cook[type="radio"]:checked + label span{
      background-color:#ee0000;
 }
 
@@ -2763,7 +2763,7 @@ body.checkout .table-responsive .table td.total-price{
     margin-bottom: 10px;
 }
 
-.fo-content .form-inp input {
+.fo-content .form-inp input,.fo-content .form-inp select {
     padding: 7px 9px;
 	font-size: 22px;
     float: right;

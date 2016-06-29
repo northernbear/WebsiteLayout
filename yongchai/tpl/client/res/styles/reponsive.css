@@ -89,7 +89,7 @@
 	top:auto;
 	padding: 21px 10px;
 	}
-	#cart {
+	#header-cart {
     left: 131px;
     z-index: 999;
     float: left;
@@ -101,7 +101,7 @@
     color: #fff;
 	padding: 26px 20px;
 	}
-	#cart:hover {
+	#header-cart:hover {
 		color:#4d4d4d;
 	}
 	#lang ul{
@@ -191,7 +191,7 @@
 	#lang {
     right: 9px;
 	}
-	#cart {
+	#header-cart {
     right: 10px;
 	}
 	#videos h3:before, #videos h3:after {
@@ -260,7 +260,7 @@
 	#lang {
     right: 9px;
 	}
-	#cart {
+	#header-cart {
     right: 10px;
 	}
 	#hotline {

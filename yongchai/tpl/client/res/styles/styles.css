@@ -2845,3 +2845,27 @@ body.checkout .table-responsive .table td.total-price{
 .dr_down select option{
     padding-left:5px;
 }
+
+.cap{
+	float:left;
+	width:100%;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.cap #checkc {
+    float: none;
+    width: 100%;
+}
+
+.cap #checkcp {
+    float: none;
+    width: 100%;
+}
+
+.cap  #checkcp input {
+    width: 373px !important;
+	padding: 10px 9px;
+    background: transparent;
+    border: 1px solid #4d4d4d;
+}

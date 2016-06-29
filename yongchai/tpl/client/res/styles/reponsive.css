@@ -1559,6 +1559,9 @@
 	float: left;
 	width: 100%;
 	}
+	.cap  #checkcp input {
+    width: 244px !important;
+	}
 }
 @media all and (max-width: 738px){
 	#follow span,#follow span+span  {

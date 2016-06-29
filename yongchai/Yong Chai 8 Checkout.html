@@ -226,6 +226,24 @@ $(document).ready(function(){
 								</tr>
 							</table>
 						</div>
+						<div class="cap">
+							<script type='text/javascript'>
+							function refreshCaptcha()
+							{
+								var img = document.images['captcha-img'];
+								img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + Math.random() * 1000;
+							}
+							</script>
+							<div id="checkc">
+								<img src="tpl/client/res/capcha/lib/PHPCaptcha/captcha.php?rand={rand()}" id="captcha-img" alt="captcha"/>
+								<a href='javascript: refreshCaptcha();' title="refresh">
+									<img src="tpl/client/res/images/refresh.png" height="24px" alt="refresh"/>
+								</a>
+							</div>
+							<div id="checkcp">
+								<input type="text" id="verification" name="verification"/>
+							</div>
+						</div>
 						<div class="col-xs-6"> 
 							<div class="btns"><button type="reset" class="btu read-more">Cancel</button></div>
 						</div>

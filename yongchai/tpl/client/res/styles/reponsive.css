@@ -1439,10 +1439,10 @@
     float: left;
     display: block;
 	width:100%;
+    text-align: center;
 	}
 	.md-content .popup-lis {
     margin-bottom: 10px;
-	float:left;
 	}
 	body.checkout .table-responsive .table th,
 	body.checkout .table-responsive .table td{
@@ -1558,6 +1558,9 @@
 	.col-xs-6:last-child .btns {
 	float: left;
 	width: 100%;
+	}
+	.cap  #checkcp input {
+    width: 244px !important;
 	}
 }
 @media all and (max-width: 738px){

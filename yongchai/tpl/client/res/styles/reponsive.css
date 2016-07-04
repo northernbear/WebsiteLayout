@@ -89,7 +89,7 @@
 	top:auto;
 	padding: 21px 10px;
 	}
-	#header-cart {
+	#cart {
     left: 131px;
     z-index: 999;
     float: left;
@@ -101,7 +101,7 @@
     color: #fff;
 	padding: 26px 20px;
 	}
-	#header-cart:hover {
+	#cart:hover {
 		color:#4d4d4d;
 	}
 	#lang ul{
@@ -191,7 +191,7 @@
 	#lang {
     right: 9px;
 	}
-	#header-cart {
+	#cart {
     right: 10px;
 	}
 	#videos h3:before, #videos h3:after {
@@ -260,7 +260,7 @@
 	#lang {
     right: 9px;
 	}
-	#header-cart {
+	#cart {
     right: 10px;
 	}
 	#hotline {
@@ -1588,5 +1588,80 @@
     position: static;
 	width: 100%;
 	text-align: center;
+	}
+}
+@media all and (max-width: 730px){
+	body.checkout .table-responsive table.table th,
+	body.checkout .table-responsive table.table td {
+    float: left;
+    display: block;
+    width: 100%;
+	border-top:0px !important;
+	}
+	body.checkout .table-responsive table.table th.ttro{
+	padding: 0px;
+	}
+	body.checkout .table-responsive .table td.total {
+    text-align: center;
+    border-left: 1px solid #302b2c !important;
+    border-bottom: 1px solid #302b2c !important;
+	}
+	body.checkout .table-responsive .table td.total-f {
+    padding: 0px;
+	}
+}
+@media all and (max-width: 535px){
+	body.yong_chai_menu .table-responsive table.table th,
+	body.yong_chai_menu .table-responsive table.table td {
+    float: left;
+    display: block;
+    width: 100%;
+	text-align:center;
+	padding: 8px 0px;
+	}
+	.menu-lis {
+    display: inline-block;
+    float: none;
+	}
+	body.yong_chai_menu .table-responsive>.table-bordered>tbody>tr:last-child>td{
+	border-bottom: 1px solid #302b2c !important;
+	}
+	body.yong_chai_menu .table-responsive>.table-bordered>tbody>tr:last-child>td:last-child{
+	border-bottom: 0px solid #302b2c !important;
+	}
+	.table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, 
+	.table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, 
+	.table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
+    white-space: normal;
+}
+@media all and (max-width: 240px){
+	#logo img{
+		width:100%;
+	}
+	#head-title{
+		width:100%;
+	}
+	#lang {
+    padding: 21px 5px;
+	}
+	#cart {
+    left: 122px;
+    padding: 26px 0px;
+	}
+	.nav {
+    font-size: 12px;
+	}
+	.cinfo+.cinfo .cinfoco {
+    padding: 20px 00px 40px 00px;
+	}
+	.cinfoco {
+    padding: 20px 0px 0px 0px;
+	}
+	.contact-content-1 ul.ccons-1 li a {
+    word-break: break-all;
+    color: #4d4d4d;
+	}
+	.nav ul:hover .current {
+    background: url(../images/check.png) no-repeat 95% 10px;
 	}
 }

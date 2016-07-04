@@ -2563,6 +2563,11 @@ input.check-cook[type="checkbox"]:checked + label span{
 	margin-right:20px;
 }
 
+.md-content .no-border{
+	border-left: 0px;
+	border-right: 0px;
+}
+
 .md-content .checkpopup{
 	text-align:center;
 	height: 28px;
@@ -2686,6 +2691,11 @@ input.check-cook[type="checkbox"]:checked + label span{
 .lang-cn{
 	letter-spacing: 4px;
 	font-weight: 700;
+}
+
+.lang-cn-popup{
+	letter-spacing: 4px;
+	font-weight: 400;
 }
 
 .yc-menu-bt{

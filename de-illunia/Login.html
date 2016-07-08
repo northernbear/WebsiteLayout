@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Brochure | DeLluvia</title>
+<title>Login / Register | DeLluvia</title>
 <link rel="stylesheet" href="tpl/client/res/styles/bootstrap.min.css"/>
 <link rel="stylesheet" href="tpl/client/res/styles/styles.css"/>
 <link rel="stylesheet" href="tpl/client/res/styles/reponsive.css"/>
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="tpl/client/res/styles/owl.carousel.css"/>
 <link rel="stylesheet" href="tpl/client/res/styles/owl.theme.default.min.css"/>
 </head>
-<body class="brochure">
+<body class="account">
 	<div class="row head">
 		<div id="header">
 			<div id="head-logo">
@@ -125,7 +125,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="current"><a href="Brochure.html" title="Download Brochures">Download Brochures</a></li>
+				<li><a href="Brochure.html" title="Download Brochures">Download Brochures</a></li>
 				<li><a href="Contact.html" title="Contact Us">Contact Us</a></li>
 			</ul>
 		</div>
@@ -141,43 +141,146 @@
 	</div>
 	<div class="row" id="wrapper">
 		<div class="container primary-container">
-			<h2 class="pr-title">Product Brochures</h2>
-			<div class="container-list">
-				<div class="rows">
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 register">
+					<div class="account-details">
+						<h2 class="account-title">Register Account</h2>
 					</div>
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
-					</div>
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
+					<div class="account-body">
+						<form role="form" class="form-horizontal">
+							<script type='text/javascript'>
+								function refreshCaptcha()
+								{
+									var img = document.images['captcha-img'];
+									img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + Math.random() * 1000;
+								}
+							</script>
+							<div class="form-group">
+								<div class="col-xs-6 col-sm-4">
+									<label for="f-name">Full Name*:</label>
+								</div>
+								<div class="col-xs-6 col-sm-8">
+									<input type="text" class="form-control" id="f-name">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-6 col-sm-4">
+									<label for="email">Email*:</label>
+								</div>
+								<div class="col-xs-6 col-sm-8">
+									<input type="text" class="form-control" id="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-6 col-sm-4">
+									<label for="pass">Password*:</label>
+								</div>
+								<div class="col-xs-6 col-sm-8">
+									<input type="password" class="form-control" id="pass">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-6 col-sm-4">
+									<label for="c-pass">Confirm Password*:</label>
+								</div>
+								<div class="col-xs-6 col-sm-8">
+									<input type="password" class="form-control" id="c-pass">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-6 col-sm-4">
+									<label for="phone">Phone*:</label>
+								</div>
+								<div class="col-xs-6 col-sm-8">
+									<input type="text" class="form-control" id="phone">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-6 col-sm-4">
+									<label for="ver">Verification Code*:</label>
+								</div>
+								<div class="col-xs-6 col-sm-8">
+									<div class="col-xs-6 col-sm-6">
+										<input type="text"  class="form-control" id="verification" name="verification"/>
+									</div>
+									<div class="col-xs-6 col-sm-6">
+										<img src="tpl/client/res/capcha/lib/PHPCaptcha/captcha.php?rand={rand()}" id="captcha-img" alt="captcha"/>
+										<a href='javascript: refreshCaptcha();' title="refresh">
+											<img src="tpl/client/res/images/refresh.png" height="24px" alt="refresh"/>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-6 col-sm-8 check-agree">
+									<div class="checkboxAcc">
+										<input type="checkbox" value="1" id="checkboxAccInput" name="" />
+										<label for="checkboxAccInput"></label>
+									</div>
+									<span>I agree the</span> Terms &amp; Conditions
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="account-submit">
+									<button type="submit" class="btn btn-account-submit">Create Account</button>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
-				<div class="rows">
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
+				<div class="col-xs-6 col-sm-6 sign-in">
+					<div class="account-details">
+						<h2 class="account-title">Member Sign In</h2>
 					</div>
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
+					<div class="account-body">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-xs-6 col-sm-4">
+									<label for="l-email">Email:</label>
+								</div>
+								<div class="col-xs-6 col-sm-8">
+									<input type="text" class="form-control" id="l-email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-6 col-sm-4">
+									<label for="l-pass">Password:</label>
+								</div>
+								<div class="col-xs-6 col-sm-8">
+									<input type="password" class="form-control" id="l-pass">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-xs-6 col-sm-8 check-agree">
+									<div class="check-Rem" >
+										<div class="checkboxAcc">
+											<input type="checkbox" value="1" id="checkboxRemInput" name="" />
+											<label for="checkboxRemInput"></label>
+										</div>
+										Remember Me
+									</div>
+									<div class="check-Rem" >
+										<div class="checkboxAcc">
+											<input type="checkbox" value="1" id="checkboxForInput" name="" />
+											<label for="checkboxForInput"></label>
+										</div>
+										Forget Password / Username
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="account-submit">
+									<button type="submit" class="btn btn-account-submit">Sign In</button>
+								</div>
+							</div>
+						</form>
 					</div>
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
+					<div id="or-log">
+						<h3>OR</h3>
+						<a href="#"><img src="tpl/client/res/images/facebook-login.png" alt="login facebook"/></a>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</div>
 	<div class="row footer">

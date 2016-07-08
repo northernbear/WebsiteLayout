@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Brochure | DeLluvia</title>
+<title>Cart | DeLluvia</title>
 <link rel="stylesheet" href="tpl/client/res/styles/bootstrap.min.css"/>
 <link rel="stylesheet" href="tpl/client/res/styles/styles.css"/>
 <link rel="stylesheet" href="tpl/client/res/styles/reponsive.css"/>
@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="tpl/client/res/styles/owl.carousel.css"/>
 <link rel="stylesheet" href="tpl/client/res/styles/owl.theme.default.min.css"/>
 </head>
-<body class="brochure">
+<body class="cart">
 	<div class="row head">
 		<div id="header">
 			<div id="head-logo">
@@ -125,7 +125,7 @@
 						</div>
 					</div>
 				</li>
-				<li class="current"><a href="Brochure.html" title="Download Brochures">Download Brochures</a></li>
+				<li><a href="Brochure.html" title="Download Brochures">Download Brochures</a></li>
 				<li><a href="Contact.html" title="Contact Us">Contact Us</a></li>
 			</ul>
 		</div>
@@ -141,43 +141,122 @@
 	</div>
 	<div class="row" id="wrapper">
 		<div class="container primary-container">
-			<h2 class="pr-title">Product Brochures</h2>
-			<div class="container-list">
-				<div class="rows">
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
+			<div class="cart-details">
+				<h2 class="cart-title">Items in Cart</h2>
+				<ul class="cart-ul">
+					<li class="cart-list-title">
+						<div class="list-title-1">Items</div>
+						<div class="list-title-2">Qty.</div>
+					</li>
+					<li class="cart-list">
+						<div class="cart-list-1"><img src="tpl/client/res/images/clear.png" alt="clear"> REMOVE</div>
+						<div class="cart-list-2">Shower Hose (Product Code:6757e6q5)</div>
+						<div class="cart-list-3">
+							<select id="sel-qty">
+								<option value="1" selected="selected">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+					</li>
+					<li class="cart-list">
+						<div class="cart-list-1"><img src="tpl/client/res/images/clear.png" alt="clear"> REMOVE</div>
+						<div class="cart-list-2">Bath Accessories (Product Code: 9869868)</div>
+						<div class="cart-list-3">
+							<select id="sel-qty">
+								<option value="1" selected="selected">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+					</li>
+					<li class="cart-list">
+						<div class="cart-list-1"><img src="tpl/client/res/images/clear.png" alt="clear"> REMOVE</div>
+						<div class="cart-list-2">Toilet Bowl (Product Code: 9869868)</div>
+						<div class="cart-list-3">
+							<select id="sel-qty">
+								<option value="1" selected="selected">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</div>
+					</li>
+					<li class="cart-list">
+						<div class="cart-list-total">
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<form role="form" class="form-horizontal">
+					<script type='text/javascript'>
+							function refreshCaptcha()
+							{
+								var img = document.images['captcha-img'];
+								img.src = img.src.substring(0, img.src.lastIndexOf("?")) + "?rand=" + Math.random() * 1000;
+							}
+							</script>
+					<div class="form-group">
+						<div class="col-xs-6 col-sm-2">
+							<label for="f-name">Full Name*:</label>
+						</div>
+						<div class="col-xs-6 col-sm-4">
+							<input type="text" class="form-control" id="f-name">
+						</div>
 					</div>
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
+					<div class="form-group">
+						<div class="col-xs-6 col-sm-2">
+							<label for="c-number">Contact Number*:</label>
+						</div>
+						<div class="col-xs-6 col-sm-4">
+							<input type="text" class="form-control" id="c-number">
+						</div>
 					</div>
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
+					<div class="form-group">
+						<div class="col-xs-6 col-sm-2">
+							<label for="email">Email Address*:</label>
+						</div>
+						<div class="col-xs-6 col-sm-4">
+							<input type="email" class="form-control" id="email">
+						</div>
 					</div>
-				</div>
-				<div class="rows">
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
+					<div class="form-group">
+						<div class="col-xs-6 col-sm-2">
+							<label for="in-remark">Remarks<br/>(optional)</label>
+						</div>
+						<div class="col-xs-6 col-sm-4">
+							<textarea id="in-remark" class="form-control" cols="10" rows="6" ></textarea>
+						</div>
 					</div>
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
+					<div class="form-group cart-note">
+						<p>Kindly enter the following text to the box below and click submit to confirm your inquiry.</p>
 					</div>
-					<div class="col-xs-6 col-sm-4">
-						<div class="bro-images"><img src="tpl/client/res/images/brochure.jpg" alt="brochure"></div>
-						<h3>Brochure title</h3>
-						<a href="#">Click here to download</a>
+					<div class="form-group cart-security">
+						<div class="col-xs-6 col-sm-6">
+							<img src="tpl/client/res/capcha/lib/PHPCaptcha/captcha.php?rand={rand()}" id="captcha-img" alt="captcha"/>
+							<a href='javascript: refreshCaptcha();' title="refresh">
+								<img src="tpl/client/res/images/refresh.png" height="24px" alt="refresh"/>
+							</a>
+						</div>
+						<div class="col-xs-6 col-sm-6">
+							<input type="text"  class="form-control" id="verification" name="verification"/>
+						</div>
 					</div>
-				</div>
-			</div>	
+					<div class="form-group cart-submit">
+						<button type="button" id="btnredirect" class="btn btn-cart-submit" data-toggle="modal" data-target="#cart-popup">Submit</button>
+					</div>
+					<div class="form-group required">
+						<p>*Required Fields</p>
+					</div>
+				</form>
+				
+			</div>
 		</div>
 	</div>
 	<div class="row footer">
@@ -224,6 +303,25 @@
 						<li><a href="#" title="Youtube" id="ytb">Youtube</a></li>
 					</ul>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="cart-popup" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<h4 class="modal-title">Form Submitted</h4>
+			</div>
+			<div class="modal-content">
+				<div class="modal-body">
+					<p>Thank you for your submission.<br/>We will get back to you shortly.</p>
+					<div class="backhome">
+						<img src="tpl/client/res/images/home-ico.png" alt="Back To Home"/>
+						<a href="Homepage.html">Back to Homepage</a>
+						<div id="dvCountDown" style="display: none">(in <span id="lblCount"></span>&nbsp;seconds.)</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
 			</div>
 		</div>
 	</div>

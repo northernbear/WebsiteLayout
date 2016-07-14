@@ -12,7 +12,7 @@
       }          
      });
     $('#pro-detail-left').css('min-height',temp);
-	$('#pro-detail-right').css('min-height',temp);
+	$('#pro-detail-right').css('min-height',temp - 200);
 	/****************/
 	$(".owl-carousel").owlCarousel({
 		loop:true,
@@ -48,10 +48,12 @@
 	});
 	/**************/
 	$(window).scroll(function() {
-		if($(window).scrollTop() != 0) {
-			$('#top').fadeIn();
-		} else {
-			$('#top').fadeOut();
+		if($(window).width() >= 1024){
+			if($(window).scrollTop() != 0) {
+				$('#top').fadeIn();
+			} else {
+				$('#top').fadeOut();
+			}
 		}
 	});
 	$('#top').click(function() {

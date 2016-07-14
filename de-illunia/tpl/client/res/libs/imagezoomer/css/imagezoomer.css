@@ -1,0 +1,51 @@
+.product-thumbnail {
+    cursor: pointer;
+}
+
+#cur-image {
+    height: 240px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+.magnifyarea { /* CSS to add shadow to magnified image. Optional */
+    box-shadow: 5px 5px 7px #818181;
+    -webkit-box-shadow: 5px 5px 7px #818181;
+    -moz-box-shadow: 5px 5px 7px #818181;
+    filter: progid:DXImageTransform.Microsoft.dropShadow(color=#818181, offX=5, offY=5, positive=true);
+    background: white;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 150;
+    display: none;
+    cursor: pointer;
+}
+
+#fullSize {
+    border: solid 2px #ffffff;
+    background-color: #ffffff;
+    padding: 10px;
+    z-index: 151;
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#closeBtn {
+    cursor: pointer;
+    position: absolute;
+    top: -5px;
+}

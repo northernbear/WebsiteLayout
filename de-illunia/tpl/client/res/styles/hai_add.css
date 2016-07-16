@@ -1,0 +1,103 @@
+.nav.catalog a{
+    color: #727272;
+}
+.nav.catalog .container{
+    position: relative;
+}
+.nav.catalog .dropdown{
+    position: static;
+}
+.nav.catalog .dropdown-menu{
+    padding: 0 14px;
+    top: calc(100% + 20px);
+}
+.nav.catalog .dropdown-menu,
+.nav.catalog .dropdown-menu-content{
+    max-width: 100%;
+    width: 100% !important;
+}
+#dropdownMenu1{
+    position: relative;
+}
+#dropdownMenu1:after{
+    content: '';
+    position: absolute;
+    bottom: -21px;
+    left: calc((100% - 40px)/2);
+    z-index: 99;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 20px;
+    border-color: transparent transparent rgba(56, 56, 56, 0.8) transparent;
+    display: none;
+}
+.open #dropdownMenu1:after{
+    display: block;
+}
+#top-menu.visible-xs #account-info{
+    margin: 0;
+}
+#top-menu.visible-xs #account-log{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#top-menu.visible-xs #account-info,
+#top-menu.visible-xs #account-log,
+#top-menu.visible-xs #cart{
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+#top-menu.visible-xs #cart{
+    background: url(../images/cart.png) no-repeat right 40px center;
+}
+@media (max-width: 768px) {
+    .nav.catalog .dropdown-menu{
+        position: absolute;
+        opacity: 0;
+    }
+
+    .nav.catalog .dropdown-menu{
+
+    }
+    .nav.catalog .open .dropdown-menu{
+        opacity: 1;
+    }
+
+
+    #dropdownMenu1:after{
+        content: '';
+        position: absolute;
+        bottom: -21px;
+        left: calc((100% - 40px)/2);
+        z-index: 99;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 20px 20px 20px;
+        border-color: transparent transparent rgba(56, 56, 56, 0.8) transparent;
+        opacity: 0;
+        transition: all .1s ease .5s;
+    }
+    .open #dropdownMenu1:after{
+        opacity: 1;
+    }
+
+    #header {
+        height: auto;
+    }
+    #head-logo {
+        margin-bottom: 0;
+    }
+    #account-info ul li a {
+        padding: 0;
+    }
+}
+@media (max-width: 767px){
+    .nav.catalog .dropdown{
+        position: relative;
+    }
+}

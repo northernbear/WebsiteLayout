@@ -199,14 +199,16 @@
 }
 .pushy ul.l1 li.l1:first-child a.l1 i.fa{
   top: 0;
+  font-size: 24px;
 }
 .pushy ul.l1 li.l1 a.l1{
   color:#FFF;
-  font-weight:bold;
+  /*font-weight:bold;*/
   line-height: 45px;
   height: 45px;
   padding: 0 10px;
   border-bottom: 1px solid rgba(255,255,255, 0.1);
+  font-size: 12px;
 }
 .pushy ul.l1 li.l1:hover a.l1{
   text-decoration:none;
@@ -222,6 +224,7 @@
   line-height: 35px;
   height: 35px;
   padding: 0 10px;
+  font-size: 12px;
 }
 .pushy ul.l2 li.l2:hover a.l2{
   text-decoration:none;
@@ -238,6 +241,7 @@
   line-height: 35px;
   height: 35px;
   padding: 0 10px 0 25px;
+  font-size: 11px;
 }
 .pushy ul.l3 li.l3:hover a.l3{
   text-decoration:none;
@@ -251,7 +255,13 @@
   width: 45px;
   color: #FFF;
   line-height:45px;
-  text-align:center;
+  text-align:right;
+  width: 100%;
+  font-size: 13px !important;
+}
+.pushy .dropdown-1 .fa,
+.pushy .dropdown-2 .fa{
+  font-size: 10px;
 }
 .pushy .dropdown-2{
   position: absolute;
@@ -261,7 +271,8 @@
   width: 45px;
   color: #FFF;
   line-height:35px;
-  text-align:center;
+  text-align:right;
+  width: 100%;
 }
 .pushy::-webkit-scrollbar {
   width: 5px;

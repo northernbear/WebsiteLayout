@@ -226,7 +226,7 @@ label {
     background: rgba(17, 62, 95, 1); 
     font-size: 14px;
 }
-.nav {
+.nav.main {
 	margin: 0px auto;
 	width: 100%;
 	max-width:1095px;
@@ -288,7 +288,7 @@ label {
     transition: all .1s ease .5s;
 }
 
-.nav .dropdown:hover > .dropdown-menu{
+.nav.main .dropdown:hover > .dropdown-menu{
 	display:block;
 }
 

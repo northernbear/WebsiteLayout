@@ -116,9 +116,6 @@
     .pr-content {
         padding: 10px 15px;
     }
-    .homepage-info-container{
-        margin-bottom: 20px;
-    }
     #wrapper .primary-container .container-list {
         width: 100% !important;
     }
@@ -253,6 +250,12 @@
         width: 100%;
         padding-right: 10px !important;
         padding-left: 10px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .homepage-info-container{
+        margin-bottom: 20px;
     }
 }
 

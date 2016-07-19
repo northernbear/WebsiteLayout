@@ -147,6 +147,19 @@
     font-size: 20px;
     top: 0;
 }
+
+.top_menu>li>a .item_cart{
+    position: relative;
+    top: -18px;
+	color: black;
+}
+.top_menu>li>a .item_cart:hover{
+    color: black !important;
+}
+
+.info_acc .media .media-left i:hover{
+	background-color: black;
+}
 .info_acc .media .media-body{
 
 }

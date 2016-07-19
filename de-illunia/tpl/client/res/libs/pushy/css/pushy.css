@@ -9,7 +9,8 @@
   height: 100%;
   top: 0;
   z-index: 9999;
-  background: #191918;
+  /*background: #191918;*/
+  background-color: #f6f7f8;
   overflow: auto;
   visibility: hidden;
   -webkit-overflow-scrolling: touch;
@@ -23,7 +24,7 @@
   outline: 0;
 }
 .pushy a:hover {
-  color: #FFF;
+  color: #333;
 }
 .pushy ul:first-child {
   margin-top: 10px;
@@ -202,12 +203,12 @@
   font-size: 24px;
 }
 .pushy ul.l1 li.l1 a.l1{
-  color:#FFF;
+  color:#333;
   /*font-weight:bold;*/
   line-height: 45px;
   height: 45px;
   padding: 0 10px;
-  border-bottom: 1px solid rgba(255,255,255, 0.1);
+  border-bottom: 1px solid #d3d3d3;
   font-size: 12px;
 }
 .pushy ul.l1 li.l1:hover a.l1{
@@ -228,8 +229,8 @@
 }
 .pushy ul.l2 li.l2:hover a.l2{
   text-decoration:none;
-  color:#FFF;
-  background:#3F3F3F;
+  color:#333;
+  background:#d0e9e7;
 }
 .pushy ul.l3{
   display:none;
@@ -245,7 +246,7 @@
 }
 .pushy ul.l3 li.l3:hover a.l3{
   text-decoration:none;
-  color:#FFF;
+  color:#333;
 }
 .pushy .dropdown-1{
   position: absolute;
@@ -253,7 +254,7 @@
   right: 0px;
   height: 45px;
   width: 45px;
-  color: #FFF;
+  color: #333;
   line-height:45px;
   text-align:right;
   width: 100%;
@@ -269,7 +270,7 @@
   right: 0px;
   height: 35px;
   width: 45px;
-  color: #FFF;
+  color: #333;
   line-height:35px;
   text-align:right;
   width: 100%;

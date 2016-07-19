@@ -78,7 +78,7 @@ label {
 }
 
 .container {
-    max-width: 950px;
+    max-width: 1095px;
 	width: 100% !important;
 	padding-right: 0px;
     padding-left: 0px;
@@ -360,7 +360,7 @@ label {
 /*******************/
 .owl-controls {
     left: 0%;
-    bottom: 85px;
+    bottom: 140px;
     position: absolute;
     width: 100%;
 }

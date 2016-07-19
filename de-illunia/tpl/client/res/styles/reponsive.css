@@ -63,7 +63,7 @@
 }
 @media (min-width: 800px) {
     .homepage-info{
-        top: 0;
+        top: -20px;
     }
 }
 @media (max-width: 830px) {

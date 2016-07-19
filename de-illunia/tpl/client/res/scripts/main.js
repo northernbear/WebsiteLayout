@@ -22,14 +22,14 @@
 		autoplay:true
 	});
 	$('.owl-carousel-recently').owlCarousel({
-		loop:true,
+		loop:false,
 		margin:10,
 		dots:false,
 		responsiveClass:true,
 		responsive:{
 			0:{
 				items:1,
-				nav:true
+				nav:false
 			},
 			600:{
 				items:4,

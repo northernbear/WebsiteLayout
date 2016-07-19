@@ -24,7 +24,7 @@
   outline: 0;
 }
 .pushy a:hover {
-  color: #333;
+  color: #fff;
 }
 .pushy ul:first-child {
   margin-top: 10px;
@@ -203,7 +203,7 @@
   font-size: 24px;
 }
 .pushy ul.l1 li.l1 a.l1{
-  color:#333;
+  color:#000;
   /*font-weight:bold;*/
   line-height: 45px;
   height: 45px;
@@ -213,7 +213,8 @@
 }
 .pushy ul.l1 li.l1:hover a.l1{
   text-decoration:none;
-  background:#4993C5;
+  background:#113e5f;
+  color: white;
 }
 .pushy ul.l2{
   display:none;
@@ -221,7 +222,7 @@
 .pushy ul.l2 li.l2{
 }
 .pushy ul.l2 li.l2 a.l2{
-  color: rgb(187, 187, 187);
+  color: black;
   line-height: 35px;
   height: 35px;
   padding: 0 10px;
@@ -238,7 +239,7 @@
 .pushy ul.l3 li.l3{
 }
 .pushy ul.l3 li.l3 a.l3{
-  color: rgb(187, 187, 187);
+  color: black;
   line-height: 35px;
   height: 35px;
   padding: 0 10px 0 25px;

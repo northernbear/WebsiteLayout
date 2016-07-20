@@ -39,7 +39,7 @@
     .small-images li {
         /*margin-left: 5px;*/
     }
-
+	
     .owl-controls .owl-dots {
         width: 100% !important;
         text-align: center;
@@ -62,7 +62,7 @@
 @media (min-width: 800px) {
     .homepage-info{
         top: -20px;
-        margin-top: -230px;
+		margin-top: -230px;
     }
 }
 @media (max-width: 830px) {
@@ -91,7 +91,7 @@
     }
     .homepage-info-container{
         min-height: 340px;
-		max-height: 340px;
+        max-height: 340px;
     }
 
 

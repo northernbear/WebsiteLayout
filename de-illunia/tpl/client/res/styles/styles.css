@@ -286,6 +286,7 @@ label {
     -ms-transition: all .1s ease .5s;
     -o-transition: all .1s ease .5s;
     transition: all .1s ease .5s;
+	left: calc(0px - ((880px - 109px)/2)) !important;
 }
 
 .nav.main .dropdown:hover > .dropdown-menu{
@@ -360,7 +361,7 @@ label {
 /*******************/
 .owl-controls {
     left: 0%;
-    bottom: 140px;
+    bottom: 120px;
     position: absolute;
     width: 100%;
 }
@@ -826,7 +827,14 @@ body.brochure .container-list .col-sm-4 a{
 .cart-order strong{
 	text-decoration: underline;
 }
-
+.cart-order .media .media-body .media-heading{
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.cart-order .media .media-body .desc{
+	margin-bottom: 0;
+	margin-top: 0;
+}
 #recently {
     margin: 50px auto 0px auto;
     overflow: hidden;

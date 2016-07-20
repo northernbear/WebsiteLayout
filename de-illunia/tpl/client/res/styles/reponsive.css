@@ -39,9 +39,7 @@
     .small-images li {
         /*margin-left: 5px;*/
     }
-    .owl-controls{
-        bottom: 20px;
-    }
+
     .owl-controls .owl-dots {
         width: 100% !important;
         text-align: center;
@@ -63,7 +61,7 @@
 }
 @media (min-width: 800px) {
     .homepage-info{
-        top: -20px;
+        top: -80px;
     }
 }
 @media (max-width: 830px) {
@@ -76,7 +74,7 @@
         position: static;
     }
 }
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 992px) and (max-width: 1024px){
     .bro-images img{
         width: 100%;
     }
@@ -102,6 +100,11 @@
 
 
 
+}
+@media (max-width: 769px) {
+    .nav > ul.visible-xs{
+        display: block !important;
+    }
 }
 @media (max-width: 768px) {
     .footage > .col-sm-6+.col-sm-6 {
@@ -169,6 +172,9 @@
         left: 0;
         z-index: 100000;
         background: rgba(17, 62, 95, 1);
+    }
+    .nav > ul.hidden-xs{
+        display: none;
     }
     .nav > ul > li{
         float: none;
@@ -258,10 +264,21 @@
     .homepage-info-container{
         margin-bottom: 20px;
     }
+    .owl-controls{
+        bottom: 20px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
     .cart-list {
         font-size: 8px !important;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    #subs,
+    #top{
+        display: none;
     }
 }

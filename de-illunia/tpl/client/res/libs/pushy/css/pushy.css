@@ -215,7 +215,7 @@
 
 .pushy ul.l1 li.l1:hover a.l1{
   text-decoration:none;
-  background-color:red;
+  background-color:rgba(17, 62, 95, 1);
   color: white;
 }
 

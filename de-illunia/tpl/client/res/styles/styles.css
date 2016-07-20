@@ -116,7 +116,7 @@ label {
 }
 
 #account-info{
-	width: 150px;
+	width: 300px;
     position: relative;
     font-size: 14px;
 	float: right;
@@ -286,7 +286,7 @@ label {
     -ms-transition: all .1s ease .5s;
     -o-transition: all .1s ease .5s;
     transition: all .1s ease .5s;
-	left: calc(0px - ((880px - 109px)/2)) !important;
+    left: calc(620px - ((880px - 109px)/2)) !important;
 }
 
 .nav.main .dropdown:hover > .dropdown-menu{
@@ -308,8 +308,8 @@ label {
 .nav .dropdown-menu .col-sm-3{
 	background: url(../images/mega-bg.png) repeat-y right 30px;
 	margin-bottom: 25px;
-	width:219px;
-	    min-height: 155px;
+	width: 219px;
+	min-height: 162px;
 }
 
 .nav .dropdown-menu .col-sm-3:nth-child(4n){
@@ -472,6 +472,8 @@ body.contact-us #wrapper{
 
 .footer{
 	background:url(../images/footer-bg-1.jpg) repeat-x top center, url(../images/footer-bg-2.jpg) repeat-x bottom center, #113e5f;
+	position: relative;
+	z-index: 2;
 }
 
 .footage{
@@ -604,7 +606,7 @@ body.contact-us #wrapper{
 
 #wrapper .col-sm-6 .pr-content {
     padding: 50px 30px;
-	height: 400px;
+	height: 520px;
 }
 
 #wrapper .col-sm-6 .pr-content #checkc img {
@@ -647,6 +649,11 @@ body.contact-us #wrapper{
 	-webkit-box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
 	-moz-box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
 	box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
+}
+
+
+textarea.form-control {
+    height: auto !important;
 }
 
 #ctact .form-group {
@@ -824,19 +831,22 @@ body.brochure .container-list .col-sm-4 a{
 .cart-order p{
 	font-style: italic;
 	margin:10px 0px 0px 0px;
+	color: #90acc0;
 }
 
 .cart-order strong{
 	text-decoration: underline;
 }
+
 .cart-order .media .media-body .media-heading{
-	font-size: 14px;
-	margin-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 .cart-order .media .media-body .desc{
-	margin-bottom: 0;
-	margin-top: 0;
+    margin-bottom: 0;
+    margin-top: 0;
 }
+
 #recently {
     margin: 50px auto 0px auto;
     overflow: hidden;
@@ -958,6 +968,10 @@ body.brochure .container-list .col-sm-4 a{
     float: left;
     width: 15%;
     color: #58aea8;
+}
+
+.cart-list-1 img{
+    margin-top: -3px;
 }
 
 .cart-list-2{

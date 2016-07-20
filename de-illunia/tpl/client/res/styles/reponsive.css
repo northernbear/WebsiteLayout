@@ -61,7 +61,8 @@
 }
 @media (min-width: 800px) {
     .homepage-info{
-        top: -80px;
+        top: -20px;
+        margin-top: -230px;
     }
 }
 @media (max-width: 830px) {

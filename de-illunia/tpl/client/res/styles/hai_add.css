@@ -1,19 +1,28 @@
+.nav.catalog.c1{
+    padding: 0;
+}
+.nav.catalog.c1 a{
+    color: #727272;
+}
 .nav.catalog a{
     color: #727272;
 }
-.nav.catalog .container{
+.nav.catalog.c1 .container{
     position: relative;
 }
-.nav.catalog .dropdown{
+.nav.catalog.c1 .dropdown{
     position: static;
 }
-.nav.catalog .dropdown-menu{
+.nav.catalog.c1 .dropdown-menu{
     padding: 0 14px;
     top: calc(100% + 20px);
     left: 0 !important;
+    display: block !important;
+    position: static;
+    padding: 0;
 }
-.nav.catalog .dropdown-menu,
-.nav.catalog .dropdown-menu-content{
+.nav.catalog.c1 .dropdown-menu,
+.nav.catalog.c1 .dropdown-menu-content{
     max-width: 100%;
     width: 100% !important;
 }
@@ -32,6 +41,7 @@
     border-width: 0 20px 20px 20px;
     border-color: transparent transparent rgba(56, 56, 56, 0.8) transparent;
     display: none;
+    opacity: 0;
 }
 .open #dropdownMenu1:after{
     display: block;
@@ -56,15 +66,15 @@
     background: url(../images/cart.png) no-repeat right 40px center;
 }
 @media (max-width: 768px) {
-    .nav.catalog .dropdown-menu{
-        position: absolute;
-        opacity: 0;
+    .nav.catalog.c1 .dropdown-menu{
+        /*position: absolute;*/
+        /*opacity: 0;*/
     }
 
-    .nav.catalog .dropdown-menu{
+    .nav.catalog.c1 .dropdown-menu{
 
     }
-    .nav.catalog .open .dropdown-menu{
+    .nav.catalog.c1 .open .dropdown-menu{
         opacity: 1;
     }
 
@@ -98,7 +108,7 @@
     }
 }
 @media (max-width: 992px){
-    .nav.catalog .dropdown{
+    .nav.catalog.c1 .dropdown{
         position: relative;
     }
 }
@@ -166,4 +176,32 @@
 }
 .info_acc .media .media-body .media-heading{
     margin-bottom: 0;
+}
+
+#myModal .modal-content{
+    background-color: transparent;
+}
+#myModal .modal-content .modal-body{
+    background: rgba(56, 56, 56, 0.8);
+}
+#myModal .modal-content .modal-body .dropdown-menu-content{
+    background-color: transparent;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+}
+#myModal .modal-content .modal-footer{
+    height: inherit;
+    padding: 15px;
+}
+@media (max-width: 992px) {
+    #myModal .modal-dialog{
+        width: calc(100% - 30px);
+    }
+}
+@media (max-width: 992px) and (min-width: 768px){
+    #myModal .col-sm-3{
+        width: 50% !important;
+    }
 }

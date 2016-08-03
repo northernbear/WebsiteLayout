@@ -20,13 +20,13 @@ $(document).ready(function(){
 	items:1,
 	autoplay: false,
     autoplayTimeout: 5000,
-	dots:false,
+	dots:true,
 	nav:true
   });
 });
   </script>
 </head>
-<body class="about-us">
+<body class="media-releases">
 	<div id="wrapper">
 		<div id="header">
 			<div id="menu-info">
@@ -38,23 +38,33 @@ $(document).ready(function(){
 			</div>
 			<a href="YK Ship - 01Homepage.html" title="logo" id="logo"><img src="tpl/client/res/images/logo_ykship.png" alt="logo"/></a>
 		</div>
-		<div id="nav">
-			<ul>
-				<li class="current"><a href="YK Ship - 01Homepage.html" title="WELCOME">WELCOME</a></li>
-				<li><a href="YK Ship - 02About Us.html" title="ABOUT US">ABOUT US</a></li>
-				<li><a href="YK Ship - 03Our History.html" title="OUR HISTORY">OUR HISTORY</a></li>
-				<li><a href="YK Ship - 04Our Future.html" title="OUR FUTURE">OUR FUTURE</a></li>
-				<li class="dropdown">
-					<a href="#" title="SERVICES" data-toggle="dropdown">SERVICES</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Air Freight</a></li>
-						<li><a href="#">Sea Freight</a></li>
-						<li><a href="#">Warehousing</a></li>
-					</ul>
-				 </li>
-				<li><a href="#" title="MEDIA">MEDIA</a></li>
-				<li><a href="#" title="CONTACT">CONTACT</a></li>
-			</ul>
+		<div class="row nav-menu">
+			<div class="nav">
+				<ul>
+					<li class="btn-menu"></li>
+					<li><a href="YK Ship - 01Homepage.html" title="WELCOME">WELCOME</a></li>
+					<li><a href="YK Ship - 02About Us.html" title="ABOUT US">ABOUT US</a></li>
+					<li><a href="YK Ship - 03Our History.html" title="OUR HISTORY">OUR HISTORY</a></li>
+					<li><a href="YK Ship - 04Our Future.html" title="OUR FUTURE">OUR FUTURE</a></li>
+					<li class="dropdown">
+						<a href="#" title="SERVICES" data-toggle="dropdown">SERVICES</a>
+						<ul class="dropdown-menu">
+							<li><a href="YK Ship - 05.1Services_Air Frieght.html">Air Freight</a></li>
+							<li><a href="YK Ship - 05.2Services_Sea Frieght.html">Sea Freight</a></li>
+							<li><a href="YK Ship - 05.3Services_Warehousing.html">Warehousing</a></li>
+						</ul>
+					 </li>
+					 <li class="dropdown current">
+						<a href="#" title="MEDIA" data-toggle="dropdown">MEDIA</a>
+						<ul class="dropdown-menu">
+							<li><a href="YK Ship - 06.1Media Releases.html">Media Releases</a></li>
+							<li><a href="YK Ship - 06.2Media Resources.html">Media Resources</a></li>
+							<li><a href="YK Ship - 06.3Photo Gallery.html">Photo Gallery</a></li>
+						</ul>
+					 </li>
+					<li><a href="YK Ship - 07Contact Us.html" title="CONTACT">CONTACT</a></li>
+				</ul>
+			</div>
 		</div>
 		<div id="slider">
 			<div class="owl-carousel">
@@ -75,7 +85,13 @@ $(document).ready(function(){
 								<ul class="menu-services">
 									<li class="current"><a href="YK Ship - 06.1Media Releases.html">MEDIA RELEASES</a></li>
 									<li><a href="YK Ship - 06.2Media Resources.html">MEDIA RESOURCES</a></li>
-									<li><a href="3YK Ship - 05.3Services_Warehousing.html">PHOTO GALLERY</a></li>
+									<li><a data-toggle="collapse" data-target="#gallery">PHOTO GALLERY</a>
+										<ul id="gallery" class="collapse">
+											<li><a href="YK Ship - 06.3Photo Gallery.html">Arranging PSA Port Tour with JTB ( Japan Travel Bureau)</a></li>
+											<li><a href="YK Ship - 06.3Photo Gallery.html">Importing &amp; Registration of Vintage Cars</a></li>
+											<li><a href="YK Ship - 06.3Photo Gallery.html">Others</a></li>
+										</ul>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -84,11 +100,11 @@ $(document).ready(function(){
 								<form class="form-inline" role="form">
 									<div class="form-group">
 										<label for="from-search">From:</label>
-										<input type="text" class="form-control" id="from-search">
+										<input type="text" class="form-control" id="from-search"/>
 									</div>
 									<div class="form-group">
 										<label for="to-search">To:</label>
-										<input type="text" class="form-control" id="to-search">
+										<input type="text" class="form-control" id="to-search"/>
 									</div>
 									<button type="submit" class="btn btn-default">Go</button>
 								</form>
@@ -100,9 +116,9 @@ $(document).ready(function(){
 										<span>June 16</span>
 									</div>
 									<div class="lis-right-content">
-										<h3 class="lis-title"><a href="#">Arranging PSA Port Tour with JTB ( Japan Travel Bureau)</a></h3>
+										<h3 class="lis-title"><a href="#" data-toggle="modal" data-target="#myNews">Arranging PSA Port Tour with JTB ( Japan Travel Bureau)</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam......</p>
-										<a class="readmore" href="#">+ read more</a>
+										<a class="readmore" href="#" data-toggle="modal" data-target="#myNews">+ read more</a>
 									</div>
 								</div>
 								<div class="lis-content">
@@ -111,9 +127,9 @@ $(document).ready(function(){
 										<span>May 16</span>
 									</div>
 									<div class="lis-right-content">
-										<h3 class="lis-title"><a href="#">Importing and Registration of Vintage Cars</a></h3>
+										<h3 class="lis-title"><a href="#" data-toggle="modal" data-target="#myNews-images">Importing and Registration of Vintage Cars</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu.......</p>
-										<a class="readmore" href="#">+ read more</a>
+										<a class="readmore" href="#" data-toggle="modal" data-target="#myNews-images">+ read more</a>
 									</div>
 								</div>
 								<div class="lis-content">
@@ -122,9 +138,9 @@ $(document).ready(function(){
 										<span>Apr 16</span>
 									</div>
 									<div class="lis-right-content">
-										<h3 class="lis-title"><a href="#">YK SHIP PTE LTD Unaudited Results for the Third Quarter and Nine Months Ended 30 April 2016</a></h3>
+										<h3 class="lis-title"><a href="#" data-toggle="modal" data-target="#myNews">YK SHIP PTE LTD Unaudited Results for the Third Quarter and Nine Months Ended 30 April 2016</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor......</p>
-										<a class="readmore" href="#">+ read more</a>
+										<a class="readmore" href="#" data-toggle="modal" data-target="#myNews">+ read more</a>
 									</div>
 								</div>
 								<div class="lis-content">
@@ -133,9 +149,9 @@ $(document).ready(function(){
 										<span>Mar 16</span>
 									</div>
 									<div class="lis-right-content">
-										<h3 class="lis-title"><a href="#">Arranging PSA Port Tour with JTB ( Japan Travel Bureau)</a></h3>
+										<h3 class="lis-title"><a href="#" data-toggle="modal" data-target="#myNews">Arranging PSA Port Tour with JTB ( Japan Travel Bureau)</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam......</p>
-										<a class="readmore" href="#">+ read more</a>
+										<a class="readmore" href="#" data-toggle="modal" data-target="#myNews">+ read more</a>
 									</div>
 								</div>
 								<div class="lis-content">
@@ -144,9 +160,9 @@ $(document).ready(function(){
 										<span>Feb 16</span>
 									</div>
 									<div class="lis-right-content">
-										<h3 class="lis-title"><a href="#">Importing and Registration of Vintage Cars</a></h3>
+										<h3 class="lis-title"><a href="#" data-toggle="modal" data-target="#myNews-images">Importing and Registration of Vintage Cars</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu.......</p>
-										<a class="readmore" href="#">+ read more</a>
+										<a class="readmore" href="#" data-toggle="modal" data-target="#myNews-images">+ read more</a>
 									</div>
 								</div>
 								<div class="lis-content">
@@ -155,9 +171,9 @@ $(document).ready(function(){
 										<span>Jan 16</span>
 									</div>
 									<div class="lis-right-content">
-										<h3 class="lis-title"><a href="#">YK SHIP PTE LTD Unaudited Results for the Third Quarter and Nine Months Ended 30 April 2016</a></h3>
+										<h3 class="lis-title"><a href="#" data-toggle="modal" data-target="#myNews">YK SHIP PTE LTD Unaudited Results for the Third Quarter and Nine Months Ended 30 April 2016</a></h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor......</p>
-										<a class="readmore" href="#">+ read more</a>
+										<a class="readmore" href="#" data-toggle="modal" data-target="#myNews">+ read more</a>
 									</div>
 								</div>
 							</div>
@@ -185,7 +201,7 @@ $(document).ready(function(){
 						<li><a href="YK Ship - 02About Us.html" title="About Us">About Us</a></li>
 						<li><a href="#" title="Media">Media</a></li>
 						<li><a href="YK Ship - 03Our History.html" title="Our History">Our History</a></li>
-						<li><a href="#" title="Contact Us">Contact Us</a></li>
+						<li><a href="YK Ship - 07Contact Us.html" title="Contact Us">Contact Us</a></li>
 						<li><a href="YK Ship - 04Our Future.html" title="Our Future">Our Future</a></li>
 					</ul>
 				</div>	
@@ -201,8 +217,8 @@ $(document).ready(function(){
 					<div id="contact-us">
 						<h3>Contact us</h3>
 						<ul class="cons">
-							<li class="tel">(+65) 6221 3346</li>
-							<li class="fax">+65) 6861 8639</li>
+							<li><span class="tel">(+65) 6221 3346</span></li>
+							<li><span class="fax">+65) 6861 8639</span></li>
 						</ul>
 					</div>
 				</div>
@@ -210,9 +226,9 @@ $(document).ready(function(){
 					<div id="addr">
 						<h3>Email us</h3>
 						<ul class="cons">
-							<li class="ema"><a href="mailto:eugene.lim@ykship.net" title="eugene.lim@ykship.net">eugene.lim@ykship.net</a></li>
-							<li class="ema"><a href="mailto:andy.yeoh@ykship.net" title="andy.yeoh@ykship.net">andy.yeoh@ykship.net</a></li>
-							<li class="ema"><a href="mailto:ivan.thong@ykship.net " title="ivan.thong@ykship.net ">ivan.thong@ykship.net </a></li>
+							<li><span class="ema"><a href="mailto:eugene.lim@ykship.net" title="eugene.lim@ykship.net">eugene.lim@ykship.net</a></span></li>
+							<li><span class="ema"><a href="mailto:andy.yeoh@ykship.net" title="andy.yeoh@ykship.net">andy.yeoh@ykship.net</a></span></li>
+							<li><span class="ema"><a href="mailto:ivan.thong@ykship.net" title="ivan.thong@ykship.net">ivan.thong@ykship.net</a></span></li>
 						</ul>
 					</div>
 					<div id="e-addr">
@@ -230,19 +246,47 @@ $(document).ready(function(){
 			<p>&copy; Copyright 2016. Designed &amp; Developed by <a href="http://www.trust-touch.com.sg">Trust Venture International Pte Ltd</a>. All Rights Reserved.</p>
 		</div>
 	</div>
-	<div class="modal fade" id="myNews-1" role="dialog">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-header">
-										  <button type="button" class="close" data-dismiss="modal">&times;</button>
-										  <h4 class="modal-title">Title Latest News #1</h4>
-										</div>
-										<div class="modal-body">
-										  <!--<img src="res/upload/images/post-img-2.jpg" alt="Title Latest News #2"/>-->
-										  <p>Ding He Marine Pte. Ltd. may be a new addition to the marine industry in Singapore but it is our attitude that sets us apart. We know that solutions are more important than questions and that the best approach is the kind of resourceful diligence which simply gets the job done.</p>
-										</div>
-									</div>
-								</div>
-							</div>	
+	<div class="modal fade" id="myNews-images" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Importing and Registration of Vintage Cars</h4>
+				</div>
+				<div class="modal-body">
+					<img src="tpl/client/res/images/popup_news_image.jpg" alt="Importing and Registration of Vintage Cars"/>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p> 
+					<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eupef mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecnas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adiping sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lom. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p> 
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia volup sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+					<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p> 
+					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p> 
+					<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.</p>
+				</div>
+				<div class="modal-footer">
+					<span><i>Date:</i> 09 February 2016</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><i>Time:</i> 09:10</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><i>posted by:</i> Eugene Lim, Managing Director</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myNews" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">YK SHIP PTE LTD<br/>Unaudited Results for the Third Quarter and Nine Months<br/>Ended 30 April 2016</h4>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligua ege dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p> 
+					<p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eupef mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecnas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adiping sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lom. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p> 
+					<p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringia mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibenm sodales, augue velit cursus nunc.</p>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiavolas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incunt ut labore et dolore magnam aliquam quaerat voluptatem.</p> 
+					<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit lam, nisi ut aliquid ex ea commodi consequatur?</p>
+					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil mtiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium volum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupite non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est labor et dolorum fuga.</p> 
+					<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cumoua nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
+				</div>
+				<div class="modal-footer">
+					<span><i>Date:</i> 02 April 2016</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><i>Time:</i> 17:24</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span><i>posted by:</i> Eugene Lim, Managing Director</span>
+				</div>
+			</div>
+		</div>
+	</div>		
 </body>
 </html>

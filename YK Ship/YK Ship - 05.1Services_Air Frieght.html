@@ -20,7 +20,7 @@ $(document).ready(function(){
 	items:1,
 	autoplay: false,
     autoplayTimeout: 5000,
-	dots:false,
+	dots:true,
 	nav:true
   });
 });
@@ -38,23 +38,33 @@ $(document).ready(function(){
 			</div>
 			<a href="YK Ship - 01Homepage.html" title="logo" id="logo"><img src="tpl/client/res/images/logo_ykship.png" alt="logo"/></a>
 		</div>
-		<div id="nav">
-			<ul>
-				<li class="current"><a href="YK Ship - 01Homepage.html" title="WELCOME">WELCOME</a></li>
-				<li><a href="YK Ship - 02About Us.html" title="ABOUT US">ABOUT US</a></li>
-				<li><a href="YK Ship - 03Our History.html" title="OUR HISTORY">OUR HISTORY</a></li>
-				<li><a href="YK Ship - 04Our Future.html" title="OUR FUTURE">OUR FUTURE</a></li>
-				<li class="dropdown">
-					<a href="#" title="SERVICES" data-toggle="dropdown">SERVICES</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Air Freight</a></li>
-						<li><a href="#">Sea Freight</a></li>
-						<li><a href="#">Warehousing</a></li>
-					</ul>
-				 </li>
-				<li><a href="#" title="MEDIA">MEDIA</a></li>
-				<li><a href="#" title="CONTACT">CONTACT</a></li>
-			</ul>
+		<div class="row nav-menu">
+			<div class="nav">
+				<ul>
+					<li class="btn-menu"></li>
+					<li><a href="YK Ship - 01Homepage.html" title="WELCOME">WELCOME</a></li>
+					<li><a href="YK Ship - 02About Us.html" title="ABOUT US">ABOUT US</a></li>
+					<li><a href="YK Ship - 03Our History.html" title="OUR HISTORY">OUR HISTORY</a></li>
+					<li><a href="YK Ship - 04Our Future.html" title="OUR FUTURE">OUR FUTURE</a></li>
+					<li class="dropdown current">
+						<a href="#" title="SERVICES" data-toggle="dropdown">SERVICES</a>
+						<ul class="dropdown-menu">
+							<li><a href="YK Ship - 05.1Services_Air Frieght.html">Air Freight</a></li>
+							<li><a href="YK Ship - 05.2Services_Sea Frieght.html">Sea Freight</a></li>
+							<li><a href="YK Ship - 05.3Services_Warehousing.html">Warehousing</a></li>
+						</ul>
+					 </li>
+					 <li class="dropdown">
+						<a href="#" title="MEDIA" data-toggle="dropdown">MEDIA</a>
+						<ul class="dropdown-menu">
+							<li><a href="YK Ship - 06.1Media Releases.html">Media Releases</a></li>
+							<li><a href="YK Ship - 06.2Media Resources.html">Media Resources</a></li>
+							<li><a href="YK Ship - 06.3Photo Gallery.html">Photo Gallery</a></li>
+						</ul>
+					 </li>
+					<li><a href="YK Ship - 07Contact Us.html" title="CONTACT">CONTACT</a></li>
+				</ul>
+			</div>
 		</div>
 		<div id="slider">
 			<div class="owl-carousel">
@@ -101,7 +111,7 @@ $(document).ready(function(){
 						<li><a href="YK Ship - 02About Us.html" title="About Us">About Us</a></li>
 						<li><a href="#" title="Media">Media</a></li>
 						<li><a href="YK Ship - 03Our History.html" title="Our History">Our History</a></li>
-						<li><a href="#" title="Contact Us">Contact Us</a></li>
+						<li><a href="YK Ship - 07Contact Us.html" title="Contact Us">Contact Us</a></li>
 						<li><a href="YK Ship - 04Our Future.html" title="Our Future">Our Future</a></li>
 					</ul>
 				</div>	
@@ -117,8 +127,8 @@ $(document).ready(function(){
 					<div id="contact-us">
 						<h3>Contact us</h3>
 						<ul class="cons">
-							<li class="tel">(+65) 6221 3346</li>
-							<li class="fax">+65) 6861 8639</li>
+							<li><span class="tel">(+65) 6221 3346</span></li>
+							<li><span class="fax">+65) 6861 8639</span></li>
 						</ul>
 					</div>
 				</div>
@@ -126,9 +136,9 @@ $(document).ready(function(){
 					<div id="addr">
 						<h3>Email us</h3>
 						<ul class="cons">
-							<li class="ema"><a href="mailto:eugene.lim@ykship.net" title="eugene.lim@ykship.net">eugene.lim@ykship.net</a></li>
-							<li class="ema"><a href="mailto:andy.yeoh@ykship.net" title="andy.yeoh@ykship.net">andy.yeoh@ykship.net</a></li>
-							<li class="ema"><a href="mailto:ivan.thong@ykship.net " title="ivan.thong@ykship.net ">ivan.thong@ykship.net </a></li>
+							<li><span class="ema"><a href="mailto:eugene.lim@ykship.net" title="eugene.lim@ykship.net">eugene.lim@ykship.net</a></span></li>
+							<li><span class="ema"><a href="mailto:andy.yeoh@ykship.net" title="andy.yeoh@ykship.net">andy.yeoh@ykship.net</a></span></li>
+							<li><span class="ema"><a href="mailto:ivan.thong@ykship.net" title="ivan.thong@ykship.net">ivan.thong@ykship.net</a></span></li>
 						</ul>
 					</div>
 					<div id="e-addr">
@@ -146,19 +156,5 @@ $(document).ready(function(){
 			<p>&copy; Copyright 2016. Designed &amp; Developed by <a href="http://www.trust-touch.com.sg">Trust Venture International Pte Ltd</a>. All Rights Reserved.</p>
 		</div>
 	</div>
-	<div class="modal fade" id="myNews-1" role="dialog">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-header">
-										  <button type="button" class="close" data-dismiss="modal">&times;</button>
-										  <h4 class="modal-title">Title Latest News #1</h4>
-										</div>
-										<div class="modal-body">
-										  <!--<img src="res/upload/images/post-img-2.jpg" alt="Title Latest News #2"/>-->
-										  <p>Ding He Marine Pte. Ltd. may be a new addition to the marine industry in Singapore but it is our attitude that sets us apart. We know that solutions are more important than questions and that the best approach is the kind of resourceful diligence which simply gets the job done.</p>
-										</div>
-									</div>
-								</div>
-							</div>	
 </body>
 </html>

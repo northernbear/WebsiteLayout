@@ -1576,3 +1576,19 @@ body.contact h3.title-post{
 .nav li.btn-menu {
     display: none;
 }
+
+.modal-footer ul {
+	float:right;
+}
+
+.modal-footer ul li{
+	width:auto;
+	float:left;
+	border-right: 1px solid #003956;
+	padding:0px 8px;
+}
+
+.modal-footer ul li:last-child{
+	border-right: 0px;
+	padding-right:0px;
+}

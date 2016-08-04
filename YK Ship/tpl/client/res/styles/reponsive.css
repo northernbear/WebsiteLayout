@@ -23,7 +23,7 @@
 		border-bottom: 0px;
 	}
 	.nav > ul > li+li{
-		height: 50px;
+		height: auto;
 		padding: 11px 0px 11px 0px !important;
 		background: #003956;
 		border-top: 1px solid #6991aa;
@@ -36,8 +36,6 @@
 	}
 	.nav > ul > li.btn-menu{
 	display:block;
-	/*float: right;
-	width: 100px;*/
 	}
 	.nav a {
 		display: block;
@@ -61,6 +59,8 @@
 		display: block;
 		margin: 0 0 0px;
 		border-bottom: 0px solid #89191a;
+	    float: left;
+		width:100%
 	}
 	.nav > ul:hover .current {
 		background: url(../images/check.png) no-repeat 97% 12px;
@@ -84,6 +84,19 @@
 	.nav.center ul {
 		left: 50%;
 		margin-left: -90px;
+	}
+	.nav .dropdown-menu {
+    width: 100%;
+    position: initial;
+	margin-top: 10px;
+	}
+	.nav > ul > li.dropdown.open{
+		padding-bottom:0px !important;
+		background: #0879a7;
+	}
+	.nav .dropdown-menu>li>a {
+    text-align: left;
+	padding: 5px 5px 5px 20px !important;
 	}
 }
 @media all and (min-width: 921px){
@@ -163,6 +176,9 @@
 	.modal-lg {
     width: 900px;
 	}
+	#slider .owl-controls .owl-nav {
+    display:none;
+	}
 }
 @media all and (min-width: 768px) and (max-width: 980px) {
 	#menu-info {
@@ -234,6 +250,12 @@
     width: 100%;
     min-height: 205px;
 	height: auto;
+	}
+	#slider .owl-controls .owl-nav {
+    display:none;
+	}
+	.modal-dialog {
+    width: 700px;
 	}
 }
 @media all and (max-width: 767px) {
@@ -346,6 +368,16 @@
 	#social li:first-child{
     width: 26%;
 	}
+	#slider .owl-controls .owl-nav {
+    display:none;
+	}
+	.modal-footer ul li{
+	text-align:center;
+	width:100%;
+	float:left;
+	border-right: 0px;
+	padding:0px;
+	}
 }
 
 @media all and (max-width: 490px){
@@ -397,12 +429,23 @@
 	}
 }
 
-@media all and (max-width: 395px){
-	
+@media all and (max-width: 768px){
+	#header {
+    height: 215px;
+	}
+	#menu-info{
+	margin: 15px auto 0px auto;
+    position: initial;
+	}
 }
 
-@media all and (max-width: 300px){
-
+@media all and (min-width: 491px) and (max-width: 590px){
+	.search-form .form-group {
+    width: 37%;
+	}
+	.search-form .form-inline .form-control {
+    width: 63%;
+	}
 }
 
 /***********menu*************/

@@ -1250,6 +1250,7 @@ body.contact h3.title-post{
 }
 
 .lis-title{
+	line-height: 33px;
 	font-weight: 700;
 	color:#89191a;
 	margin-top: 5px;
@@ -1591,4 +1592,14 @@ body.contact h3.title-post{
 .modal-footer ul li:last-child{
 	border-right: 0px;
 	padding-right:0px;
+}
+
+.post-cbody{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 180px;
+    /*-webkit-line-clamp: 5;*/
+    -webkit-box-orient: vertical;
+	margin-bottom:10px;
 }

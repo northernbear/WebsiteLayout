@@ -3,12 +3,73 @@ Theme Name: YK Ship
 Version: 1.08.16
 ***/
 
+@font-face {
+  font-family: 'AvenirNext-Bold';
+  src: url('../fonts/AvenirNext-Bold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AvenirNext-Bold.woff') format('woff'), 
+  url('../fonts/AvenirNext-Bold.ttf')  format('truetype'), 
+  url('../fonts/AvenirNext-Bold.svg#AvenirNext-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNext-Italic';
+  src: url('../fonts/AvenirNext-Italic.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AvenirNext-Italic.woff') format('woff'), 
+  url('../fonts/AvenirNext-Italic.ttf')  format('truetype'), 
+  url('../fonts/AvenirNext-Italic.svg#AvenirNext-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNext-Medium';
+  src: url('../fonts/AvenirNext-Medium.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AvenirNext-Medium.woff') format('woff'), 
+  url('../fonts/AvenirNext-Medium.ttf')  format('truetype'), 
+  url('../fonts/AvenirNext-Medium.svg#AvenirNext-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNext-Regular';
+  src: url('../fonts/AvenirNext-Regular.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AvenirNext-Regular.woff') format('woff'), 
+  url('../fonts/AvenirNext-Regular.ttf')  format('truetype'), 
+  url('../fonts/AvenirNext-Regular.svg#AvenirNext-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNext-DemiBold';
+  src: url('../fonts/AvenirNext-DemiBold.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AvenirNext-DemiBold.woff') format('woff'), 
+  url('../fonts/AvenirNext-DemiBold.ttf')  format('truetype'), 
+  url('../fonts/AvenirNext-DemiBold.svg#AvenirNext-DemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'AvenirNext-MediumItalic';
+  src: url('../fonts/AvenirNext-MediumItalic.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/AvenirNext-MediumItalic.woff') format('woff'), 
+  url('../fonts/AvenirNext-MediumItalic.ttf')  format('truetype'), 
+  url('../fonts/AvenirNext-MediumItalic.svg#AvenirNext-MediumItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 *{margin: 0; padding: 0;}
 
 body {
 	font-size: 100%;
-	font-family:'Century Gothic', tahoma, arial, sans-serif;
+	font-family:'AvenirNext-Regular', tahoma, arial, sans-serif;
 	background: url(../images/background_website.jpg) no-repeat top center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -47,8 +108,8 @@ fieldset {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: 'Century Gothic', tahoma, arial, sans-serif;
-	font-weight: bold;
+	font-family: 'AvenirNext-Medium', tahoma, arial, sans-serif;
+	font-weight: normal;
 }
 
 h1 {
@@ -56,11 +117,11 @@ h1 {
 }
 
 strong{
-
+	font-family: 'AvenirNext-Bold';
 }
 
 i{
-    font-style: italic;
+    font-family: 'AvenirNext-Italic';
 }
 
 .clear {
@@ -179,17 +240,17 @@ text-align: center;
 }
 
 #info-content li a{
-	font-weight: bold;
+	font-family: 'AvenirNext-Bold';
 	color:#89191a;
-	font-size: 26px;
+	font-size: 24px;
 	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 
 #info-content li#cus{
-	font-size:16px;
+	font-size:15px;
 	color:#0879a7;
 	padding-top:5px;
-	font-weight: bold;
+	font-family: 'AvenirNext-Bold';
 	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 }
 
@@ -234,6 +295,7 @@ text-align: center;
 	-webkit-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.75);
     box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.75);
+	font-family: 'AvenirNext-DemiBold';
 }
 .nav > ul > li {
     list-style: none;
@@ -258,7 +320,6 @@ text-align: center;
 	color: #fff;
 	line-height: 100%;
 	border-left: 1px solid #6991aa;
-	font-weight: bold;
 }
 .nav > ul > li > a:hover {
 	color: #fff;
@@ -413,18 +474,20 @@ text-align: center;
 .mleft-title{
 	text-align:center;
 	width:100%;
-    font-size: 22px;
+    font-size: 19px;
     color: #fff;
     margin-bottom: 0px;
 	margin-top:0px;
 	padding: 10px 5px 10px 5px;
 	background:#89191a;
+	font-family: 'AvenirNext-DemiBold';
 }
 
 #sidebar .menu-services{
 	float: left;
     width: 100%;
-	font-size:18px;
+	font-size:19px;
+	font-family: 'AvenirNext-DemiBold';
 	list-style: disc;
 	padding-left: 40px;
 	background:url(../images/side-title-bg.png) no-repeat center top;
@@ -439,8 +502,7 @@ text-align: center;
 .menu-services li{
 	float: left;
     width: 100%;
-	padding: 10px 0px 10px 0px;
-	font-weight:700;
+	padding: 7px 0px 7px 0px;
 }
 
 .menu-services li:first-child{
@@ -552,7 +614,7 @@ text-align: center;
     margin: 0px auto;
     color: #003956;
     width: 100%;
-    font-weight: bold;
+    font-family: 'AvenirNext-DemiBold';
     text-transform: uppercase;
     font-size: 36px;
     display: inline;
@@ -564,22 +626,34 @@ text-align: center;
 }
 
 .srv-tabe p{
-	line-height: 34px;
-    font-size: 22px;
+	line-height: 35px;
+    font-size: 24px;
 	margin-bottom: 20px;
 }
 
 .srv-tabe .read-red{
 	color:#89191a;
+	font-family: 'AvenirNext-Medium';
+}
+
+.srv-tabe .read-red-i{
+	color:#89191a;
+	font-family: 'AvenirNext-MediumItalic';
+}
+
+.srv-tabe .read-red-d{
+	color:#89191a;
+	font-family: 'AvenirNext-DemiBold';
 }
 
 .srv-tabe .read-blue{
 	color:#003956;
+	font-family: 'AvenirNext-Medium';
 }
 
 .srv-tabe .read-italic{
 	color:#003956;
-	font-style: italic;
+	font-family: 'AvenirNext-MediumItalic';
 }
 
 .srv-tabe a{
@@ -587,7 +661,7 @@ text-align: center;
 }
 
 .content-post{
-	height: 870px;
+	height: 818px;
     padding: 20px;
     float: left;
     overflow-y: scroll;
@@ -664,6 +738,7 @@ text-align: center;
 
 .srvc-content .srv-c p{
     color: #fff;
+	font-family: 'AvenirNext-Regular';.foot-content h3
 }
 
 .srvc-content .srv-co h3 {
@@ -671,7 +746,8 @@ text-align: center;
     float: left;
     width: 100%;
     color: #fff;
-    font-weight: bold;
+    font-family: 'AvenirNext-Bold';
+	font-size:27px;
     text-transform: uppercase;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
@@ -694,7 +770,7 @@ text-align: center;
 .srvc-content .srv-c {
     padding: 20px 35px;
 	border-right:1px solid #117eaa;
-	height: 295px;
+	/*height: 295px;*/
 	background: url(../images/li-shaw.png) no-repeat left center;
 }
 
@@ -711,15 +787,20 @@ text-align: center;
     margin-bottom: 10px;
 	margin-top: 0px;
 	color:#516f85;
-	font-weight: bold;
+	font-family: 'AvenirNext-Bold';
+	font-size:27px;
 	text-transform: uppercase;
 }
 
 .srv-c{
     float: left;
     width: 100%;
-    height: 205px;
+    /*height: 205px;*/
 	text-align: left;
+}
+
+.srv-c p{
+    font-family: 'AvenirNext-Medium';
 }
 
 .choose-us{
@@ -771,7 +852,7 @@ text-align: center;
 	color:#2754ac;
 	overflow:hidden;
 	width:100%;
-	font-weight: bold;
+	font-family: 'AvenirNext-Medium';
 	text-align:center;
 	margin-bottom:15px;
 	font-size: 22px;
@@ -781,7 +862,7 @@ text-align: center;
 	color:#516f85;
 	font-style: italic;
 	font-size: 20px;
-	font-weight: bold;
+	font-family: 'AvenirNext-Medium';
 }
 
 .m-content p {
@@ -966,23 +1047,6 @@ body.contact h3.title-post{
 	color:#516f85;
 }
 
-.exp-more-news .title-news a{
-    color: #516f85;
-}
-
-.exp-more-news .title-news a:hover{
-    color: #6991AA;
-}
-
-.exp-more-news .date{
-	margin-bottom: 10px;
-    float: left;
-    width: 100%;
-    color: #516f85;
-    font-weight: bold;
-	font-size: 14px;
-}
-
 .search-dropdown {
     border: 1px solid #c3c3c3;
     background: #f1f1f1;
@@ -1068,15 +1132,11 @@ body.contact h3.title-post{
 	opacity: 0.7;
 }
 
-.ws{
-	font-weight: bold;
-	color:#fff;
-}
-
 .foot-content{
 	float:left;
 	width:33.33%;
 	padding-left:50px;
+	font-size:19px;
 }
 
 .foot-content:first-child{
@@ -1089,6 +1149,7 @@ body.contact h3.title-post{
 	font-size:19px;
 	margin-bottom: 20px;
 	text-transform: uppercase;
+	font-family: 'AvenirNext-DemiBold';
 }
 
 .foot-content ul.cate{
@@ -1155,18 +1216,19 @@ body.contact h3.title-post{
     margin: 0px auto;
     overflow: hidden;
 	text-align:center;
-	font-size:16px;
+	font-size:15px;
 	background: transparent;
 }
 
 #copyright p{
-	font-size:16px;
+	font-size:15px;
+	font-family: 'AvenirNext-Medium';
 }
 
 #copyright a{
 	color: #003956;
 	text-transform: uppercase;
-	font-weight:700;
+	font-family: 'AvenirNext-DemiBold';
 }
 
 /****page-navigation*****/
@@ -1178,7 +1240,7 @@ body.contact h3.title-post{
     font-size: 19px;
 	float:left;
 	width:100%;
-	font-weight: bold
+	font-family: 'AvenirNext-Medium';
 }
 
 .page-navigation .page-title {
@@ -1228,18 +1290,19 @@ body.contact h3.title-post{
 .date-time{
 	float:left;
 	width:15%;
-	font-size:20px;
+	font-size:19px;
 	text-align:center;
 	padding-right:10px;
-	font-weight: 700;
+	font-family: 'AvenirNext-Bold';
 }
 
 .date-time .date-day{
-	font-size: 80px;
+	font-size: 68px;
     float: left;
     width: 100%;
 	font-weight: normal;
 	line-height: 80px;
+	font-family: 'AvenirNext-Regular';
 }
 
 .lis-right-content{
@@ -1251,9 +1314,10 @@ body.contact h3.title-post{
 
 .lis-title{
 	line-height: 33px;
-	font-weight: 700;
+	font-family: 'AvenirNext-Bold';
 	color:#89191a;
 	margin-top: 5px;
+	font-size:27px;
 }
 
 .lis-title a{
@@ -1269,8 +1333,8 @@ body.contact h3.title-post{
 	color:#89191a;
 	float:right;
 	font-style: italic;
-	font-weight: 700;
-	font-size:18px;
+	font-family: 'AvenirNext-Bold';
+	font-size:19px;
 }
 
 .search-form{
@@ -1289,18 +1353,19 @@ body.contact h3.title-post{
 
 .search-form .form-group{
 	margin-right:35px;
-	width:40%;
+	width:39%;
 	text-align: right;
 }
 
 .search-form label{
 	font-weight: normal;
+	font-family: 'AvenirNext-Regular';
 }
 
 .search-form .form-inline .form-control {
     border:1px solid #717171;
 	border-radius:0px;
-	width: 80%;
+	width: 75%;
 }
 
 .lis-content-resource{
@@ -1333,12 +1398,14 @@ body.contact h3.title-post{
 	font-weight: normal;
 	color:#666767;
 	line-height:30px;
+	font-family: 'AvenirNext-Regular';
 }
 
 #primary-content .download{
 	font-size:18px;
 	text-decoration: underline;
 	color:#89191a;
+	font-family: 'AvenirNext-DemiBold';
 }
 
 #primary-content .download:hover{
@@ -1391,7 +1458,7 @@ body.contact h3.title-post{
 .photo-gallery .lb-data .lb-number {
     font-size: 18px;
     text-align: center;
-	font-weight: bold;
+	font-family: 'AvenirNext-DemiBold';
 	color:#fff;
 }
 
@@ -1416,14 +1483,15 @@ body.contact h3.title-post{
 
 .modal-title {
     text-align: center;
-	font-size: 24px;
+	font-size: 26px;
 	color:#353535;
+	font-family: 'AvenirNext-Bold';
 }
 
 .modal-footer{
 	font-size:16px;
 	color:#003956;
-	font-weight:700;
+	font-family: 'AvenirNext-Medium';
 	padding: 15px 0px;
 }
 
@@ -1451,18 +1519,21 @@ body.contact h3.title-post{
 	background: url(../images/icon/address_icon_red.png) no-repeat center left;
 	padding-left:35px;
 	color:#89191a;
+	font-family: 'AvenirNext-DemiBold';
 }
 
 #contact-co{
 	background: url(../images/icon/contact_icon_red.png) no-repeat center left;
 	padding-left:35px;
 	color:#89191a;
+	font-family: 'AvenirNext-DemiBold';
 }
 
 #email-co{
 	background: url(../images/icon/email_icon_red.png) no-repeat center left;
 	padding-left:35px;
 	color:#89191a;
+	font-family: 'AvenirNext-DemiBold';
 }
 
 .general-form {
@@ -1476,7 +1547,7 @@ body.contact h3.title-post{
 }
 
 .form-contact .form-horizontal  label{
-	font-size:22px;
+	font-size:24px;
 	font-weight: normal;
 	padding-top: 0px;
 }
@@ -1484,7 +1555,7 @@ body.contact h3.title-post{
 .form-contact label span{
 	display:block;
 	width:100%;
-	font-style:italic;
+	 font-family: 'AvenirNext-Italic';
 	font-size:18px;
 }
 
@@ -1500,10 +1571,10 @@ body.contact h3.title-post{
 
 .form-contact .btn{
 	background: #717171;
-    font-size: 24px;
+    font-size: 22px;
     text-transform: uppercase;
     color: #fff;
-    padding: 0px 12px;
+    padding: 4px 12px 0px 12px;
     border: 0px;
 }
 
@@ -1534,6 +1605,7 @@ body.contact h3.title-post{
 	text-align:right;
 	color:#003956;
 	font-size:18px;
+	font-family: 'AvenirNext-MediumItalic';
 }
 
 .form-contact .form-control.country {
@@ -1589,6 +1661,10 @@ body.contact h3.title-post{
 	padding:0px 8px;
 }
 
+.modal-footer ul li i{
+	font-family: 'AvenirNext-MediumItalic';
+}
+
 .modal-footer ul li:last-child{
 	border-right: 0px;
 	padding-right:0px;
@@ -1602,4 +1678,37 @@ body.contact h3.title-post{
     /*-webkit-line-clamp: 5;*/
     -webkit-box-orient: vertical;
 	margin-bottom:10px;
+}
+
+.post-cbody p{
+	font-size:24px;
+}
+
+.grid {
+  background: transparent;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+  padding:15px;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  border:1px solid #722c2c;
 }

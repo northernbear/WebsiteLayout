@@ -248,7 +248,7 @@
 	.srv-c {
     float: left;
     width: 100%;
-    min-height: 205px;
+    /*min-height: 205px;*/
 	height: auto;
 	}
 	#slider .owl-controls .owl-nav {
@@ -426,6 +426,19 @@
     column-count: 1;
     column-gap: 0;
     margin-bottom: 30px;
+	}
+	.grid-sizer,
+	.grid-item {
+	  width: 50%;
+	  padding:15px;
+	}
+}
+
+@media all and (max-width: 375px){
+	.grid-sizer,
+	.grid-item {
+	  width: 100%;
+	  padding:15px;
 	}
 }
 

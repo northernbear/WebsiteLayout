@@ -11,19 +11,25 @@
 <script src="tpl/client/res/scripts/jquery-1.12.2.min.js" type="text/javascript"></script>
 <script src="tpl/client/res/scripts/bootstrap.min.js" type="text/javascript"></script>
 <script src="tpl/client/res/scripts/owl.carousel.min.js" type="text/javascript"></script>
+<script src="tpl/client/res/scripts/masonry.pkgd.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="tpl/client/res/styles/owl.carousel.css"/>
 <link rel="stylesheet" href="tpl/client/res/styles/lightbox.min.css"/>
 <link rel="stylesheet" href="tpl/client/res/styles/owl.theme.default.min.css"/>
 <script type="text/javascript">
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
-	loop:true,
-	items:1,
-	autoplay: false,
-    autoplayTimeout: 5000,
-	dots:true,
-	nav:true
-  });
+		loop:true,
+		items:1,
+		autoplay: false,
+		autoplayTimeout: 5000,
+		dots:true,
+		nav:true
+	});
+	var $grid = $('.grid').masonry({
+		itemSelector: '.grid-item',
+		percentPosition: true,
+		columnWidth: '.grid-sizer'
+	}); 
 });
   </script>
 </head>
@@ -101,19 +107,42 @@ $(document).ready(function(){
 								<h3 class="lis-title">Arranging PSA port tour with JTB (Japan Travel Bureau)</h3>
 								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</p>
 								<div class="row">
-									<div class="photo-gall">
-										<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" alt="photo"/></a>
-										<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" alt="photo"/></a>
-										<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" alt="photo"/></a>
-										<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" alt="photo"/></a>
-										<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" alt="photo"/></a>
-										<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" alt="photo"/></a>
-										<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" alt="photo"/></a>
-										<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" alt="photo"/></a>
-										<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" alt="photo"/></a>
-										<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" alt="photo"/></a>
-										<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" alt="photo"/></a>
-									</div>
+										<div class="grid">
+											<div class="grid-sizer"></div>
+											<div class="grid-item">
+												<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" alt="photo"/></a>
+											</div>
+											<div class="grid-item">
+												<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" alt="photo"/></a>
+											</div>
+											<div class="grid-item">
+												<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" alt="photo"/></a>
+											</div>
+											<div class="grid-item">
+												<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" alt="photo"/></a>
+											</div>
+											<div class="grid-item">
+												<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" alt="photo"/></a>
+											</div>
+											<div class="grid-item">
+												<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" alt="photo"/></a>
+											</div>
+											<div class="grid-item">
+												<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_3.jpg" alt="photo"/></a>
+											</div>
+											<div class="grid-item">
+												<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" alt="photo"/></a>
+											</div>
+											<div class="grid-item">
+												<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" alt="photo"/></a>
+											</div>
+											<div class="grid-item">
+												<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_1.jpg" alt="photo"/></a>
+											</div>
+											<div class="grid-item">
+												<a class="photo-image-link" href="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" data-lightbox="photo"><img src="tpl/client/res/images/photo_gallery/folder_2_image_2.jpg" alt="photo"/></a>
+											</div>
+										</div>
 								</div>
 							</div>
 						</div>
@@ -173,7 +202,7 @@ $(document).ready(function(){
 			</div>
 		</div>
 		<div id="copyright">
-			<p>&copy; Copyright 2016. Designed &amp; Developed by <a href="http://www.trust-touch.com.sg">Trust Venture International Pte Ltd</a>. All Rights Reserved.</p>
+			<p>&copy; Copyright 2016. Designed &amp; Developed by <a href="http://www.trust-touch.com.sg" target="_blank">Trust Venture International Pte Ltd</a>. All Rights Reserved.</p>
 		</div>
 	</div>
 	<script src="tpl/client/res/scripts/lightbox.min.js" type="text/javascript"></script>

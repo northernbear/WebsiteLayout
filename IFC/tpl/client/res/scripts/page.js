@@ -1,0 +1,75 @@
+﻿$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+	loop:true,
+	items:1,
+	dots:true,
+	nav:false,
+	autoplay:true
+  });
+  $('.owl-carousel-p').owlCarousel({
+    loop:true,
+    margin:41,
+	dots:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        480:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:true
+        },
+        960:{
+            items:5,
+            nav:true
+        },
+		1200:{
+            items:6,
+            nav:true,
+            loop:false
+        }
+    }
+	});
+	$('.owl-carousel-meet').owlCarousel({
+    loop:true,
+    margin:27,
+	dots:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        480:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:true
+        },
+        960:{
+            items:4,
+            nav:true
+        },
+		1200:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    }
+	});
+	var temp = 0;
+	$('.build').each(function (index) {
+      if($(this).outerHeight() > temp)
+      {
+        temp = $(this).outerHeight();
+      }          
+     });
+    $('.build .build-content').css('min-height',temp);
+});

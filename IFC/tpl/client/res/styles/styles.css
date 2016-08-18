@@ -55,8 +55,6 @@ body {
 	font-size: 100%;
 	font-family: 'SourceSansPro-Light', tahoma, arial, sans-serif;
 	background:url(../images/bg.png) no-repeat center center, #343434;
-	/*background: url(../images/Background.jpg) no-repeat top center; 
-	background: #343434;*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -155,9 +153,11 @@ label {
 }
 
 #wrapper{
-width:1197px;
-margin: 0px auto;
-overflow:hidden;
+	width:1197px;
+	margin: 0px auto;
+	overflow:hidden;
+    z-index: 10;
+    position: relative;
 }
 
 .head{
@@ -423,6 +423,7 @@ font-size:14px;
 #we-can .col-sm-4{
 	padding-right: 5px;
     padding-left: 5px;
+	margin-bottom: 10px;
 }
 
 #we-can .row{
@@ -588,7 +589,7 @@ body.about-us p{
 }
 
 .ccons-1 li#cc-local span{
-	background: url(../images/ico/icon_address.png) no-repeat left 10px;
+	background: url(../images/ico/icon_address.png) no-repeat left 6px;
 }
 
 .ccons-1 li#cc-phone span{
@@ -671,6 +672,7 @@ body.connect .primary-title h2 {
 
 .work-content p{
 	font-size:18px;
+	text-align:center;
 	font-family: 'SourceSansPro-Regular';
 }
 
@@ -817,7 +819,7 @@ body.connect .primary-title h2 {
 /**************/
 
 #footage{
-	padding: 40px 10px;
+	padding: 40px 0px;
     margin: 0px auto;
     overflow: hidden;
     width: 100%;
@@ -845,13 +847,14 @@ body.connect .primary-title h2 {
 
 .foot-content{
 	float:left;
-	width:40%;
+	width:33.333%;
+	padding:0px 10px;
 }
 
-.foot-content:last-child{
+/*.foot-content:last-child{
 	float:left;
 	width:20%;
-}
+}*/
 
 .foot-content h3{
 	float:left;
@@ -971,4 +974,91 @@ body.connect .primary-title h2 {
     left: 20px;
     top: 47px;
 	z-index: 9;
+}
+
+.popup-head{
+	width:100%;
+	overflow: hidden;
+	display: table;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom:1px solid #343434;
+}
+
+.popup-head img{
+	vertical-align: bottom;
+    display: table-cell;
+	width:110px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    background: #343434;
+}
+
+.popup-head .pop-right{
+	vertical-align: bottom;
+    display: table-cell;
+	padding-left: 10px;
+}
+
+.pop-right h4{
+	color:#333;
+	margin-bottom: 0px;
+	font-size:29px;
+}
+
+.pop-right span{
+	font-family: 'SourceSansPro-Regular';
+	font-size:24px;
+}
+
+.modal-body p{
+	font-family: 'SourceSansPro-Light';
+	font-size:22px;
+	line-height: 26px;
+}
+
+.modal-body {
+    padding: 25px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal-content {
+    border-radius: 0px;
+}
+
+/************/
+
+.owl-carousel .owl-item .morelink img{
+	width:auto;
+	text-align: right;
+	float: right;
+}
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+	color:#333;
+	float: left;
+	width:100%;
+	padding-top: 13px;
 }

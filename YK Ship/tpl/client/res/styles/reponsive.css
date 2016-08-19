@@ -24,37 +24,41 @@
 	}
 	.nav > ul > li+li{
 		height: auto;
-		padding: 11px 0px 11px 0px !important;
+		padding: 0px 0px 0px 0px !important;
 		background: #003956;
 		border-top: 1px solid #6991aa;
 	}
-	.nav > ul > li:last-child {
+	/*.nav > ul > li:last-child {
 		background: #003956;
 	}
 	.nav > ul > li:last-child:hover {
     background-color: #003956;
-	}
+	}*/
 	.nav > ul > li.btn-menu{
 	display:block;
 	}
 	.nav a {
 		display: block;
-		padding: 5px 5px 5px 32px !important;
+		padding: 16px 5px 16px 32px !important;
 		text-align: left;
 		margin-right: 80px;
 	}
 	.nav  .current a {
-		padding: 5px 5px 5px 32px !important;
+		padding: 16px 5px 16px 32px !important;
 	}
 	.nav .current a {
 		background: none;
 		color: #fff;
 		margin-right: 80px;
 	}
-	/* on nav hover */
-	.nav > ul:hover {
-		background-image: none;
+	.nav .dropdown-menu a {
+		text-align: left;
+		margin-right: 0px;
 	}
+	/* on nav hover */
+	/*.nav > ul:hover {
+		background-image: none;
+	}*/
 	.nav > ul:hover li {
 		display: block;
 		margin: 0 0 0px;

@@ -11,7 +11,7 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		background: rgba(179, 144, 73, 0.8) url(../images/interface.png) no-repeat 95% 21px;
+		background: #b5b5b5 url(../images/interface.png) no-repeat 95% 21px;
 		z-index: 10;
 	}
 	.nav li {
@@ -25,13 +25,16 @@
 	.nav li+li{
 		height: 50px;
 		padding: 11px 10px 11px 10px;
-		background: rgba(161, 133, 76, 0.8);
+		background: #b5b5b5;
 	}
 	.nav li:last-child {
-		background: rgba(161, 133, 76, 0.8);
+		background: #b5b5b5;
 	}
 	.nav li:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: #b39049;
+	}
+	.nav li:hover a{
+    color:#fff;
 	}
 	.nav li.btn-menu{
 	display:block;
@@ -43,6 +46,7 @@
 		padding: 5px 5px 5px 32px !important;
 		text-align: left;
 		margin-right: 80px;
+		color:#b39049;
 	}
 	.nav  .current a {
 		padding: 5px 5px 5px 32px !important;
@@ -65,7 +69,7 @@
 	}
 	.nav-menu {
 	width:100%;
-	height: 66px;
+	height: 62px;
 	z-index: 99;
 	}
 	/* right nav */

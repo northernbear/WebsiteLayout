@@ -524,6 +524,22 @@ z-index:15;
 	margin:50px 0px;
 }
 
+.btn-tip a .we-minus{
+	display:block;
+}
+
+.btn-tip a .we-plus{
+	display:none;
+}
+
+.btn-tip .collapsed .we-minus{
+	display:none;
+}
+
+.btn-tip .collapsed .we-plus{
+	display:block;
+}
+
 #meet-our{
 	float:left;
 	width:100%;
@@ -637,6 +653,10 @@ body.about-us p{
 	float: left;
 }
 
+.ccons-1 li span a{
+	color:#fff;
+}
+
 .ccons-1 li#cc-local span{
 	background: url(../images/ico/icon_address.png) no-repeat left 6px;
 }
@@ -696,7 +716,7 @@ body.about-us p{
 	border-radius: 10px;
 	font-family: 'SourceSansPro-Italic';
     font-size:16px;
-	color:#e1e1e1;
+	color:#333;
 }
 
 #contact-info{

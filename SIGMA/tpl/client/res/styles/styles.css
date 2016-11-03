@@ -901,30 +901,30 @@ z-index:15;
 	padding-right:40px;
 }
 
-#xu-wform{
+.xu-wform{
 	border: 1px solid #ececec;
 	padding:20px 0px;
 	overflow: hidden;
 }
 
-#xu-wform .col-sm-6:first-child{
+.xu-wform .col-sm-6:first-child{
 	border-right: 1px solid #ececec;
 }
 
-#xu-wform h4.xu-h4{
+.xu-wform h4.xu-h4{
 	padding-top:15px;
 }
 
-#xu-wform .xu-req{
+.xu-wform .xu-req{
 	color: #ed1c24;
 }
 
-#xu-wform label{
+.xu-wform label{
 	text-align: left;
 	font-family: 'Avenir-Medium';
 }
 
-#xu-wform .xu-btn{
+.xu-btn{
 	font-size: 18px;
     color: #fff;
     background: #000000;
@@ -940,16 +940,21 @@ z-index:15;
 	text-align:right;
 }
 
+.xu-center{
+	text-align:center;
+}
+
 .xu-requ{
 	color: #ed1c24;
 	font-style: italic;
+	padding-right: 5px;
 }
 
-#xu-wform .form-control {
+.xu-wform .form-control {
     font-style: italic;
 }
 
-#xu-wform select.form-control {
+.xu-wform select.form-control {
     width: auto;
 	background: url(../images/arrow.png) no-repeat 96% center;
 	appearance:none;
@@ -958,11 +963,11 @@ z-index:15;
 	padding-right: 30px;
 }
 
-#xu-wform .checkbox input[type=checkbox]{
+.xu-wform .checkbox input[type=checkbox]{
     display: none;
 }
 
-#xu-wform .checkbox input[type="checkbox"] + label:before {
+.xu-wform .checkbox input[type="checkbox"] + label:before {
       border: 1px solid #7f83a2;
     content: "\00a0";
     display: inline-block;
@@ -975,27 +980,27 @@ z-index:15;
     border-radius: 3px;
 }
 
-#xu-wform .checkbox input[type="checkbox"]:checked + label:before {
+.xu-wform .checkbox input[type="checkbox"]:checked + label:before {
   background: #fff;
   color: #666;
   content: "\f00c";
   text-align: center;
 }
 
-#xu-wform .checkbox input[type="checkbox"]:checked + label:after {
+.xu-wform .checkbox input[type="checkbox"]:checked + label:after {
   font-weight: bold;
 }
 
-#xu-wform .checkbox label{
+.xu-wform .checkbox label{
     padding-left: 0px;
 }
 
-#xu-wform .checkbox span {
+.xu-wform .checkbox span {
     text-decoration: underline;
 	cursor: pointer;
 }
 
-#xu-wform .checkbox span:hover {
+.xu-wform .checkbox span:hover {
     color:#ed1c24;
 }
 
@@ -1012,6 +1017,231 @@ z-index:15;
 	margin-bottom:40px;
 }
 
-.xu-cform #xu-wform{
+.xu-cform .xu-wform{
 	border:0px;
+}
+
+select.xu-sl {
+    width: auto;
+    background: url(../images/arrow.png) no-repeat 88% center;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 30px;
+}
+
+.xu-content .table{
+	margin-bottom:40px;
+}
+
+.xu-content .table td:first-child{
+	border: 1px solid #ddd;
+	padding-top:10px;
+}
+
+.xu-content .table td{
+	border-bottom: 1px solid #ddd;
+	padding-top:30px;
+}
+
+.xu-content .table td:last-child{
+	border-right: 1px solid #ddd;
+}
+
+.xu-del{
+	font-weight: 700;
+	color: #ee1c24;
+	font-size:20px;
+}
+
+.text-right{
+	text-align:right;
+}
+
+.break-word .xu-btn {
+    width: 130px;
+    white-space: normal !important;
+    word-wrap: break-word;
+	padding: 5px 5px;
+	height: 62px;
+}
+
+.xu-content .table tfoot  h3, .xu-content .table tfoot  h4{
+	margin:5px 0px;
+	font-family: 'Avenir-Black';
+	font-weight:700;
+}
+
+.xu-content .table tfoot  td:first-child{
+	text-align:right;
+	border:0px;
+	vertical-align: middle;
+}
+
+.xu-content .table tfoot  td:last-child{
+	text-align:right;
+	border:1px solid #ddd;
+	vertical-align: middle;
+	padding-top: 10px;
+	padding-right: 20px;
+	font-family: 'Avenir-Black';
+	font-size: 18px;
+}
+
+.xu-dropdown{
+	width:100%;
+	background:#fff;
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+
+.xu-dropdown .btn-sel{
+	width:100%;
+	background:#fff;
+	border: 1px solid #ddd;
+	text-align: left;
+	background: url(../images/arrow.png) no-repeat 99% center;
+}
+
+.xu-dropdown-menu{
+	background:#ebebeb;
+	right: 20px;
+	top: 70%;
+}
+
+.xu-dropdown-menu li{
+	border-top:1px solid #cccccc;
+	padding:5px 5px;
+}
+
+.xu-dropdown-menu li:first-child{
+	border-top:0px;
+}
+
+.xu-rnam .form-control {
+    display: inline-block;
+}
+
+.xu-content .form-horizontal label{
+	text-align: left;
+	font-family: 'Avenir-Medium';
+}
+
+#xu-bctry{
+	background: url(../images/arrow.png) no-repeat 97% center;
+	appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.xu-container .xu-content{
+	padding:15px;
+	font-family: 'Avenir-Roman';
+	margin-bottom:40px;
+	font-size:16px;
+}
+
+.xu-container .xu-content:first-child{
+	margin-bottom:0px;
+}
+
+.xu-container .xu-content h4{
+	font-family: 'Avenir-Roman';
+	font-weight:700;
+}
+
+.xu-container .xu-wform {
+    border: 0px solid #ececec;
+}
+
+.tip-note{
+	border: 1px solid #151515;
+	padding:10px 10px 0px 10px;
+}
+
+.xu-top{
+	margin-top:40px;
+}
+
+.xu-menu-left{
+	border:1px solid #111111;
+	padding:15px;
+}
+
+.xu-menu-left ul{
+	margin-bottom: 0px;
+}
+
+.xu-menu-left li{
+	padding:5px 0px;
+}
+
+.xu-aform .col-sm-6:first-child {
+    border-right: 0px solid #ececec;
+}
+
+.xu-aform select.form-control {
+    width: 100%;
+}
+.xu-aform .form-control {
+    font-style: normal;
+}
+
+.xu-check{
+	padding-top:10px;
+}
+
+.xu-check .checkbox input[type=checkbox]{
+    display: none;
+}
+
+.xu-check .checkbox input[type=checkbox] + label:before {
+    border: 1px solid #7f83a2;
+    content: "\f111";
+    display: inline-block;
+    font-family: FontAwesome;
+    height: 23px;
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 23px;
+    border-radius: 3px;
+	color: #fff;
+	text-align: center;
+}
+
+.xu-check .checkbox input[type=checkbox]:checked + label:before {
+  background: #fff;
+  color: #ed1c24;
+  content: "\f111";
+  font-family: FontAwesome;
+  text-align: center;
+}
+
+.xu-check .checkbox input[type=checkbox]:checked + label:after {
+  font-weight: bold;
+}
+
+.xu-check .checkbox label{
+    padding-left: 0px;
+}
+
+.xu-crow{
+	padding:5px 0px;
+}
+
+.xu-change{
+	text-decoration: underline;
+}
+
+.xu-atitle{
+	position:relative;
+}
+
+.xu-atitle h4:last-child{
+	position:absolute;
+	right:0px;
+	top:0px;
+	margin-top: 0px;
+    margin-bottom: 0px;
 }

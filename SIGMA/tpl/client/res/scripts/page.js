@@ -7,7 +7,7 @@
 	autoplay:true
   });
   $('.owl-product').owlCarousel({
-    loop:true,
+    loop:false,
 	dots:false,
     responsiveClass:true,
     responsive:{
@@ -19,19 +19,19 @@
             items:2,
             nav:true
         },
-        600:{
+        690:{
             items:3,
             nav:true
         },
-		768:{
-            items:4,
+		767:{
+            items:3,
             nav:true
         },
-        960:{
+        992:{
             items:5,
             nav:true
         },
-		1200:{
+		1179:{
             items:5,
             nav:true,
             loop:false
@@ -71,58 +71,33 @@
         }
     }
 	});
-	var temp = 0;
-	$('.build').each(function (index) {
-      if($(this).outerHeight() > temp)
+	var temp = 0, temp1 = 0, temp2 = 0;
+	$('.xu-prodetail #thumbcarousel .item .pro-thumb').each(function (index) {
+		if($(this).outerHeight() > temp)
+		{
+			temp = $(this).outerHeight();
+		}          
+    });
+    $('.xu-prodetail .item .pro-thumb').css('height',temp);
+	$('#xu-products h3.xu-product-title').each(function (index) {
+      if($(this).outerHeight() > temp1)
       {
-        temp = $(this).outerHeight();
+        temp1 = $(this).outerHeight();
       }          
      });
-    $('.build .build-content').css('min-height',temp);
-	$(".nav .btn-menu").click(function(){
-		$(".nav ul li+li").toggle();
+    $('#xu-products h3.xu-product-title').css('height',temp1);
+	$('.xu-gallery .pro-list').each(function (index) {
+      if($(this).outerHeight() > temp2)
+      {
+        temp2 = $(this).outerHeight();
+      }          
+     });
+    $('.xu-gallery .pro-list').css('height',temp2);
+	$('.top-bread .col-sm-5 .fa').click(function(){
+		$('.pro-content .col-sm-9').addClass('xu-list');
 	});
-	/*$(".nav .btn-menu").click(function(){
-		$(".nav ul li+li").show();
-	});*/
-	// Configure/customize these variables.
-    var showChar = 250;  // How many characters are shown by default
-    var ellipsestext = "...";
-    var moretext = '<img src="tpl/client/res/images/ico/icon_show.png" alt="show"/>';
-    var lesstext = '<img src="tpl/client/res/images/ico/icon_hide.png" alt="show"/>';
-    
-
-    $('.mee_content .meecontent').each(function() {
-        var content = $(this).html();
-        //var content_1 = $(".meet-desc").html();
- 
-        if(content.length > showChar) {
- 
-            var c = content.substr(0, showChar);
-            var h = content.substr(showChar, content.length - showChar);
- 
-            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span><a href="" class="morelink">' + moretext + '</a></span>';
- 
-            $(this).html(html);
-        }
- 
-    });
- 
-    $(".morelink").click(function(){
-        if($(this).hasClass("less")) {
-            $(this).removeClass("less");
-            $(this).html(moretext);
-			$(this).parent().find(".moreellipses").css("display", "inline");
-			$(this).parent().find(".morecontent span").css("display", "none");
-        } else {
-            $(this).addClass("less");
-            $(this).html(lesstext);
-			$(this).parent().find(".moreellipses").css("display", "none");
-			$(this).parent().find(".morecontent span").css("display", "inline");
-        }
-        $(this).parent().prev().toggle();
-        $(this).prev().toggle();
-        return false;
-    });
+	$('.top-bread .col-sm-5 .fa.fa-th').click(function(){
+		$('.pro-content .col-sm-9').removeClass('xu-list');
+	});
 });
 

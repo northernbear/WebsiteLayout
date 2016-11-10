@@ -21,10 +21,10 @@
 		<div class="top-head">
 			<div class="top-menu">
 				<ul>
-					<li><a href="#">REGISTER</a></li>
-					<li><a href="#">LOG IN</a></li>
-					<li><a href="#">MY CART (2)</a></li>
-					<li><a href="#">MY ACCOUNT</a></li>
+					<li><a href="Login Page.html">REGISTER</a></li>
+					<li><a href="Login Page.html">LOG IN</a></li>
+					<li><a href="Wishlist Page.html">MY CART (2)</a></li>
+					<li><a href="Account Dashboard.html">MY ACCOUNT</a></li>
 					<li>
 						<div class="expanding-sf">
 							<div class="form_top"> <span class="toggle_top"></span>
@@ -39,12 +39,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row headbanner">
 		<div id="header">
-			<div class="col-xs-6 col-sm-3">
-				<div id="head-logo">
-					<a href="index.html" title="logo" class="clearfix" id="logo"><img src="tpl/client/res/images/logo.jpg" alt="logo"/></a>
-				</div>
+			<div id="head-logo">
+				<a href="index.html" title="logo" class="clearfix" id="logo"><img src="tpl/client/res/images/logo.jpg" alt="logo"/></a>
 			</div>
 		</div>
 		<div class="nav-menu">
@@ -59,8 +57,20 @@
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="home active"><a href="index.html" title="WELCOME">WELCOME</a></li>
-						<li><a href="IFC_Homepage(Master).html#we-can" title="OUR PRODUCTS">OUR PRODUCTS</a></li>
-						<li><a href="IFC_about IFC.html" title="GALLERIES">GALLERIES</a></li>
+						<li class="dropdown"><a href="#" data-toggle="dropdown" title="OUR PRODUCTS">OUR PRODUCTS</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown"><a href="#" data-toggle="dropdown">CAMERA</a>
+									<ul class="dropdown-menu">
+									<li class="dropdown"><a href="our_product_camera.html">DIGITAL </a>	</li>
+									<li><a href="our_product_camera.html">COMPACT</a></li>
+									<li><a href="our_product_camera.html">MICRORLENS</a></li>
+								</ul>
+								</li>
+								<li><a href="our_product_lens.html">LENS</a></li>
+								<li><a href="our_product_accessories.html">ACCESSORIES</a></li>
+							</ul>
+						</li>
+						<li><a href="our_product_Gallery.html" title="GALLERIES">GALLERIES</a></li>
 						<li><a href="warranty.html" title="WARRNTY">WARRANTY</a></li>
 						<li><a href="contact_us.html" title="CONTACT US">CONTACT US</a></li>
 					</ul>
@@ -72,7 +82,7 @@
 		<div class="xu-container xu-top">
 			<div class="row">
 				<div class="xu-content">
-					<div class="row">
+					<div class="row xu-acc">
 						<div class="col-xs-6 col-sm-3">
 							<div class="xu-menu-left">
 								<ul>
@@ -403,21 +413,22 @@
 					<ul class="cate">
 						<li><a href="index.html" title="Welcome">Welcome</a></li>
 						<li><a href="where to buy.html" title="When To Buy">When To Buy</a></li>
-						<li><a href="#" title="Our Products">Our Products</a></li>
+						<li><a href="news_event.html" title="Our Products">Our Products tt</a></li>
 						<li><a href="news_event.html" title="News &amp; Events">News &amp; Events</a></li>
-						<li><a href="#" title="Galleries">Galleries</a></li>
-						<li><a href="#" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+						<li><a href="our_product_Gallery.html" title="Galleries">Galleries</a></li>
+						<li><a href="warranty.html" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
 						<li><a href="warranty.html" title="Warranty">Warranty</a></li>
-						<li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+						<li><a href="warranty.html" title="Warranty T&amp;C" data-toggle="modal" data-target="#warranty-terms">Warranty T&amp;C</a></li>
+						<li><a href="IFC_Connect.html" title="Privacy Policy">Privacy Policy</a></li>
 						<li><a href="contact_us.html" title="Contact Us">Contact Us</a></li>
 					</ul>
 				</div>	
 				<div class="col-xs-6 col-sm-4">
 					<ul class="xu-cons">
 						<li>SIGMA Marketing (Singapore) Pte Ltd</li>
-						<li>3791 Janlan Bukit Merah</li>
-						<li>#07-19/20 E-Centre@Redhill</a></li>
-						<li>Singapore 159471</a></li>
+						<li><a href="https://goo.gl/maps/agm75goyEEB2" target="_blank">3791 Janlan Bukit Merah<br/>
+						#07-19/20 E-Centre@Redhill<br/>
+						Singapore 159471</a></li>
 					</ul>
 				</div>	
 				<div class="col-xs-6 col-sm-4">
@@ -439,7 +450,7 @@
 				</div>					
 			</div>
 			<div id="copyright">
-				<img src="tpl/client/res/images/logo-footer.png" id="logo-footer"/>
+				<a href="index.html"><img src="tpl/client/res/images/logo-footer.png" id="logo-footer"/></a>
 				<p>Copyright &copy; 2016. Sigma Marketing (Singapore) Pte Ltd. All Rights Reserved.</p>
 			</div>
 		</div>

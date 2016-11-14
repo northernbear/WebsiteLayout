@@ -304,6 +304,15 @@
 	#sort-value {
     display: inline-block;
 	}
+	.navbar-default .navbar-nav li.dropdown > .dropdown-menu > li.dropdown >.dropdown-menu {
+	margin-top:0px;
+	}
+	.navbar-default .navbar-nav li.dropdown > .dropdown-menu > li.dropdown >.dropdown-menu > li > a:hover{
+	background:transparent;
+	}
+	.navbar-default .navbar-nav li.dropdown > .dropdown-menu > li.dropdown >.dropdown-menu > li.dropdown:first-child{
+	border-top:0px;
+	}
 }
 
 @media all and (max-width: 690px){

@@ -409,6 +409,9 @@
 	.xu-acdails .col-sm-6 .col-sm-8{
 	width:100%;
 	}
+	.xu-prodetail #carousel {
+	height:380px;
+	}
 }
 
 @media all and (max-width: 441px){
@@ -478,6 +481,9 @@
 	}
 	#logo {
 	top: 20px;
+	}
+	.xu-prodetail #carousel {
+	height:280px;
 	}
 }
 

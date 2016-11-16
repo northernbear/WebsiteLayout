@@ -114,43 +114,43 @@ label {
 
 ::-webkit-input-placeholder {
   color: #333;
-  font-family: 'Avenir-Medium', tahoma, arial, sans-serif;
+  font-family: 'Avenir-Roman', tahoma, arial, sans-serif;
   font-size:16px;
 }
 ::-moz-placeholder {
   color: #333;
-  font-family: 'Avenir-Medium', tahoma, arial, sans-serif;
+  font-family: 'Avenir-Roman', tahoma, arial, sans-serif;
   font-size:16px;
 }
 :-ms-input-placeholder {
   color: #333;
-  font-family: 'Avenir-Medium', tahoma, arial, sans-serif;
+  font-family: 'Avenir-Roman', tahoma, arial, sans-serif;
   font-size:16px;
 }
 :-moz-placeholder {
   color: #333;
-  font-family: 'Avenir-Medium', tahoma, arial, sans-serif;
+  font-family: 'Avenir-Roman', tahoma, arial, sans-serif;
   font-size:16px;
 }
 
 #contact-info .form-control::-webkit-input-placeholder {
   color: #e1e1e1;
-  font-family: 'SourceSansPro-Italic';
+  font-family: 'Avenir-Roman';
   font-size:16px;
 }
 #contact-info .form-control::-moz-placeholder {
   color: #e1e1e1;
-  font-family: 'SourceSansPro-Italic';
+  font-family: 'Avenir-Roman';
   font-size:16px;
 }
 #contact-info .form-control:-ms-input-placeholder {
   color: #e1e1e1;
-  font-family: 'SourceSansPro-Italic';
+  font-family: 'Avenir-Roman';
   font-size:16px;
 }
 #contact-info .form-control:-moz-placeholder {
   color: #e1e1e1;
-  font-family: 'SourceSansPro-Italic';
+  font-family: 'Avenir-Roman';
   font-size:16px;
 }
 
@@ -166,7 +166,7 @@ label {
 
 .head{
 	background:#111111;
-	height:40px;
+	height:35px;
 }
 
 .top-head{
@@ -181,8 +181,8 @@ label {
 
 .top-menu ul li{
 	float:left;
-	font-size:14px;
-	padding-top: 10px;
+	font-size:13px;
+	padding-top: 8px;
 }
 
 .top-menu ul li:last-child{
@@ -225,15 +225,15 @@ label {
     color: #FFFFFF;
     cursor: pointer;
     display: block;
-    height: 30px;
+    height: 24px;
     position: absolute;
     right: 0;
-    width: 50px;
+    width: 45px;
 }
 
 #searchform {
     float: right;
-    height: 30px;
+    height: 25px;
     margin: 0;
     opacity: 0;
     padding: 0;
@@ -274,10 +274,10 @@ label {
     color: #FFFFFF;
     cursor: pointer;
     display: block;
-    height: 30px;
+    height: 24px;
     position: absolute;
     right: 0;
-    width: 50px;
+    width: 45px;
 }
 
 /*****************/
@@ -286,7 +286,7 @@ label {
 width:1197px;
 margin: 0px auto;
 /*overflow:hidden;*/
-height:105px;
+height:80px;
 text-align: center;
 position: relative;
 font-size:14px;
@@ -575,7 +575,7 @@ z-index:15;
 }
 
 #footage a:hover{
-	color:#ee1c24;
+	color:#ececec;
 }
 
 #footage ul.cate li{
@@ -945,6 +945,15 @@ z-index:15;
     width: 100%;
     height: 210px;
 	border-bottom:1px solid #ececec;
+	overflow:hidden;
+	display: table;
+}
+
+#xu-products .xu-imgthumbs img{
+    height: auto;
+    max-height: 210px;
+	vertical-align: middle;
+    display: table-cell;
 }
 
 #xu-products h3.xu-product-title{
@@ -1008,6 +1017,7 @@ z-index:15;
 #xu-about .xu-content h4{
 	font-family: 'Avenir-Roman';
 	font-weight:700;
+	margin-top:20px;
 }
 
 .xu-event li a{
@@ -1076,6 +1086,7 @@ z-index:15;
 
 .xu-wform .form-control {
     font-style: italic;
+	font-size:16px;
 }
 
 .xu-wform select.form-control {
@@ -1117,6 +1128,7 @@ z-index:15;
 
 .xu-wform .checkbox label{
     padding-left: 0px;
+	font-size:14px;
 }
 
 .xu-wform .checkbox span {
@@ -1248,7 +1260,7 @@ select.xu-sl {
 
 .xu-content .form-horizontal label{
 	text-align: left;
-	font-family: 'Avenir-Medium';
+	font-family: 'Avenir-Roman';
 }
 
 #xu-bctry{
@@ -1273,6 +1285,10 @@ select.xu-sl {
 .xu-container .xu-content h4{
 	font-family: 'Avenir-Roman';
 	font-weight:700;
+}
+
+.xu-container .xu-content #carousel .item h4{
+	padding:0px 5px 20px 5px;
 }
 
 .xu-container .xu-wform {
@@ -1416,6 +1432,12 @@ select.xu-sl {
 	padding:30px;
 }
 
+.tab-content #accessories,
+.tab-content #tech-specs{
+	background:#fff;
+	border:1px solid #f1f1f1;
+}
+
 .tab-content .table-bordered td{
 	border: 1px solid #979595;
 	vertical-align: middle;
@@ -1482,6 +1504,14 @@ select.xu-sl {
 
 .xu-prodetail #carousel {
 	border:1px solid #979595;
+	width:100%;
+	height:480px;
+	overflow: hidden;
+}
+
+.xu-prodetail #carousel .carousel-inner {
+    /*display:table-cell;
+	vertical-align: middle;*/
 }
 
 .xu-prodetail #thumbcarousel {
@@ -1630,7 +1660,7 @@ select.xu-sl {
 	background:#000000;
 	border-top: 10px solid #ed1c24;
 	color:#fff;
-	padding:5px 15px;
+	padding:5px 15px 10px 15px;
 	margin-bottom:15px;
 }
 
@@ -1732,7 +1762,8 @@ select.xu-sl {
 }
 
 .xu-video #thumbcarousel {
-    padding: 0px 0px 30px 0px;
+    padding: 0px 0px 0px 0px;
+	margin-bottom:30px;
 }
 
 .xu-video .carousel {
@@ -1775,7 +1806,7 @@ select.xu-sl {
 	display: table-cell;
     height: 85px;
     border: 0px solid #ddd;
-    padding: 5px;
+    padding: 0px 5px;
     vertical-align: middle;	
 }
 
@@ -1786,8 +1817,15 @@ select.xu-sl {
 .xu-video .carousel-control {
 	width: 21px;
     background: transparent;
-    top: 30%;
-	display:none;	
+    top: 0;
+	display: flex;
+	/*display:none;	*/
+}
+
+.xu-video .carousel-control {
+	width: auto;
+    height: auto;
+    margin: auto;
 }
 
 .xu-video .carousel-inner {
@@ -1873,4 +1911,9 @@ select.xu-sl {
 .headbanner{
 	position:relative;
 	z-index:11;
+}
+
+.xu-video #carousel-ds {
+    margin-top: 0px;
+    padding: 0px 5px;
 }

@@ -66,6 +66,11 @@
 	#xu-products .owl-product .owl-item.active{
 	margin-left:0px;
 	}*/
+	#searchfm{
+	position:absolute;
+	right:10px;
+	top:30%;
+	}
 }
 
 @media all and (max-width: 992px) {
@@ -205,10 +210,6 @@
 	}
 	.navbar-default .navbar-nav > li.dropdown > .dropdown-menu > li.dropdown:hover > a:after {
     content: '';
-	}
-	#logo {
-    position: relative;
-	left:0px;
 	}
 	#logo-footer {
     position: initial;
@@ -396,7 +397,7 @@
 
 @media all and (max-width: 479px){
 	#head-logo img {
-    width: 100%;
+    width: auto;
     max-width: 290px;
 	}
 	#xu-products .xu-imgthumbs {
@@ -411,6 +412,21 @@
 	}
 	.xu-prodetail #carousel {
 	height:380px;
+	}
+	#logo {
+    position: relative;
+	left:0px;
+	}
+	#header {
+    height: 110px;
+	}
+	#searchfm {
+    top: initial;
+    position: absolute;
+    right: 0px;
+    bottom: 10%;
+	width:100%;
+	text-align:center;
 	}
 }
 
@@ -427,13 +443,12 @@
 
 @media all and (max-width: 425px){
 	#head-logo img {
-    width: 100%;
+    width: auto;
     max-width: 250px;
-	top: 0px;
 	}
-	#logo {
+	/*#logo {
 	top: 0px;
-	}
+	}*/
 	.xu-gallery .col-xs-6 {
     width: 100%;
 	}
@@ -477,14 +492,15 @@
     border-left: 1px solid #fff;
 	}
 	.top-menu ul li:last-child{
-    display:none;
-	}
-	#logo {
-	top: 20px;
+    /*display:none;*/
+	padding-right:0px;
 	}
 	.xu-prodetail #carousel {
 	height:280px;
 	}
+	/*#logo {
+    top: 0px;
+	}*/
 }
 
 @media all and (max-width: 375px){
@@ -499,4 +515,7 @@
     width: 100%;
 	float: left;
 	}
+	/*#logo {
+    top: 0px;
+	}*/
 }

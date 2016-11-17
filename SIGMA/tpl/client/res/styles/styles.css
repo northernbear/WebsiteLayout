@@ -165,7 +165,7 @@ label {
 /**************/
 
 .head{
-	background:#111111;
+	background:grey;
 	height:35px;
 }
 
@@ -186,8 +186,8 @@ label {
 }
 
 .top-menu ul li:last-child{
-	width:50px;
-	padding-top: 5px;
+	/*width:50px;
+	padding-top: 5px;*/
 }
 
 .top-menu ul li a{
@@ -294,7 +294,7 @@ z-index:15;
 }
 
 #head-logo img{
-    width: 100%;
+    width: auto;
     max-width: 330px;
 }
 /**********************/
@@ -1916,4 +1916,25 @@ select.xu-sl {
 .xu-video #carousel-ds {
     margin-top: 0px;
     padding: 0px 5px;
+}
+
+#searchfm{
+	position:absolute;
+	right:0px;
+	top:30%;
+}
+
+#searchfm #s{
+	width: 250px;
+    font-size: 14px;
+    padding: 2px 5px 0px 5px;
+    color: #3e3e3e;
+}
+
+#searchfm  ::-webkit-input-placeholder,
+#searchfm  ::-moz-placeholder,
+#searchfm  :-ms-input-placeholder ,
+#searchfm  :-moz-placeholder {
+  color: #3e3e3e;
+  font-size:14px;
 }

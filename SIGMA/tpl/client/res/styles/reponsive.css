@@ -519,3 +519,9 @@
     top: 0px;
 	}*/
 }
+
+@media all and (max-width: 317px){
+	.top-menu ul li:last-child {
+    display: none;
+	}
+}

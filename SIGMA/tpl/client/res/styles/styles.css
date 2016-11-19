@@ -115,43 +115,43 @@ label {
 ::-webkit-input-placeholder {
   color: #333;
   font-family: 'Avenir-Roman', tahoma, arial, sans-serif;
-  font-size:16px;
+  /*font-size:16px;*/
 }
 ::-moz-placeholder {
   color: #333;
   font-family: 'Avenir-Roman', tahoma, arial, sans-serif;
-  font-size:16px;
+   /*font-size:16px;*/
 }
 :-ms-input-placeholder {
   color: #333;
   font-family: 'Avenir-Roman', tahoma, arial, sans-serif;
-  font-size:16px;
+   /*font-size:16px;*/
 }
 :-moz-placeholder {
   color: #333;
   font-family: 'Avenir-Roman', tahoma, arial, sans-serif;
-  font-size:16px;
+   /*font-size:16px;*/
 }
 
 #contact-info .form-control::-webkit-input-placeholder {
   color: #e1e1e1;
   font-family: 'Avenir-Roman';
-  font-size:16px;
+   /*font-size:16px;*/
 }
 #contact-info .form-control::-moz-placeholder {
   color: #e1e1e1;
   font-family: 'Avenir-Roman';
-  font-size:16px;
+   /*font-size:16px;*/
 }
 #contact-info .form-control:-ms-input-placeholder {
   color: #e1e1e1;
   font-family: 'Avenir-Roman';
-  font-size:16px;
+   /*font-size:16px;*/
 }
 #contact-info .form-control:-moz-placeholder {
   color: #e1e1e1;
   font-family: 'Avenir-Roman';
-  font-size:16px;
+  /*font-size:16px;*/
 }
 
 #wrapper{
@@ -1425,11 +1425,14 @@ select.xu-sl {
     overflow: hidden;
     width: 100%;
 	margin-bottom:40px;
+	font-size:16px;
 }
 
 .tab-content .tab-pane{
-	background:#f1f1f1;
+	background:#ffff;
 	padding:30px;
+	font-size:16px;
+	border:1px solid #f1f1f1;
 }
 
 .tab-content #accessories,
